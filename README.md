@@ -1,13 +1,13 @@
 #Rails Starter Kit
 
 > Mini Starter Kit for Designers and Ruby on Rails Developers.
-> This boilerplate is build on Bulma CSS and using HTML5, CSS3, Sass and JavaScript.
+> This boilerplate is build on Foundation CSS and using HTML5, CSS3, Sass and JavaScript.
 
 ##Doc and Libraries
 
 ### Front-end
 
-> Bulma --> http://bulma.io/documentation/overview/start/,
+> Foundation --> http://foundation.zurb.com/sites/docs/installation.html,
 > Normalize.css --> https://necolas.github.io/normalize.css/,
 > Sass --> http://sass-lang.com, 
 > Animate.css --> https://github.com/daneden/animate.css,

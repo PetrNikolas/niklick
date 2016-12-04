@@ -3,6 +3,8 @@
 //= require turbolinks
 //= require_tree .
 //= require anijs-min
+//= require what-input
+//= require foundation
 
 $(document).ready(function() {
     // Scrolling href
