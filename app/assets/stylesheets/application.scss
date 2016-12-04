@@ -1,0 +1,98 @@
+/* Imports */
+
+@import "framework/normalize";
+@import "framework/bulma";
+@import "_variables";
+@import "_animate.scss";
+
+/* General Styles */
+
+body,html{
+  height: 100%;
+  margin: 0;
+  color: $main-color;
+  background-color: $white-color;
+}
+
+hr{
+  width: 100%;
+  margin: $large-top-bottom-margin;
+  border: 0;
+  border-top: 1px solid $main-color;
+}
+
+.button{
+  border-radius: 100px;
+}
+
+strong{
+  font-weight: bold;
+}
+
+span{
+  border-bottom: 1px solid;
+}
+
+a{
+  text-decoration: none;
+  border-bottom: 1px dotted;
+  color: $main-color;
+  -webkit-transition: color .4s ease-out;
+  -moz-transition: color .4s ease-out;
+  -o-transition: color .4s ease-out;
+  transition: color .4s ease-out;
+}
+
+a:hover,a:active,a:focus{
+  color: $brand-color;
+  border-bottom: 1px solid;
+  text-decoration: none;
+}
+
+@media (max-width: 768px){
+  .none-display-mobile{
+    display: none;
+  }
+}
+
+section{
+  padding: 10rem 0 10rem;
+  text-align: center;
+}
+
+.mini-section{
+  padding: 5rem 0 3rem;
+  text-align: center;
+}
+
+.section-heading{
+  margin-bottom: 1.2rem;
+}
+
+.section-description{
+  margin-bottom: 1rem;
+  color: $description-color;
+}
+
+@media (min-width: 750px){
+  .section-description{
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Hero */
+
+.hero{
+  padding: 15rem 0 10rem;
+  padding-bottom: 10rem;
+
+  h1{
+    font-weight: 900;
+  }
+}
+
+.hero a:hover,.hero a:focus,.hero a:active{
+  color: $brand-color;
+}

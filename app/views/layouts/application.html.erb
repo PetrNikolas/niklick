@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title-->
+  <title></title>
+
+  <!-- Meta Tags-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <%= csrf_meta_tags %>
+
+  <!-- OG Meta Tags-->
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="public/favicon.ico">
+
+  <!-- Import Icon Font-->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Family Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'true' %>
+  <%= stylesheet_link_tag params[:controller] %>
+</head>
+
+<body>
+
+  <main>
+    <%= yield %>
+  </main>
+
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'true' %>
+  <%= javascript_include_tag params[:controller] %>
+</body>
+</html>
