@@ -1,7 +1,6 @@
 /* Imports */
 
-@import "framework/normalize";
-@import "framework/foundation";
+@import "bulma/bulma";
 @import "_variables";
 @import "_animate.scss";
 
@@ -18,7 +17,6 @@ hr{
   width: 100%;
   margin: $large-top-bottom-margin;
   border: 0;
-  border-top: 1px solid $main-color;
 }
 
 .button{
@@ -79,6 +77,18 @@ section{
     max-width: 60%;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+/* Nav */
+
+.nav{
+  a{
+    border-bottom: none !important;
+  }
+
+  .is-brand{
+    font-size: 25px;
   }
 }
 

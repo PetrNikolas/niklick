@@ -1,25 +1,64 @@
-<!-- Hero Section -->
+<!-- Hero-->
 <section class="hero">
-  <div class="row">
-    <h1 class="section-main animated bounce"><span>Rails Starter Kit!</span></h1>
-    <h2 class="section-heading">Mini Starter Kit for Designers and Ruby on Rails Developers.</h2>
-    <p class="section-description">This boilerplate is build on Foundation and using HTML5, CSS3, Stylus and JavaScript.</p><a href="https://github.com/PetrNikolas/Niklick" target="_blank" class="button is-primary is-medium">Download!</a>
+  <div class="container">
+    <h1 class="section-main title is-1 animated bounce"><span>Rails Starter Kit!</span></h1>
+    <h2 class="section-heading title is-2">Full-Stack Solution for Ruby on Rails Developers.</h2>
+    <p class="section-description title subtitle">This boilerplate is build on Rails Back-End and using HTML5, CSS3, Sass, etc.</p>
+    <a href="https://github.com/PetrNikolas/Rails-Starter-Kit" target="_blank" class="button is-primary is-medium">Download!</a>
   </div>
 </section>
-<!-- Cancel Hero Section -->
 
-<!-- Section -->
+<!-- Section-->
 <section>
-  <h2 data-anijs="if: mouseover, on: body, do: swing animated" class="section-main"><span>Lorem ipsum</span></h2>
-  <div class="row">
-    <div class="medium-6 columns">
-      <h3 class="section-heading">Lorem ipsum 1</h3>
-      <p class="section-description">Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum.</p>
+  <div class="container">
+    <h2 class="title is-2"><span>Half columns</span></h2>
+
+    <div class="columns is-desktop">
+      <div class="column is-half-desktop">
+        <h3 class="title is-3 section-heading">Lorem ipsum 1</h3>
+        <p class="section-description">Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum.</p>
+      </div>
+
+      <div class="column is-half-desktop">
+        <h3 class="title is-3 section-heading">Lorem ipsum 2</h3>
+        <p class="section-description">Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum.</p>
+      </div>
     </div>
-    <div class="medium-6 columns">
-      <h3 class="section-heading">Lorem ipsum 2</h3>
-      <p class="section-description">Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum.</p>
+
+  </div>
+</section>
+
+<!-- hr-->
+<div class="container">
+  <hr/>
+</div>
+
+<!-- Section-->
+<section>
+  <div class="container">
+    <h2 class="title is-2">Panel and progress bar</h2>
+    <div class="columns is-desktop">
+
+      <div class="column is-half-desktop">
+        <nav class="panel">
+          <p class="panel-heading">Repositories</p>
+          <p class="panel-tabs"><a href="#" class="is-active">All</a><a href="#">Public</a><a href="#">Private</a><a href="#">Sources</a><a href="#">Forks</a></p><a href="#" class="panel-block is-active"><span class="panel-icon"><i class="fa fa-book"></i></span>    bulma-website</a><a href="#" class="panel-block"><span class="panel-icon"><i class="fa fa-book"></i></span>    bulma</a><a href="#" class="panel-block"><span class="panel-icon"><i class="fa fa-book"></i></span>    marksheet</a><a href="#" class="panel-block"><span class="panel-icon"><i class="fa fa-code-fork"></i></span>    daniellowtw/infBoard</a><a href="#" class="panel-block"><span class="panel-icon"><i class="fa fa-book"></i></span>    jgthms.github.io</a><a href="#" class="panel-block"><span class="panel-icon"><i class="fa fa-code-fork"></i></span>    mojs</a><a href="#" class="panel-block"><span class="panel-icon"><i class="fa fa-book"></i></span>    grumpy-cat</a>
+          <label class="panel-block">
+            <input type="checkbox"/>    Remember me
+          </label>
+          <div class="panel-block">
+            <button class="button is-primary is-outlined is-fullwidth">Reset all filters</button>
+          </div>
+        </nav>
+      </div>
+
+      <div class="column is-half-desktop">
+        <progress value="15" max="100" class="progress is-small">15%</progress>
+        <progress value="30" max="100" class="progress">30%</progress>
+        <progress value="45" max="100" class="progress is-medium">45%</progress>
+        <progress value="60" max="100" class="progress is-large">60%</progress>
+      </div>
+
     </div>
   </div>
 </section>
-<!-- End Section-->

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
 <head>
+
   <!-- Title-->
   <title>Rails Starter Kit</title>
 
@@ -9,7 +10,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="">
-  <%= csrf_meta_tags %>
 
   <!-- OG Meta Tags-->
   <meta property="og:title" content="">
@@ -18,9 +18,6 @@
   <meta property="og:image" content="">
   <meta property="og:type" content="website">
 
-  <!-- Favicon-->
-  <link rel="shortcut icon" href="public/favicon.ico">
-
   <!-- Import Icon Font-->
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -28,21 +25,37 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
   <!-- CSS-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'true' %>
   <%= stylesheet_link_tag params[:controller] %>
 </head>
-
 <body>
 
+  <!-- Nav-->
+  <nav class="nav">
+    <!-- Container-->
+    <div class="container">
+      <div class="nav-left">
+        <a href="/" class="nav-item is-brand">RSK</a>
+      </div>
+
+      <div class="nav-center">
+        <a href="https://github.com/PetrNikolas/Niklick-Version-Node" class="nav-item"><span class="icon"><i class="fa fa-github"></i></span></a>
+        <a href="https://twitter.com/PetrNikolas" class="nav-item"><span class="icon"><i class="fa fa-twitter"></i></span></a>
+      </div>
+
+      <div class="nav-right nav-menu">
+        <a href="/" class="nav-item">Home</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main content-->
   <main>
     <%= yield %>
   </main>
 
+  <!-- JS-->
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'true' %>
   <%= javascript_include_tag params[:controller] %>
-  <script>
-    $(document).foundation();
-  </script>
 </body>
 </html>
