@@ -53,16 +53,6 @@ a:hover,a:active,a:focus{
   }
 }
 
-section{
-  padding: 10rem 0 10rem;
-  text-align: center;
-}
-
-.mini-section{
-  padding: 5rem 0 3rem;
-  text-align: center;
-}
-
 .section-heading{
   margin-bottom: 1.2rem;
 }
@@ -90,19 +80,4 @@ section{
   .is-brand{
     font-size: 25px;
   }
-}
-
-/* Hero */
-
-.hero{
-  padding: 15rem 0 10rem;
-  padding-bottom: 10rem;
-
-  h1{
-    font-weight: 900;
-  }
-}
-
-.hero a:hover,.hero a:focus,.hero a:active{
-  color: $brand-color;
 }

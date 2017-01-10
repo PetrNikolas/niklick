@@ -22,15 +22,11 @@
   <!-- Import Icon Font-->
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
-  <!-- Family Fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
   <!-- CSS-->
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'true' %>
   <%= stylesheet_link_tag params[:controller] %>
 </head>
 <body>
-
   <!-- Nav-->
   <nav class="nav">
     <!-- Container-->
@@ -50,10 +46,12 @@
     </div>
   </nav>
 
+
   <!-- Main content-->
   <main>
     <%= yield %>
   </main>
+
 
   <!-- JS-->
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'true' %>
