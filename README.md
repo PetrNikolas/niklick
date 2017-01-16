@@ -1,14 +1,11 @@
 # Rails-Starter-Kit.io
 Full-Stack Solution for Ruby on Rails Developers. 
-This boilerplate is build on Rails Back-End and using React on Front-End.
 
 ## Libraries
 
 
 * Ruby --> https://www.ruby-lang.org/en/documentation/,
 * Ruby on Rails --> http://guides.rubyonrails.org/getting_started.html,
-* React --> https://facebook.github.io/react/,
-* Redux --> http://redux.js.org,
 * Material Icons --> https://material.io/icons/,
 * Browsersync --> https://browsersync.io,
 * Bower --> https://bower.io/,
