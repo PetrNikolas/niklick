@@ -33,4 +33,6 @@ This boilerplate is build on Rails Back-End and using React on Front-End.
 
 ## Project Sstup and start
 
-Clone or download this repo. Use "bundle install", and "rails s" --> http://localhost:3000/. That's it!.
+Clone or download this repo. Use `bundle install`, and `rails s` --> http://localhost:3000/. That's it!.
+
+* Browsersync start => `bundle exec rake browser_sync:start`
