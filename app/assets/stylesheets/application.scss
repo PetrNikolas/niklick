@@ -1,5 +1,6 @@
 /* Imports */
 
+@import "bourbon/bourbon";
 @import "bulma/bulma";
 @import "shared/variables";
 @import "libs/animate";
@@ -74,5 +75,17 @@ a:hover,a:active,a:focus{
 
   .is-brand{
     font-size: 25px;
+  }
+}
+
+/* Hero */
+
+.hero{
+  h1{
+    font-weight: 900;
+  }
+
+  a:hover,.hero a:focus,.hero a:active{
+    color: $brand-color;
   }
 }

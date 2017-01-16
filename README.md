@@ -1,26 +1,35 @@
-# Rails Starter Kit
+# Rails-Starter-Kit.io
 Full-Stack Solution for Ruby on Rails Developers. 
-This boilerplate is build on Rails Back-End and using HTML5, CSS3, Sass, etc.
+This boilerplate is build on Rails Back-End and using React on Front-End.
 
-## Doc and Libraries
+## Libraries
 
-### Front-end
-
-* Bulma --> http://bulma.io/documentation/overview/start/,
-* Sass --> http://sass-lang.com/documentation/file.SASS_REFERENCE.html, 
-* Bourbon --> http://bourbon.io/docs/,
-* Animate.css --> https://github.com/daneden/animate.css, 
-* Font Awesome --> http://fontawesome.io/get-started/ and http://fontawesome.io/icons/.
-
-### Back-end
 
 * Ruby --> https://www.ruby-lang.org/en/documentation/,
-* Ruby on Rails --> http://guides.rubyonrails.org/.
+* Ruby on Rails --> http://guides.rubyonrails.org/getting_started.html,
+* React --> https://facebook.github.io/react/,
+* Redux --> http://redux.js.org,
+* Material Icons --> https://material.io/icons/,
+* Browsersync --> https://browsersync.io,
+* Bower --> https://bower.io/,
+* Bulma --> http://bulma.io/documentation/overview/start/,
+* SASS --> http://sass-lang.com/documentation/file.SASS_REFERENCE.html, 
+* Bourbon --> http://bourbon.io/docs/,
+* Animate.css --> https://github.com/daneden/animate.css.
 
 ### Databases
 
 * SQLite --> https://sqlite.org/docs.html,
 * PostgreSQL --> https://www.postgresql.org/docs/.
+
+## Prerequisites
+
+* [Ruby 2.3.1 and +](https://www.ruby-lang.org/en/downloads/),
+* [Rails 4 and +](http://guides.rubyonrails.org/getting_started.html),
+* [RVM](https://rvm.io/),
+* [Node.js v6 and +](https://nodejs.org/en/download/),
+* [NPM](https://docs.npmjs.com/getting-started/what-is-npm)
+* Database.
 
 ## Project Sstup and start
 

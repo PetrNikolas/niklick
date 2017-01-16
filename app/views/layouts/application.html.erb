@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
   <!-- Title-->
-  <title>Rails Starter Kit</title>
+  <title>Rails-Starter-Kit.io</title>
 
   <!-- Meta Tags-->
   <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="">
@@ -18,32 +19,27 @@
   <meta property="og:image" content="">
   <meta property="og:type" content="website">
 
-  <!-- Import Icon Font-->
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Apple touch icon -->
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <!-- Icon Font-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
   <!-- CSS-->
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'true' %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => 'true' %>
   <%= stylesheet_link_tag params[:controller] %>
 </head>
 <body>
   <!-- Nav-->
   <nav class="nav">
-
     <!-- Container-->
     <div class="container">
 
       <!-- Nav-left -->
       <div class="nav-left">
-        <a href="/" class="nav-item is-brand">RSK</a>
+        <a href="/" class="nav-item is-brand">Rails-Starter-Kit.io</a>
       </div>
       <!-- End Nav-left -->
-
-      <!-- Nav-center -->
-      <div class="nav-center">
-        <a href="https://github.com/PetrNikolas/Niklick-Version-Node" class="nav-item"><span class="icon"><i class="fa fa-github"></i></span></a>
-        <a href="https://twitter.com/PetrNikolas" class="nav-item"><span class="icon"><i class="fa fa-twitter"></i></span></a>
-      </div>
-      <!-- End Nav Center -->
 
       <!-- Nav-right -->
       <div class="nav-right nav-menu">
@@ -53,7 +49,6 @@
 
     </div>
     <!-- End Container -->
-
   </nav>
   <!-- End Nav -->
 
@@ -66,7 +61,7 @@
 
 
   <!-- JS-->
-  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'true' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'true' %>
   <%= javascript_include_tag params[:controller] %>
 </body>
 </html>

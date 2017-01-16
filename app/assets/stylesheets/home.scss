@@ -1,13 +1,3 @@
+/* Imports */
+
 @import "shared/variables";
-
-/* Hero */
-
-.hero{
-  h1{
-    font-weight: 900;
-  }
-
-  a:hover,.hero a:focus,.hero a:active{
-    color: $brand-color;
-  }
-}
