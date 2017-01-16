@@ -11,17 +11,16 @@ body,html{
   height: 100%;
   margin: 0;
   color: $main-color;
-  background-color: $white-color;
+  background-color: $second-color;
 }
 
 hr{
   width: 100%;
-  margin: $large-top-bottom-margin;
   border: 0;
 }
 
 .button{
-  border-radius: 100px;
+  border-radius: 7.14285714rem;
 }
 
 strong{
@@ -74,7 +73,7 @@ a:hover,a:active,a:focus{
   }
 
   .is-brand{
-    font-size: 25px;
+    font-size: 1.78571429rem;
   }
 }
 
