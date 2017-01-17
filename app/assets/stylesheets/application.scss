@@ -20,7 +20,7 @@ hr{
 }
 
 .button{
-  border-radius: 7.14285714rem;
+  border-radius: rem(100);
 }
 
 strong{
@@ -28,12 +28,12 @@ strong{
 }
 
 span{
-  border-bottom: 1px solid;
+  border-bottom: rem(1) solid;
 }
 
 a{
   text-decoration: none;
-  border-bottom: 1px dotted;
+  border-bottom: rem(1) dotted;
   color: $main-color;
   -webkit-transition: color .4s ease-out;
   -moz-transition: color .4s ease-out;
@@ -43,7 +43,7 @@ a{
 
 a:hover,a:active,a:focus{
   color: $brand-color;
-  border-bottom: 1px solid;
+  border-bottom: rem(1) solid;
   text-decoration: none;
 }
 
@@ -73,7 +73,7 @@ a:hover,a:active,a:focus{
   }
 
   .is-brand{
-    font-size: 1.78571429rem;
+    font-size: rem(30);
   }
 }
 
