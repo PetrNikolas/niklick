@@ -1,0 +1,70 @@
+<!-- Hero-->
+<section class="hero is-medium has-text-centered">
+  <!-- Hero-body -->
+  <div class="hero-body">
+    <!-- Container -->
+    <div class="container">
+
+      <h1 class="title is-1  animated bounceInDown">
+        <span><%= @post.title %></span>
+      </h1>
+
+    </div>
+    <!-- End Container -->
+  </div>
+  <!-- End Hero-body -->
+</section>
+<!-- End Section -->
+
+
+<!-- Hr -->
+<div class="container">
+
+  <p id="notice"><%= notice %></p>
+
+</div>
+<!-- End Hr -->
+
+
+<!-- Section-->
+<section class="section has-text-centered">
+  <!-- Container -->
+  <div class="container">
+
+    <!-- Message -->
+    <article class="message">
+      <!-- Message-header -->
+      <div class="message-header">
+        <p><%= @post.subtitle %></p>
+      </div>
+      <!-- End Message-header -->
+
+      <!-- Message-body -->
+      <div class="message-body">
+
+        <%= @post.content %>
+
+      </div>
+      <!-- End Message-body -->
+    </article>
+    <!-- End Message -->
+
+    <!-- Level -->
+    <nav class="level">
+      <!-- Level Item -->
+      <div class="level-item has-text-centered  animated fadeInRight">
+        <div>
+
+          <%= link_to 'Edit', edit_post_path(@post), class: "button is-medium" %>
+          <%= link_to 'Back', posts_path, class: "button is-medium" %>
+
+        </div>
+      </div>
+      <!-- End Level Item -->
+    </nav>
+    <!-- End Level -->
+
+  </div>
+  <!-- End Container -->
+</section>
+<!-- End Section -->

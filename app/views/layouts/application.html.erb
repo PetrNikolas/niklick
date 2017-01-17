@@ -37,13 +37,14 @@
 
       <!-- Nav-left -->
       <div class="nav-left">
-        <a href="/" class="nav-item is-brand">Rails-Starter-Kit.io</a>
+        <%= link_to "Rails-Starter-Kit.io", root_path, class: "nav-item is-brand" %>
       </div>
       <!-- End Nav-left -->
 
       <!-- Nav-right -->
       <div class="nav-right nav-menu">
-        <a href="/" class="nav-item">Home</a>
+        <%= link_to "Home", root_path, class: "nav-item" %>
+        <%= link_to "Posts", posts_path, class: "nav-item" %>
       </div>
       <!-- End Nav-right -->
 

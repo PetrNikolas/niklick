@@ -1,0 +1,43 @@
+<div class="content">
+
+  <!-- Form -->
+  <%= form_for(post) do |f| %>
+      <% if post.errors.any? %>
+          <div id="error_explanation">
+            <h2 class="title is-2"><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+            <ul>
+              <% post.errors.full_messages.each do |message| %>
+                  <li><%= message %></li>
+              <% end %>
+            </ul>
+          </div>
+      <% end %>
+
+      <div class="field control">
+        <%= f.label :title, class: "label" %>
+        <%= f.text_field :title, class: "input" %>
+      </div>
+
+      <div class="field control">
+        <%= f.label :subtitle,class: "label" %>
+        <%= f.text_field :subtitle, class: "input" %>
+      </div>
+
+      <div class="field control">
+        <%= f.label :description, class: "label" %>
+        <%= f.text_field :description, class: "input" %>
+      </div>
+
+      <div class="field control">
+        <%= f.label :content, class: "label" %>
+        <%= f.text_area :content, class: "textarea" %>
+      </div>
+
+      <div class="actions control">
+        <%= f.submit class: "button is-primary" %>
+      </div>
+  <% end %>
+  <!-- End Form -->
+
+</div>

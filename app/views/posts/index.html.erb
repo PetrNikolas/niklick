@@ -1,0 +1,98 @@
+<!-- Hero-->
+<section class="hero is-medium has-text-centered">
+  <!-- Hero-body -->
+  <div class="hero-body">
+    <!-- Container -->
+    <div class="container">
+
+      <h1 class="title is-1  animated bounceInDown">
+        <span>Posts</span>
+      </h1>
+
+    </div>
+    <!-- End Container -->
+  </div>
+  <!-- End Hero-body -->
+</section>
+<!-- End Section -->
+
+
+<!-- Hr -->
+<div class="container">
+
+  <p id="notice"><%= notice %></p>
+
+</div>
+<!-- End Hr -->
+
+
+<!-- Section-->
+<section class="section has-text-centered">
+  <!-- Container -->
+  <div class="container">
+
+    <!-- Level -->
+    <nav class="level">
+      <!-- Level Item -->
+      <div class="level-item has-text-right  animated fadeInRight">
+        <div>
+
+          <%= link_to 'New Post', new_post_path, class: "button is-medium" %>
+
+        </div>
+      </div>
+      <!-- End Level Item -->
+    </nav>
+    <!-- End Level -->
+
+    <!-- Columns -->
+    <div class="columns is-desktop">
+
+      <% @posts.each do |post| %>
+
+          <!-- Column -->
+          <div class="column  animated fadeInLeft">
+
+            <!-- Card -->
+            <div class="card">
+
+              <!-- Card-header -->
+              <header class="card-header">
+                <p class="card-header-title">
+                  <%= post.title %>
+                </p>
+              </header>
+              <!-- End Card-header -->
+
+              <!-- Card-content -->
+              <div class="card-content">
+                <div class="content">
+                  <small><strong><%= post.subtitle %></strong></small>
+                  <br>
+                  <p><%= post.description %></p>
+                </div>
+              </div>
+              <!-- End Card-content -->
+
+              <!-- Card-footer -->
+              <footer class="card-footer">
+                <%= link_to 'Detail', post, class: "card-footer-item" %>
+                <%= link_to 'Edit', edit_post_path(post), class: "card-footer-item" %>
+                <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, class: "card-footer-item" %>
+              </footer>
+              <!-- End Card-footer -->
+            </div>
+            <!-- End Card -->
+
+          </div>
+          <!-- End Column -->
+
+      <% end %>
+
+    </div>
+    <!-- End Columns -->
+
+  </div>
+  <!-- End Container -->
+</section>
+<!-- End Section -->
