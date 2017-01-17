@@ -68,7 +68,8 @@ a:hover,a:active,a:focus{
 /* Nav */
 
 .nav{
-  a{
+  a,
+  span{
     border-bottom: none !important;
   }
 
@@ -86,5 +87,16 @@ a:hover,a:active,a:focus{
 
   a:hover,.hero a:focus,.hero a:active{
     color: $brand-color;
+  }
+}
+
+/* Sign Form */
+
+.new_user{
+  width: 50%;
+  margin: 0 auto;
+
+  @media only screen and (max-width: 992px) {
+    width: 90%;
   }
 }

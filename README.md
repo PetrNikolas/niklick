@@ -33,3 +33,7 @@ Full-Stack Solution for Ruby on Rails Developers.
 Clone or download this repo. Use `bundle install`, and `rails s` --> http://localhost:3000/. That's it!.
 
 * Browsersync start => `bundle exec rake browser_sync:start`
+
+### Email and password for login
+
+`admin@rsk.com` and `password`

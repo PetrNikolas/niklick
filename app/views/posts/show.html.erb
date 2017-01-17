@@ -55,7 +55,12 @@
       <div class="level-item has-text-centered  animated fadeInRight">
         <div>
 
-          <%= link_to 'Edit', edit_post_path(@post), class: "button is-medium" %>
+          <% if user_signed_in? %>
+
+            <%= link_to 'Edit', edit_post_path(@post), class: "button is-medium" %>
+
+          <% end %>
+
           <%= link_to 'Back', posts_path, class: "button is-medium" %>
 
         </div>

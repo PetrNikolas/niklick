@@ -31,19 +31,21 @@
   <!-- Container -->
   <div class="container">
 
-    <!-- Level -->
-    <nav class="level">
-      <!-- Level Item -->
-      <div class="level-item has-text-right  animated fadeInRight">
-        <div>
+    <% if user_signed_in? %>
+      <!-- Level -->
+      <nav class="level">
+        <!-- Level Item -->
+        <div class="level-item has-text-right  animated fadeInRight">
+          <div>
 
-          <%= link_to 'New Post', new_post_path, class: "button is-medium" %>
+            <%= link_to 'New Post', new_post_path, class: "button is-medium" %>
 
+          </div>
         </div>
-      </div>
-      <!-- End Level Item -->
-    </nav>
-    <!-- End Level -->
+        <!-- End Level Item -->
+      </nav>
+      <!-- End Level -->
+    <% end %>
 
     <!-- Columns -->
     <div class="columns is-desktop">
@@ -77,8 +79,13 @@
               <!-- Card-footer -->
               <footer class="card-footer">
                 <%= link_to 'Detail', post, class: "card-footer-item" %>
-                <%= link_to 'Edit', edit_post_path(post), class: "card-footer-item" %>
-                <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, class: "card-footer-item" %>
+
+                <% if user_signed_in? %>
+
+                  <%= link_to 'Edit', edit_post_path(post), class: "card-footer-item" %>
+                  <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, class: "card-footer-item" %>
+
+                <% end %>
               </footer>
               <!-- End Card-footer -->
             </div>
