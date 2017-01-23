@@ -39,6 +39,8 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     arel (7.1.4)
+    autoprefixer-rails (6.6.1)
+      execjs
     bcrypt (3.1.11)
     browser_sync_rails (0.1.1)
       rails
@@ -161,6 +163,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  autoprefixer-rails
   browser_sync_rails
   byebug
   devise (~> 4.2)

@@ -3,7 +3,6 @@ Full-Stack Solution for Ruby on Rails Developers.
 
 ## Libraries
 
-
 * Ruby --> https://www.ruby-lang.org/en/documentation/,
 * Ruby on Rails --> http://guides.rubyonrails.org/getting_started.html,
 * Material Icons --> https://material.io/icons/,
@@ -12,6 +11,7 @@ Full-Stack Solution for Ruby on Rails Developers.
 * Bulma --> http://bulma.io/documentation/overview/start/,
 * SASS --> http://sass-lang.com/documentation/file.SASS_REFERENCE.html, 
 * Bourbon --> http://bourbon.io/docs/,
+* Autoprefixer-rails --> https://github.com/ai/autoprefixer-rails,
 * Animate.css --> https://github.com/daneden/animate.css.
 
 ### Databases
