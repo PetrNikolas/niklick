@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9714e5a-1554-4308-8165-b47c3de5dd7e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Rails-Starter-Kit.iml" afterPath="$PROJECT_DIR$/.idea/Rails-Starter-Kit.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="Rails-Starter-Kit.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -554,7 +550,7 @@
       <workItem from="1484668508970" duration="10862000" />
       <workItem from="1484758820666" duration="16000" />
       <workItem from="1484773469948" duration="115000" />
-      <workItem from="1485200797901" duration="481000" />
+      <workItem from="1485200797901" duration="507000" />
     </task>
     <task id="LOCAL-00001" summary="update stylesheets">
       <created>1484073432553</created>
@@ -626,11 +622,18 @@
       <option name="project" value="LOCAL" />
       <updated>1484683238694</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add autoprefixer">
+      <created>1485201311038</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1485201311038</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25776000" />
+    <option name="totallyTimeSpent" value="25802000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="33" width="1440" height="835" extended-state="0" />
@@ -691,7 +694,8 @@
     <MESSAGE value="add rem mixin" />
     <MESSAGE value="add new model" />
     <MESSAGE value="add gem Devise" />
-    <option name="LAST_COMMIT_MESSAGE" value="add gem Devise" />
+    <MESSAGE value="add autoprefixer" />
+    <option name="LAST_COMMIT_MESSAGE" value="add autoprefixer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
