@@ -1,6 +1,15 @@
 # Mango.io
 Full-Stack Solution for Ruby on Rails Developers. 
 
+## Prerequisites
+
+* [Ruby 2.3.1 and +](https://www.ruby-lang.org/en/downloads/),
+* [Rails 4 and +](http://guides.rubyonrails.org/getting_started.html),
+* [RVM](https://rvm.io/),
+* [Node.js v6 and +](https://nodejs.org/en/download/),
+* [NPM](https://docs.npmjs.com/getting-started/what-is-npm)
+* Database.
+
 ## Libraries
 
 * Ruby --> https://www.ruby-lang.org/en/documentation/,
@@ -19,14 +28,10 @@ Full-Stack Solution for Ruby on Rails Developers.
 * SQLite --> https://sqlite.org/docs.html,
 * PostgreSQL --> https://www.postgresql.org/docs/.
 
-## Prerequisites
+## Gems
 
-* [Ruby 2.3.1 and +](https://www.ruby-lang.org/en/downloads/),
-* [Rails 4 and +](http://guides.rubyonrails.org/getting_started.html),
-* [RVM](https://rvm.io/),
-* [Node.js v6 and +](https://nodejs.org/en/download/),
-* [NPM](https://docs.npmjs.com/getting-started/what-is-npm)
-* Database.
+* Authentication solution for Rails --> https://github.com/plataformatec/devise,
+* Pagination library for Rails --> https://github.com/mislav/will_paginate.
 
 ## Project Sstup and start
 
