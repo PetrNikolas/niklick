@@ -28,10 +28,14 @@ Full-Stack Solution for Ruby on Rails Developers.
 * SQLite --> https://sqlite.org/docs.html,
 * PostgreSQL --> https://www.postgresql.org/docs/.
 
-## Gems
+## Ruby gems
 
 * Authentication solution for Rails --> https://github.com/plataformatec/devise,
-* Pagination library for Rails --> https://github.com/mislav/will_paginate.
+* Pagination library for Rails --> https://github.com/mislav/will_paginate,
+* Embed the V8 Javascript Interpreter into Ruby --> https://github.com/cowboyd/therubyracer (you must uncommented in gemfile),
+* Official Ruby on Rails specific tasks for Capistrano --> https://github.com/capistrano/rails (you must uncommented in gemfile),  
+* bcrypt-ruby is a Ruby binding for the OpenBSD bcrypt() password hashing algorithm, allowing you to easily store a secure hash of your users' passwords --> https://github.com/codahale/bcrypt-ruby (you must uncommented in gemfile),
+* A Ruby client library for Redis --> https://github.com/redis/redis-rb (you must uncommented in gemfile).
 
 ## Project Sstup and start
 

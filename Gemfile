@@ -42,7 +42,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-# See https://github.com/rails/execjs#readme for more supported runtimes
+# See https://github.com/rails/execjs
+# Readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
 # Use Capistrano for deployment
