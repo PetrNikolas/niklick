@@ -36,6 +36,21 @@ gem 'will_paginate', '~> 3.1.0'
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+# Forms made easy for Rails!
+# gem 'simple_form'
+
+# Template language
+# gem 'slim'
+
+# A Ruby static code analyzer
+# gem 'rubocop', '~> 0.47.1', require: false
+
+# Decorators/View-Models
+# gem 'draper'
+
+# Easy file attachment management for ActiveRecord
+# gem "paperclip", "~> 5.0.0"
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 
