@@ -10,11 +10,10 @@ Full-Stack Solution for Ruby on Rails Developers.
 * [NPM](https://docs.npmjs.com/getting-started/what-is-npm)
 * Prefer database.
 
-## Libraries
+## Main Libraries
 
 * Ruby --> https://www.ruby-lang.org/en/documentation/,
 * Ruby on Rails --> http://guides.rubyonrails.org/getting_started.html,
-* Material Icons --> https://material.io/icons/,
 * Browsersync --> https://browsersync.io,
 * Bower --> https://bower.io/,
 * Bulma --> http://bulma.io/documentation/overview/start/,

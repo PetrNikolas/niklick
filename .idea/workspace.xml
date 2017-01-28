@@ -2,86 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9714e5a-1554-4308-8165-b47c3de5dd7e" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/_bourbon-deprecated-upcoming.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/_bourbon-deprecated-upcoming.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/_bourbon.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/_bourbon.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/addons/_border-color.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/addons/_border-color.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/addons/_border-radius.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/addons/_border-radius.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/addons/_border-style.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/addons/_border-style.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/addons/_border-width.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/addons/_border-width.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/addons/_buttons.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/addons/_buttons.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/addons/_clearfix.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/addons/_clearfix.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/addons/_ellipsis.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/addons/_ellipsis.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/addons/_font-stacks.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/addons/_font-stacks.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/addons/_hide-text.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/addons/_hide-text.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/addons/_margin.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/addons/_margin.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/addons/_padding.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/addons/_padding.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/addons/_position.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/addons/_position.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/addons/_prefixer.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/addons/_prefixer.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/addons/_retina-image.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/addons/_retina-image.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/addons/_size.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/addons/_size.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/addons/_text-inputs.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/addons/_text-inputs.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/addons/_timing-functions.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/addons/_timing-functions.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/addons/_triangle.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/addons/_triangle.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/addons/_word-wrap.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/addons/_word-wrap.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/css3/_animation.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/css3/_animation.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/css3/_appearance.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/css3/_appearance.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/css3/_backface-visibility.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/css3/_backface-visibility.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/css3/_background-image.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/css3/_background-image.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/css3/_background.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/css3/_background.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/css3/_border-image.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/css3/_border-image.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/css3/_calc.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/css3/_calc.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/css3/_columns.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/css3/_columns.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/css3/_filter.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/css3/_filter.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/css3/_flex-box.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/css3/_flex-box.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/css3/_font-face.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/css3/_font-face.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/css3/_font-feature-settings.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/css3/_font-feature-settings.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/css3/_hidpi-media-query.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/css3/_hidpi-media-query.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/css3/_hyphens.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/css3/_hyphens.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/css3/_image-rendering.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/css3/_image-rendering.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/css3/_keyframes.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/css3/_keyframes.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/css3/_linear-gradient.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/css3/_linear-gradient.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/css3/_perspective.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/css3/_perspective.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/css3/_placeholder.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/css3/_placeholder.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/css3/_radial-gradient.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/css3/_radial-gradient.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/css3/_selection.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/css3/_selection.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/css3/_text-decoration.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/css3/_text-decoration.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/css3/_transform.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/css3/_transform.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/css3/_transition.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/css3/_transition.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/css3/_user-select.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/css3/_user-select.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/functions/_assign-inputs.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/functions/_assign-inputs.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/functions/_contains-falsy.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/functions/_contains-falsy.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/functions/_contains.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/functions/_contains.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/functions/_is-length.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/functions/_is-length.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/functions/_is-light.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/functions/_is-light.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/functions/_is-number.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/functions/_is-number.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/functions/_is-size.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/functions/_is-size.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/functions/_modular-scale.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/functions/_modular-scale.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/functions/_px-to-em.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/functions/_px-to-em.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/functions/_px-to-rem.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/functions/_px-to-rem.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/functions/_shade.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/functions/_shade.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/functions/_strip-units.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/functions/_strip-units.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/functions/_tint.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/functions/_tint.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/functions/_transition-property-name.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/functions/_transition-property-name.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/functions/_unpack.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/functions/_unpack.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/helpers/_convert-units.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/helpers/_convert-units.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/helpers/_directional-values.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/helpers/_directional-values.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/helpers/_font-source-declaration.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/helpers/_font-source-declaration.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/helpers/_gradient-positions-parser.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/helpers/_gradient-positions-parser.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/helpers/_linear-angle-parser.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/helpers/_linear-angle-parser.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/helpers/_linear-gradient-parser.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/helpers/_linear-gradient-parser.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/helpers/_linear-positions-parser.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/helpers/_linear-positions-parser.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/helpers/_linear-side-corner-parser.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/helpers/_linear-side-corner-parser.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/helpers/_radial-arg-parser.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/helpers/_radial-arg-parser.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/helpers/_radial-gradient-parser.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/helpers/_radial-gradient-parser.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/helpers/_radial-positions-parser.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/helpers/_radial-positions-parser.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/helpers/_render-gradients.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/helpers/_render-gradients.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/helpers/_shape-size-stripper.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/helpers/_shape-size-stripper.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/helpers/_str-to-num.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/helpers/_str-to-num.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/settings/_asset-pipeline.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/settings/_asset-pipeline.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/settings/_prefixer.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/settings/_prefixer.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bourbon/settings/_px-to-em.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/bourbon/settings/_px-to-em.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
     </list>
     <ignored path="Rails-Starter-Kit.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -107,11 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="application.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="application.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+            <state relative-caret-position="345">
+              <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -120,19 +43,19 @@
       <file leaf-file-name="application.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="73">
-              <caret line="45" column="19" lean-forward="false" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
+            <state relative-caret-position="272">
+              <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="165">
-                <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <first_editor relative-caret-position="375">
+                <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -143,7 +66,7 @@
       <file leaf-file-name="Gemfile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
+            <state relative-caret-position="705">
               <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
               <folding />
             </state>
@@ -192,10 +115,10 @@
         <option value="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -206,9 +129,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="32" />
     <option name="width" value="1440" />
-    <option name="height" value="836" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -226,8 +148,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="RailsProjectView" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -303,79 +223,11 @@
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rails-Starter-Kit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rails-Starter-Kit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rails-Starter-Kit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rails-Starter-Kit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rails-Starter-Kit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rails-Starter-Kit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="RailsProjectView" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -647,7 +499,8 @@
       <workItem from="1485549039590" duration="775000" />
       <workItem from="1485550243029" duration="27000" />
       <workItem from="1485596634393" duration="485000" />
-      <workItem from="1485603167505" duration="1421000" />
+      <workItem from="1485603167505" duration="1475000" />
+      <workItem from="1485608328657" duration="52000" />
     </task>
     <task id="LOCAL-00001" summary="update stylesheets">
       <created>1484073432553</created>
@@ -754,17 +607,24 @@
       <option name="project" value="LOCAL" />
       <updated>1485606666515</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="update readme">
+      <created>1485606737902</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1485606737902</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28510000" />
+    <option name="totallyTimeSpent" value="28616000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="32" width="1440" height="836" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2532189" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25679544" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1137,20 +997,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
+        <state relative-caret-position="705">
           <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="165">
-            <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -1158,23 +1007,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="45" column="19" lean-forward="false" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
+        <state relative-caret-position="272">
+          <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-          <folding />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="375">
+            <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
