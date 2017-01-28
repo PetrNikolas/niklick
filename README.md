@@ -1,4 +1,4 @@
-# Rails-Starter-Kit.io
+# Mango.io
 Full-Stack Solution for Ruby on Rails Developers. 
 
 ## Libraries
