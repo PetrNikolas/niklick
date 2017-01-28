@@ -8,7 +8,7 @@ Full-Stack Solution for Ruby on Rails Developers.
 * [RVM](https://rvm.io/),
 * [Node.js v6 and +](https://nodejs.org/en/download/),
 * [NPM](https://docs.npmjs.com/getting-started/what-is-npm)
-* Database.
+* Prefer database.
 
 ## Libraries
 
