@@ -11,9 +11,6 @@
 /db/*.sqlite3
 /db/*.sqlite3-journal
 
-# Ignore IDE files
-.idea/*
-
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*
@@ -22,3 +19,6 @@
 
 # Ignore Byebug command history file.
 .byebug_history
+
+# Ignore IDE files
+.idea
