@@ -12,7 +12,7 @@
 /db/*.sqlite3-journal
 
 # Ignore IDE files
-.idea
+.idea/*
 
 # Ignore all logfiles and tempfiles.
 /log/*
