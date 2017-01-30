@@ -33,6 +33,12 @@ gem 'autoprefixer-rails'
 # Pagination library for Rails
 gem 'will_paginate', '~> 3.1.0'
 
+# Simple Ruby on Rails plugin for creating meta tags
+gem 'metamagic'
+
+# Client Side Validations made easy for Ruby on Rails
+gem 'client_side_validations'
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 

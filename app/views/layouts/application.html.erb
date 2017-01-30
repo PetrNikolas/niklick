@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Title-->
-  <title>7even</title>
+  <!-- Generating Meta tags -->
+  <%= metamagic %>
+  <!-- End Generating Meta tags -->
 
-  <!-- Meta Tags-->
+  <!-- Static Meta Tags-->
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
   <meta name="author" content="">
   <%= csrf_meta_tags %>
+  <!-- End Static Meta Tags-->
 
   <!-- OG Meta Tags-->
   <meta property="og:title" content="7even">
@@ -18,13 +19,16 @@
   <meta property="og:url" content="">
   <meta property="og:image" content="">
   <meta property="og:type" content="website">
+  <!-- End OG Meta Tags-->
 
   <!-- Apple touch icon -->
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- End Apple touch icon -->
 
   <!-- CSS-->
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => 'true' %>
   <%= stylesheet_link_tag params[:controller] %>
+  <!-- End CSS-->
 </head>
 <body>
   <!-- Nav-->
