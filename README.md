@@ -31,6 +31,8 @@ Full-Stack Solution for Ruby on Rails Developers.
 
 * Authentication solution for Rails --> https://github.com/plataformatec/devise,
 * Pagination library for Rails --> https://github.com/mislav/will_paginate,
+* Better error page for Rack apps --> https://github.com/charliesome/better_errors,
+* The authorization Gem for Ruby on Rails --> https://github.com/CanCanCommunity/cancancan (you must uncommented in gemfile),
 * Embed the V8 Javascript Interpreter into Ruby --> https://github.com/cowboyd/therubyracer (you must uncommented in gemfile),
 * Easy file attachment management for ActiveRecord --> https://github.com/thoughtbot/paperclip (you must uncommented in gemfile),
 * Forms made easy for Rails --> https://github.com/plataformatec/simple_form (you must uncommented in gemfile),
