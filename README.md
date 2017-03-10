@@ -1,5 +1,5 @@
-# Nacho
-Full-Stack Solution for Ruby on Rails Developers. 
+# NACHO Stack
+Full-Stack Solution for React and Ruby on Rails Developers. 
 
 ## Prerequisites
 
@@ -16,11 +16,10 @@ Full-Stack Solution for Ruby on Rails Developers.
 * Ruby on Rails --> http://guides.rubyonrails.org/getting_started.html,
 * Browsersync --> https://browsersync.io,
 * Bower --> https://bower.io/,
-* Bulma --> http://bulma.io/documentation/overview/start/,
+* UIkit --> https://getuikit.com/,
 * SASS --> http://sass-lang.com/documentation/file.SASS_REFERENCE.html, 
 * Bourbon --> http://bourbon.io/docs/,
-* Autoprefixer-rails --> https://github.com/ai/autoprefixer-rails,
-* Animate.css --> https://github.com/daneden/animate.css.
+* Autoprefixer-rails --> https://github.com/ai/autoprefixer-rails.
 
 ### Databases
 

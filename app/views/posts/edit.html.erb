@@ -1,64 +1,37 @@
 <!-- Meta tags -->
-<% meta title: "Edit Post",
-        description: ""
-%>
+<% meta title: "Edit Post" %>
 <!-- End Meta tags -->
 
 
 <!-- Hero-->
-<section class="hero is-medium has-text-centered">
-  <!-- Hero-body -->
-  <div class="hero-body">
-    <!-- Container -->
-    <div class="container">
+<div class="uk-section uk-section-primary uk-light uk-section-xlarge">
+  <div class="uk-container uk-container-small uk-text-center">
 
-      <h1 class="title is-1  animated bounceInDown">
-        <span>Editing Post</span>
-      </h1>
-
-    </div>
-    <!-- End Container -->
-  </div>
-  <!-- End Hero-body -->
-</section>
-<!-- End Section -->
-
-
-<!-- Section-->
-<section class="section is-medium has-text-centered">
-  <!-- Container -->
-  <div class="container">
-
-    <!-- Level -->
-    <nav class="level">
-      <!-- Level Item -->
-      <div class="level-item has-text-right  animated fadeInRight">
-        <div>
-
-          <%= link_to 'Show', @post, class: "button is-medium" %>
-          <%= link_to 'Back', posts_path, class: "button is-medium" %>
-
-        </div>
-      </div>
-      <!-- End Level Item -->
-    </nav>
-    <!-- End Level -->
-
-    <!-- Columns -->
-    <div class="columns is-desktop">
-
-      <!-- Column -->
-      <div class="column is-12">
-
-        <%= render 'form', post: @post %>
-
-      </div>
-      <!-- End Column -->
-
-    </div>
-    <!-- End Columns -->
+    <h1 class="uk-heading-primary uk-margin-small">
+      Editing Post
+    </h1>
 
   </div>
-  <!-- End Container -->
-</section>
-<!-- End Section -->
+</div>
+
+
+<!-- section -->
+<div class="uk-section uk-section-large uk-section-muted">
+  <div class="uk-container uk-container-small uk-text-center">
+
+
+    <ul class="uk-subnav">
+      <li>
+        <%= link_to 'Show', @post, class: "uk-button uk-button-default uk-button-large" %>
+      </li>
+      <li>
+        <%= link_to 'Back', posts_path, class: "uk-button uk-button-default uk-button-large" %>
+      </li>
+    </ul>
+
+
+    <%= render 'form', post: @post %>
+
+
+  </div>
+</div>

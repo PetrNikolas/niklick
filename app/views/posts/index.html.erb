@@ -1,118 +1,93 @@
 <!-- Meta tags -->
-<% meta title: "Posts",
-        description: ""
-%>
-<!-- End Meta tags -->
+<% meta title: "Posts" %>
 
 
 <!-- Hero-->
-<section class="hero is-medium has-text-centered">
-  <!-- Hero-body -->
-  <div class="hero-body">
-    <!-- Container -->
-    <div class="container">
+<div class="uk-section uk-section-primary uk-light uk-section-xlarge">
+  <div class="uk-container uk-container-small uk-text-center">
 
-      <h1 class="title is-1  animated bounceInDown">
-        <span>Posts</span>
-      </h1>
+    <h1 class="uk-heading-primary uk-margin-small">
+      Posts
+    </h1>
 
-    </div>
-    <!-- End Container -->
   </div>
-  <!-- End Hero-body -->
-</section>
-<!-- End Section -->
+</div>
 
 
-<!-- Hr -->
-<div class="container">
+<!-- hr -->
+<div class="uk-container">
 
   <p id="notice"><%= notice %></p>
 
 </div>
-<!-- End Hr -->
 
 
-<!-- Section-->
-<section class="section has-text-centered">
-  <!-- Container -->
-  <div class="container">
+<!-- section -->
+<div class="uk-section uk-section-large uk-section-muted">
+  <div class="uk-container uk-container-small uk-text-center">
 
     <% if user_signed_in? %>
-      <!-- Level -->
-      <nav class="level">
-        <!-- Level Item -->
-        <div class="level-item has-text-right  animated fadeInRight">
-          <div>
 
-            <%= link_to 'New Post', new_post_path, class: "button is-medium" %>
+        <ul class="uk-subnav">
+          <li>
+            <%= link_to 'New Post', new_post_path, class: "uk-button uk-button-default uk-button-large" %>
+          </li>
+        </ul>
 
-          </div>
-        </div>
-        <!-- End Level Item -->
-      </nav>
-      <!-- End Level -->
     <% end %>
 
-    <!-- Columns -->
-    <div class="columns">
+
+    <div class="uk-child-width-expand@s uk-text-center" uk-grid>
 
       <% @posts.each do |post| %>
 
-          <!-- Column -->
-          <div class="column is-3  animated fadeInLeft">
+          <!-- column -->
+          <div>
 
-            <!-- Card -->
-            <div class="card">
+            <!-- card -->
+            <div class="uk-card uk-card-default uk-card-body">
 
-              <!-- Card-header -->
-              <header class="card-header">
-                <p class="card-header-title">
-                  <%= post.title %>
-                </p>
-              </header>
-              <!-- End Card-header -->
+              <h3 class="uk-card-title uk-margin-small"><%= post.title %></h3>
 
-              <!-- Card-content -->
-              <div class="card-content">
-                <div class="content">
-                  <small><strong><%= post.subtitle %></strong></small>
-                  <br>
-                  <p><%= post.description %></p>
-                </div>
-              </div>
-              <!-- End Card-content -->
+              <small class="uk-margin-small"><strong><%= post.subtitle %></strong></small>
+              <br>
+              <p class="uk-margin-small"><%= post.description %></p>
 
-              <!-- Card-footer -->
-              <footer class="card-footer">
-                <%= link_to 'Detail', post, class: "card-footer-item" %>
+              <%= link_to 'Detail', post, class: "uk-button uk-button-default" %>
 
-                <% if user_signed_in? %>
+              <% if user_signed_in? %>
 
-                  <%= link_to 'Edit', edit_post_path(post), class: "card-footer-item" %>
-                  <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, class: "card-footer-item" %>
+                  <%= link_to 'Edit', edit_post_path(post), class: "uk-button uk-button-default" %>
+                  <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, class: "uk-button uk-button-default" %>
 
-                <% end %>
-              </footer>
-              <!-- End Card-footer -->
+              <% end %>
+
             </div>
-            <!-- End Card -->
 
           </div>
-          <!-- End Column -->
 
       <% end %>
 
+
     </div>
-    <!-- End Columns -->
+
+  </div>
+</div>
+
+
+<!-- Section-->
+<div class="uk-section uk-section-large uk-section-muted">
+  <!-- Container -->
+  <div class="uk-container">
+
 
     <!-- Paginate -->
-    <nav class="pagination is-centered">
+    <nav class="uk-pagination">
       <%= will_paginate @posts %>
     </nav>
     <!-- End Paginate -->
 
   </div>
   <!-- End Container -->
-</section>
+</div>
 <!-- End Section -->

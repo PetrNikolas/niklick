@@ -1,82 +1,50 @@
 <!-- Meta tags -->
-<% meta title: "Detail Post",
-        description: ""
-%>
-<!-- End Meta tags -->
+<% meta title: "Detail Post" %>
 
 
 <!-- Hero-->
-<section class="hero is-medium has-text-centered">
-  <!-- Hero-body -->
-  <div class="hero-body">
-    <!-- Container -->
-    <div class="container">
+<div class="uk-section uk-section-primary uk-light uk-section-xlarge">
+  <div class="uk-container uk-container-small uk-text-center">
 
-      <h1 class="title is-1  animated bounceInDown">
-        <span><%= @post.title %></span>
-      </h1>
+    <h1 class="uk-heading-primary uk-margin-small">
+      <%= @post.title %>
+    </h1>
 
-    </div>
-    <!-- End Container -->
   </div>
-  <!-- End Hero-body -->
-</section>
-<!-- End Section -->
+</div>
 
 
-<!-- Hr -->
-<div class="container">
+<!-- hr -->
+<div class="uk-container">
 
   <p id="notice"><%= notice %></p>
 
 </div>
-<!-- End Hr -->
 
 
-<!-- Section-->
-<section class="section has-text-centered">
-  <!-- Container -->
-  <div class="container">
+<!-- section -->
+<div class="uk-section uk-section-large uk-section-muted">
+  <div class="uk-container uk-container-small uk-text-center">
 
-    <!-- Message -->
-    <article class="message">
-      <!-- Message-header -->
-      <div class="message-header">
-        <p><%= @post.subtitle %></p>
-      </div>
-      <!-- End Message-header -->
 
-      <!-- Message-body -->
-      <div class="message-body">
+  <!-- card -->
+  <div class="uk-card uk-card-default uk-card-body">
 
-        <%= @post.content %>
+    <h3 class="uk-card-title uk-margin-small"><%= @post.subtitle %></h3>
 
-      </div>
-      <!-- End Message-body -->
-    </article>
-    <!-- End Message -->
-
-    <!-- Level -->
-    <nav class="level">
-      <!-- Level Item -->
-      <div class="level-item has-text-centered  animated fadeInRight">
-        <div>
-
-          <% if user_signed_in? %>
-
-            <%= link_to 'Edit', edit_post_path(@post), class: "button is-medium" %>
-
-          <% end %>
-
-          <%= link_to 'Back', posts_path, class: "button is-medium" %>
-
-        </div>
-      </div>
-      <!-- End Level Item -->
-    </nav>
-    <!-- End Level -->
+    <p class="uk-margin-small"><%= @post.content %></p>
 
   </div>
-  <!-- End Container -->
-</section>
-<!-- End Section -->
+
+
+  <% if user_signed_in? %>
+
+      <%= link_to 'Edit', edit_post_path(@post), class: "uk-button uk-button-default" %>
+
+  <% end %>
+
+  <%= link_to 'Back', posts_path, class: "uk-button uk-button-default" %>
+
+
+  </div>
+</div>

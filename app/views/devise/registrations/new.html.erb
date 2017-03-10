@@ -1,70 +1,59 @@
 <!-- Hero-->
-<section class="hero has-text-centered">
-  <!-- Hero-body -->
-  <div class="hero-body">
-    <!-- Container -->
-    <div class="container">
+<div class="uk-section uk-section-primary uk-light uk-section-large">
+  <div class="uk-container uk-container-small uk-text-center">
 
-      <h1 class="title is-1  animated bounceInDown">
-        <span>Sign up</span>
-      </h1>
+    <h1 class="uk-heading-primary uk-margin-small">
+      Sign up
+    </h1>
 
-    </div>
-    <!-- End Container -->
   </div>
-  <!-- End Hero-body -->
-</section>
-<!-- End Section -->
+</div>
 
 
 <!-- Section-->
-<section class="section is-medium has-text-centered">
-  <!-- Container -->
-  <div class="container">
+<div class="uk-section uk-section-large uk-section-muted">
+  <div class="uk-container uk-container-small uk-text-center">
 
-    <!-- Columns -->
-    <div class="columns is-desktop">
 
-      <!-- Column -->
-      <div class="column is-12">
+    <!-- Form -->
+    <%= form_for(resource, class: "sign_form", as: resource_name, url: registration_path(resource_name)) do |f| %>
 
-        <!-- Form -->
-        <%= form_for(resource, class: "sign_form", as: resource_name, url: registration_path(resource_name)) do |f| %>
-            <%= devise_error_messages! %>
 
-            <div class="field control">
-              <%= f.label :email, class: "label" %><br />
-              <%= f.email_field :email, autofocus: true, class: "input" %>
-            </div>
+        <fieldset class="uk-fieldset">
 
-            <div class="field control">
-              <%= f.label :password, class: "label" %>
-              <% if @minimum_password_length %>
-                  <em>(<%= @minimum_password_length %> characters minimum)</em>
-              <% end %><br />
-              <%= f.password_field :password, autocomplete: "off", class: "input" %>
-            </div>
 
-            <div class="field control">
-              <%= f.label :password_confirmation, class: "label" %><br />
-              <%= f.password_field :password_confirmation, autocomplete: "off", class: "input" %>
-            </div>
+          <%= devise_error_messages! %>
 
-            <div class="actions">
-              <%= f.submit "Sign up", class: "button is-success" %>
-            </div>
-        <% end %>
-        <!-- End Form -->
 
-        <%= render "devise/shared/links" %>
+          <div class="field uk-margin">
+            <%= f.label :email, class: "uk-form-label" %><br />
+            <%= f.email_field :email, autofocus: true, class: "uk-input" %>
+          </div>
 
-      </div>
-      <!-- End Column -->
+          <div class="field uk-margin">
+            <%= f.label :password, class: "uk-form-label" %>
+            <% if @minimum_password_length %>
+                <em>(<%= @minimum_password_length %> characters minimum)</em>
+            <% end %><br />
+            <%= f.password_field :password, autocomplete: "off", class: "uk-input" %>
+          </div>
 
-    </div>
-    <!-- End Columns -->
+          <div class="field uk-margin">
+            <%= f.label :password_confirmation, class: "uk-formlabel" %><br />
+            <%= f.password_field :password_confirmation, autocomplete: "off", class: "uk-input" %>
+          </div>
+
+          <div class="actions uk-margin">
+            <%= f.submit "Sign up", class: "uk-button uk-button-default uk-button-large" %>
+          </div>
+
+
+        </fieldset>
+    <% end %>
+    <!-- End Form -->
+
+    <%= render "devise/shared/links" %>
+
 
   </div>
-  <!-- End Container -->
-</section>
-<!-- End Section -->
+</div>

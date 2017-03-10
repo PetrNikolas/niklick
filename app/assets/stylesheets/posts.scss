@@ -4,10 +4,6 @@
 
 /* Hero */
 
-.hero{
-  background-color: $decoration-color;
-}
-
 .content{
   width: 50%;
   margin: 0 auto;
@@ -15,4 +11,6 @@
   @media only screen and (max-width: 992px) {
     width: 90%;
   }
+
+
 }

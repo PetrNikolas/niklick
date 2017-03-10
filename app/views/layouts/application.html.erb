@@ -15,7 +15,7 @@
 
 
   <!-- OG Meta Tags-->
-  <meta property="og:title" content="Nacho">
+  <meta property="og:title" content="NACHO Stack">
   <meta property="og:url" content="">
   <meta property="og:image" content="">
   <meta property="og:type" content="website">
@@ -26,49 +26,60 @@
 
 
   <!-- CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.18/css/uikit.min.css" />
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => 'true' %>
   <%= stylesheet_link_tag params[:controller] %>
 </head>
 <body>
 
   <!-- Nav-->
-  <nav class="nav">
+  <div class="uk-position-relative">
+    <div class="uk-position-top">
+      <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
 
+        <div class="uk-navbar-left">
 
-    <!-- Container-->
-    <div class="container">
+          <ul class="uk-navbar-nav">
+            <li>
+              <%= link_to "NACHO Stack", root_path, class: "brand" %>
+            </li>
+          </ul>
 
+        </div>
 
-      <!-- Nav-left -->
-      <div class="nav-left">
-        <%= link_to "Nacho", root_path, class: "nav-item is-brand" %>
-      </div>
+        <div class="uk-navbar-right">
 
+          <ul class="uk-navbar-nav">
+            <li>
+              <%= link_to "Home", root_path %>
+            </li>
+            <li>
+              <%= link_to "Posts", posts_path %>
+            </li>
 
-      <!-- Nav-right -->
-      <div class="nav-right nav-menu">
-        <%= link_to "Home", root_path, class: "nav-item" %>
-        <%= link_to "Posts", posts_path, class: "nav-item" %>
+            <% if user_signed_in? %>
 
-        <span class="nav-item">|</span>
+              <li>
+                <%= link_to "Log Out", destroy_user_session_path, :method => :delete %>
+              </li>
 
-        <% if user_signed_in? %>
+            <% else %>
 
-            <%= link_to "Log Out", destroy_user_session_path, :method => :delete, class: "nav-item" %>
+              <li>
+                <%= link_to "Log In", new_user_session_path %>
+              </li>
+              <li>
+                <%= link_to "Sign Up", new_user_registration_path %>
+              </li>
 
-        <% else %>
+            <% end %>
+          </ul>
 
-          <%= link_to "Log In", new_user_session_path, class: "nav-item" %>
-          <%= link_to "Sign Up", new_user_registration_path, class: "nav-item" %>
+        </div>
 
-        <% end %>
-      </div>
-
-
+      </nav>
     </div>
-
-
-  </nav>
+  </div>
 
 
   <!-- Main Content-->
@@ -82,6 +93,9 @@
 
 
   <!-- JS-->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.18/js/uikit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.18/js/uikit-icons.min.js"></script>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'true' %>
   <%= javascript_include_tag params[:controller] %>
 </body>

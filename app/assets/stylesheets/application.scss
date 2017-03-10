@@ -1,9 +1,7 @@
 /* Imports */
 
 @import "libs/bourbon/bourbon";
-@import "libs/bulma";
 @import "shared/variables";
-@import "libs/animate";
 
 /* General Styles */
 
@@ -17,18 +15,6 @@ body,html{
 hr{
   width: 100%;
   border: 0;
-}
-
-.button{
-  border-radius: rem(100);
-}
-
-strong{
-  font-weight: bold;
-}
-
-span{
-  border-bottom: rem(1) solid;
 }
 
 a{
@@ -67,14 +53,26 @@ a:hover,a:active,a:focus{
 
 /* Nav */
 
-.nav{
-  a,
-  span{
+.uk-navbar-container{
+  a{
+    color: $second-color !important;
     border-bottom: none !important;
+
+    &:hover, &:focus{
+      color: $second-color !important;
+      border-bottom: 1px solid $second-color !important;
+    }
   }
 
-  .is-brand{
+  .brand{
+    color: $second-color;
     font-size: rem(30);
+    text-transform: none;
+
+    &:hover, &:focus{
+      color: $second-color;
+      border-bottom: none !important;
+    }
   }
 }
 
