@@ -9,23 +9,23 @@ Full-Stack Solution for React and Ruby on Rails Developers.
 * [Node.js v6 and +](https://nodejs.org/en/download/),
 * [NPM](https://docs.npmjs.com/getting-started/what-is-npm),
 * [Bower](https://bower.io/),
-* Databases.
+* [PostgreSQL](https://www.postgresql.org/docs/).
 
 ## Main Libraries
 
-* Ruby --> https://www.ruby-lang.org/en/documentation/,
-* Ruby on Rails --> http://guides.rubyonrails.org/getting_started.html,
+* Ruby --> https://www.ruby-lang.org/en/,
+* Ruby on Rails --> http://rubyonrails.org/,
 * Browsersync --> https://browsersync.io,
 * Bower --> https://bower.io/,
 * UIkit --> https://getuikit.com/,
-* SASS --> http://sass-lang.com/documentation/file.SASS_REFERENCE.html, 
-* Bourbon --> http://bourbon.io/docs/,
+* SASS --> http://sass-lang.com/, 
+* Bourbon --> http://bourbon.io/,
 * Autoprefixer-rails --> https://github.com/ai/autoprefixer-rails.
 
 ### Databases
 
-* SQLite --> https://sqlite.org/docs.html,
-* PostgreSQL --> https://www.postgresql.org/docs/.
+* SQLite --> https://sqlite.org/,
+* PostgreSQL --> https://www.postgresql.org/.
 
 ## Ruby gems
 
