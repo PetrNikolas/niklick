@@ -46,8 +46,13 @@ Full-Stack Solution for React and Ruby on Rails Developers.
 
 ## Project Setup and start
 
-Clone or download this repo. Use `bundle install`, `bower install` and `rails s` --> http://localhost:3000/. That's it!.
+* Clone or download this repo,
+* Use `bundle install`,
+* Use `bower install`,
+* Use `rails s`, 
+* Visit --> http://localhost:3000/. That's it!.
 
+### Browsersync
 * Browsersync start => `bundle exec rake browser_sync:start`
 
 ### Email and password for login
