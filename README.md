@@ -7,7 +7,8 @@ Full-Stack Solution for React and Ruby on Rails Developers.
 * [Rails 4 and +](http://guides.rubyonrails.org/getting_started.html),
 * [RVM](https://rvm.io/),
 * [Node.js v6 and +](https://nodejs.org/en/download/),
-* [NPM](https://docs.npmjs.com/getting-started/what-is-npm)
+* [NPM](https://docs.npmjs.com/getting-started/what-is-npm),
+* [Bower](https://bower.io/),
 * Databases.
 
 ## Main Libraries
