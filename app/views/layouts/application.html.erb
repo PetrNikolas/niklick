@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <!-- Generating Meta tags -->
   <%= metamagic %>
-  <!-- End Generating Meta tags -->
+
 
   <!-- Static Meta Tags-->
   <meta charset="utf-8">
@@ -11,35 +12,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="">
   <%= csrf_meta_tags %>
-  <!-- End Static Meta Tags-->
+
 
   <!-- OG Meta Tags-->
-  <meta property="og:title" content="7even">
+  <meta property="og:title" content="Nacho">
   <meta property="og:url" content="">
   <meta property="og:image" content="">
   <meta property="og:type" content="website">
-  <!-- End OG Meta Tags-->
+
 
   <!-- Apple touch icon -->
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <!-- End Apple touch icon -->
+  <link rel="apple-touch-icon" href="../../../public/apple-touch-icon-precomposed.png">
+
 
   <!-- CSS-->
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => 'true' %>
   <%= stylesheet_link_tag params[:controller] %>
-  <!-- End CSS-->
 </head>
 <body>
+
   <!-- Nav-->
   <nav class="nav">
+
+
     <!-- Container-->
     <div class="container">
 
+
       <!-- Nav-left -->
       <div class="nav-left">
-        <%= link_to "7even", root_path, class: "nav-item is-brand" %>
+        <%= link_to "Nacho", root_path, class: "nav-item is-brand" %>
       </div>
-      <!-- End Nav-left -->
+
 
       <!-- Nav-right -->
       <div class="nav-right nav-menu">
@@ -59,19 +63,22 @@
 
         <% end %>
       </div>
-      <!-- End Nav-right -->
+
 
     </div>
-    <!-- End Container -->
+
+
   </nav>
-  <!-- End Nav -->
 
 
   <!-- Main Content-->
   <main>
+
+
     <%= yield %>
+
+
   </main>
-  <!-- End Main Content -->
 
 
   <!-- JS-->
