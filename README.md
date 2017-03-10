@@ -1,4 +1,4 @@
-# 7even
+# Nacho
 Full-Stack Solution for Ruby on Rails Developers. 
 
 ## Prerequisites
@@ -8,7 +8,7 @@ Full-Stack Solution for Ruby on Rails Developers.
 * [RVM](https://rvm.io/),
 * [Node.js v6 and +](https://nodejs.org/en/download/),
 * [NPM](https://docs.npmjs.com/getting-started/what-is-npm)
-* Prefer database.
+* Databases.
 
 ## Main Libraries
 
@@ -45,7 +45,7 @@ Full-Stack Solution for Ruby on Rails Developers.
 * bcrypt-ruby is a Ruby binding for the OpenBSD bcrypt() password hashing algorithm, allowing you to easily store a secure hash of your users' passwords --> https://github.com/codahale/bcrypt-ruby (you must uncommented in gemfile),
 * A Ruby client library for Redis --> https://github.com/redis/redis-rb (you must uncommented in gemfile).
 
-## Project Sstup and start
+## Project Setup and start
 
 Clone or download this repo. Use `bundle install`, and `rails s` --> http://localhost:3000/. That's it!.
 
