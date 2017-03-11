@@ -93,10 +93,9 @@
 
 
   <!-- JS-->
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'true' %>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.18/js/uikit.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.18/js/uikit-icons.min.js"></script>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'true' %>
   <%= javascript_include_tag params[:controller] %>
 </body>
 </html>
