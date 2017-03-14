@@ -1,5 +1,5 @@
 # NACHO Stack
-Full-Stack Solution for React and Ruby on Rails Developers. 
+Full-Stack Solution for Ruby on Rails Developers. 
 
 ## Prerequisites
 
