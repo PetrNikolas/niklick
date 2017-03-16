@@ -1,4 +1,4 @@
-# NACHO Stack
+# Niklick
 Full-Stack Solution for Ruby on Rails Developers. 
 
 ## Prerequisites
