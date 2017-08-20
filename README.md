@@ -1,31 +1,19 @@
 # Niklick
 Full-Stack Solution for Ruby on Rails Developers. 
 
-## Prerequisites
+## Prerequisites and Main Libraries
 
 * [Ruby 2.3.1 and +](https://www.ruby-lang.org/en/downloads/),
-* [Rails 4 and +](http://guides.rubyonrails.org/getting_started.html),
+* [Rails 5 and +](http://guides.rubyonrails.org/getting_started.html),
 * [RVM](https://rvm.io/),
-* [Node.js v6 and +](https://nodejs.org/en/download/),
-* [NPM](https://docs.npmjs.com/getting-started/what-is-npm),
-* [Bower](https://bower.io/),
-* [PostgreSQL](https://www.postgresql.org/docs/).
-
-## Main Libraries
-
-* Ruby --> https://www.ruby-lang.org/en/,
-* Ruby on Rails --> http://rubyonrails.org/,
-* Browsersync --> https://browsersync.io,
-* Bower --> https://bower.io/,
-* UIkit --> https://getuikit.com/,
-* SASS --> http://sass-lang.com/, 
-* Bourbon --> http://bourbon.io/,
-* Autoprefixer-rails --> https://github.com/ai/autoprefixer-rails.
+* [UIkit](https://getuikit.com/),
+* [SASS](http://sass-lang.com/),
+* [Bourbon](http://bourbon.io/),
+* [Autoprefixer-rails](https://github.com/ai/autoprefixer-rails).
 
 ### Databases
-
-* SQLite --> https://sqlite.org/,
-* PostgreSQL --> https://www.postgresql.org/.
+* [PostgreSQL](https://www.postgresql.org/docs/),
+* [SQLite](https://sqlite.org/).
 
 ## Ruby gems
 
@@ -47,15 +35,9 @@ Full-Stack Solution for Ruby on Rails Developers.
 
 ## Project Setup and start
 
-* Clone or download this repo,
-* Use `bundle install`,
-* Use `bower install`,
-* Use `rails s`, 
-* Visit --> http://localhost:3000/. That's it!.
-
-### Browsersync
-* Browsersync start => `bundle exec rake browser_sync:start`
-
-### Email and password for login
-
-`admin@rsk.com` and `password`
+1. Clone or download this repo,
+2. Use `bundle install`,
+3. Use `rake db:migrate`,
+4. Use `rake db:seed`,
+5. Use `rails s`, 
+6. Visit --> http://localhost:3000/. That's it!.
