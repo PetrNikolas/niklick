@@ -373,7 +373,6 @@ module.exports = {
         "favicon.ico"
       ],
       "globOptions": {
-        "cwd": "/Users/petrnikolasprokop/Documents/work/marley/client",
         "dot": true,
         "ignore": "**/.gitkeep"
       }
