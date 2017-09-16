@@ -7,4 +7,6 @@ Rails.application.routes.draw do
 
   root :to => "home#index"
 
+  get '/api' => 'news#index', defaults: { format: :json }
+
 end

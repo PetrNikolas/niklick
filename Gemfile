@@ -9,6 +9,12 @@ gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 
+# Provides Sprockets implementation for Rails 4.x (and beyond) Asset Pipeline
+gem 'sprockets'
+
+# Rack Middleware for handling Cross-Origin Resource Sharing (CORS), which makes cross-origin AJAX possible
+gem 'rack-cors'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 
