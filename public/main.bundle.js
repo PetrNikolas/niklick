@@ -1,11 +1,11 @@
 webpackJsonp([0],{
 
-/***/ "./src/$$_gendir async recursive":
+/***/ "./client/$$_gendir async recursive":
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
 	"./contact/contact.module": [
-		"./src/app/contact/contact.module.ts"
+		"./client/app/contact/contact.module.ts"
 	]
 };
 function webpackAsyncContext(req) {
@@ -20,18 +20,18 @@ webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
 module.exports = webpackAsyncContext;
-webpackAsyncContext.id = "./src/$$_gendir async recursive";
+webpackAsyncContext.id = "./client/$$_gendir async recursive";
 
 /***/ }),
 
-/***/ "./src/app/app.component.html":
+/***/ "./client/app/app.component.html":
 /***/ (function(module, exports) {
 
 module.exports = "<!-- Nav-->\n<app-header></app-header>\n<!-- End Nav -->\n\n\n<!-- Main Content-->\n<main>\n\n    <!-- Router Outlet -->\n    <router-outlet></router-outlet>\n\n</main>\n<!-- End Main Content -->\n\n<!-- Footer -->\n<app-footer></app-footer>\n<!-- End Footer -->"
 
 /***/ }),
 
-/***/ "./src/app/app.component.scss":
+/***/ "./client/app/app.component.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/css-base.js")(false);
@@ -49,7 +49,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ "./src/app/app.component.ts":
+/***/ "./client/app/app.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -70,27 +70,27 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* Component */])({
         selector: 'app-root',
-        template: __webpack_require__("./src/app/app.component.html"),
-        styles: [__webpack_require__("./src/app/app.component.scss")]
+        template: __webpack_require__("./client/app/app.component.html"),
+        styles: [__webpack_require__("./client/app/app.component.scss")]
     })
 ], AppComponent);
 
-//# sourceMappingURL=/Users/petrnikolasprokop/Documents/work/niklick/src/app.component.js.map
+//# sourceMappingURL=/Users/petrnikolasprokop/Documents/work/niklick/client/app.component.js.map
 
 /***/ }),
 
-/***/ "./src/app/app.module.ts":
+/***/ "./client/app/app.module.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__("./node_modules/@angular/platform-browser/@angular/platform-browser.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("./node_modules/@angular/core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__welcome_welcome_module__ = __webpack_require__("./src/app/welcome/welcome.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__contact_contact_module__ = __webpack_require__("./src/app/contact/contact.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_routes__ = __webpack_require__("./src/app/app.routes.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__("./src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shared_components_header_header_component__ = __webpack_require__("./src/app/shared-components/header/header.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__shared_components_footer_footer_component__ = __webpack_require__("./src/app/shared-components/footer/footer.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__welcome_welcome_module__ = __webpack_require__("./client/app/welcome/welcome.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__contact_contact_module__ = __webpack_require__("./client/app/contact/contact.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_routes__ = __webpack_require__("./client/app/app.routes.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__("./client/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shared_components_header_header_component__ = __webpack_require__("./client/app/shared-components/header/header.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__shared_components_footer_footer_component__ = __webpack_require__("./client/app/shared-components/footer/footer.component.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -131,16 +131,16 @@ AppModule = __decorate([
     })
 ], AppModule);
 
-//# sourceMappingURL=/Users/petrnikolasprokop/Documents/work/niklick/src/app.module.js.map
+//# sourceMappingURL=/Users/petrnikolasprokop/Documents/work/niklick/client/app.module.js.map
 
 /***/ }),
 
-/***/ "./src/app/app.routes.ts":
+/***/ "./client/app/app.routes.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__welcome_pages_welcome_component__ = __webpack_require__("./src/app/welcome/pages/welcome.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__welcome_pages_welcome_component__ = __webpack_require__("./client/app/welcome/pages/welcome.component.ts");
 /* unused harmony export routes */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return routing; });
 
@@ -152,11 +152,11 @@ var routes = [
     { path: 'contact', loadChildren: './contact/contact.module#ContactModule' }
 ];
 var routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* RouterModule */].forRoot(routes);
-//# sourceMappingURL=/Users/petrnikolasprokop/Documents/work/niklick/src/app.routes.js.map
+//# sourceMappingURL=/Users/petrnikolasprokop/Documents/work/niklick/client/app.routes.js.map
 
 /***/ }),
 
-/***/ "./src/app/contact/contact.module.ts":
+/***/ "./client/app/contact/contact.module.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -165,8 +165,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("./node_modules/@angular/common/@angular/common.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("./node_modules/@angular/forms/@angular/forms.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__("./node_modules/@angular/http/@angular/http.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_contact_component__ = __webpack_require__("./src/app/contact/pages/contact.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__contact_routes__ = __webpack_require__("./src/app/contact/contact.routes.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_contact_component__ = __webpack_require__("./client/app/contact/pages/contact.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__contact_routes__ = __webpack_require__("./client/app/contact/contact.routes.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContactModule", function() { return ContactModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -202,16 +202,16 @@ ContactModule = __decorate([
     })
 ], ContactModule);
 
-//# sourceMappingURL=/Users/petrnikolasprokop/Documents/work/niklick/src/contact.module.js.map
+//# sourceMappingURL=/Users/petrnikolasprokop/Documents/work/niklick/client/contact.module.js.map
 
 /***/ }),
 
-/***/ "./src/app/contact/contact.routes.ts":
+/***/ "./client/app/contact/contact.routes.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pages_contact_component__ = __webpack_require__("./src/app/contact/pages/contact.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pages_contact_component__ = __webpack_require__("./client/app/contact/pages/contact.component.ts");
 /* unused harmony export routes */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return routing; });
 
@@ -222,18 +222,18 @@ var routes = [
     { path: 'contact', component: __WEBPACK_IMPORTED_MODULE_1__pages_contact_component__["a" /* ContactComponent */] }
 ];
 var routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* RouterModule */].forChild(routes);
-//# sourceMappingURL=/Users/petrnikolasprokop/Documents/work/niklick/src/contact.routes.js.map
+//# sourceMappingURL=/Users/petrnikolasprokop/Documents/work/niklick/client/contact.routes.js.map
 
 /***/ }),
 
-/***/ "./src/app/contact/pages/contact.component.html":
+/***/ "./client/app/contact/pages/contact.component.html":
 /***/ (function(module, exports) {
 
 module.exports = "<!-- Hero-->\n<section class=\"hero is-fullheight has-text-centered\">\n    <!-- Hero-body -->\n    <div class=\"hero-body\">\n        <!-- Container -->\n        <div class=\"container\">\n\n            <h1 class=\"title is-1\">\n                <span>Contact informations</span>\n            </h1>\n\n        </div>\n        <!-- End Container -->\n    </div>\n    <!-- End Hero-body -->\n</section>\n<!-- End Section -->"
 
 /***/ }),
 
-/***/ "./src/app/contact/pages/contact.component.scss":
+/***/ "./client/app/contact/pages/contact.component.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/css-base.js")(false);
@@ -251,7 +251,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ "./src/app/contact/pages/contact.component.ts":
+/***/ "./client/app/contact/pages/contact.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -277,25 +277,25 @@ var ContactComponent = (function () {
 ContactComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* Component */])({
         selector: 'app-contact',
-        template: __webpack_require__("./src/app/contact/pages/contact.component.html"),
-        styles: [__webpack_require__("./src/app/contact/pages/contact.component.scss")],
+        template: __webpack_require__("./client/app/contact/pages/contact.component.html"),
+        styles: [__webpack_require__("./client/app/contact/pages/contact.component.scss")],
         providers: []
     }),
     __metadata("design:paramtypes", [])
 ], ContactComponent);
 
-//# sourceMappingURL=/Users/petrnikolasprokop/Documents/work/niklick/src/contact.component.js.map
+//# sourceMappingURL=/Users/petrnikolasprokop/Documents/work/niklick/client/contact.component.js.map
 
 /***/ }),
 
-/***/ "./src/app/shared-components/footer/footer.component.html":
+/***/ "./client/app/shared-components/footer/footer.component.html":
 /***/ (function(module, exports) {
 
 module.exports = "<!-- Footer -->\n<footer class=\"footer\">\n    <!-- Container -->\n    <div class=\"container\">\n        <!-- Content -->\n        <div class=\"content has-text-centered\">\n            <p>\n                <strong><a href=\"http://www.petrnikolas.com/niklick\">Niklick</a></strong> by <a href=\"http://www.petrnikolas.com/\">Petr Nikolas</a>.\n            </p>\n        </div>\n        <!-- End Content -->\n    </div>\n    <!-- End Container -->\n</footer>\n<!-- End Footer -->"
 
 /***/ }),
 
-/***/ "./src/app/shared-components/footer/footer.component.scss":
+/***/ "./client/app/shared-components/footer/footer.component.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/css-base.js")(false);
@@ -313,7 +313,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ "./src/app/shared-components/footer/footer.component.ts":
+/***/ "./client/app/shared-components/footer/footer.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -339,24 +339,24 @@ var FooterComponent = (function () {
 FooterComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* Component */])({
         selector: 'app-footer',
-        template: __webpack_require__("./src/app/shared-components/footer/footer.component.html"),
-        styles: [__webpack_require__("./src/app/shared-components/footer/footer.component.scss")]
+        template: __webpack_require__("./client/app/shared-components/footer/footer.component.html"),
+        styles: [__webpack_require__("./client/app/shared-components/footer/footer.component.scss")]
     }),
     __metadata("design:paramtypes", [])
 ], FooterComponent);
 
-//# sourceMappingURL=/Users/petrnikolasprokop/Documents/work/niklick/src/footer.component.js.map
+//# sourceMappingURL=/Users/petrnikolasprokop/Documents/work/niklick/client/footer.component.js.map
 
 /***/ }),
 
-/***/ "./src/app/shared-components/header/header.component.html":
+/***/ "./client/app/shared-components/header/header.component.html":
 /***/ (function(module, exports) {
 
 module.exports = "<!-- Nav-->\n<nav class=\"nav\">\n    <!-- Container-->\n    <div class=\"container\">\n\n        <!-- Nav-left -->\n        <div class=\"nav-left\">\n            <a class=\"nav-item is-brand\" [routerLink]=\"['/']\">Niklick</a>\n        </div>\n        <!-- End Nav-left -->\n\n        <!-- Nav-right -->\n        <div class=\"nav-right nav-menu\">\n            <a class=\"nav-item\" [routerLink]=\"['/contact']\" [routerLinkActive]=\"['is-active']\">Contact</a>\n        </div>\n        <!-- End Nav-right -->\n\n    </div>\n    <!-- End Container -->\n</nav>\n<!-- End Nav -->"
 
 /***/ }),
 
-/***/ "./src/app/shared-components/header/header.component.scss":
+/***/ "./client/app/shared-components/header/header.component.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/css-base.js")(false);
@@ -374,7 +374,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ "./src/app/shared-components/header/header.component.ts":
+/***/ "./client/app/shared-components/header/header.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -400,24 +400,24 @@ var HeaderComponent = (function () {
 HeaderComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* Component */])({
         selector: 'app-header',
-        template: __webpack_require__("./src/app/shared-components/header/header.component.html"),
-        styles: [__webpack_require__("./src/app/shared-components/header/header.component.scss")]
+        template: __webpack_require__("./client/app/shared-components/header/header.component.html"),
+        styles: [__webpack_require__("./client/app/shared-components/header/header.component.scss")]
     }),
     __metadata("design:paramtypes", [])
 ], HeaderComponent);
 
-//# sourceMappingURL=/Users/petrnikolasprokop/Documents/work/niklick/src/header.component.js.map
+//# sourceMappingURL=/Users/petrnikolasprokop/Documents/work/niklick/client/header.component.js.map
 
 /***/ }),
 
-/***/ "./src/app/welcome/pages/welcome.component.html":
+/***/ "./client/app/welcome/pages/welcome.component.html":
 /***/ (function(module, exports) {
 
 module.exports = "<!-- Hero-->\n<section class=\"hero is-fullheight has-text-centered\">\n    <!-- Hero-body -->\n    <div class=\"hero-body\">\n        <!-- Container -->\n        <div class=\"container\">\n\n            <h1 class=\"title is-1\">\n                <span>Niklick!</span>\n            </h1>\n            <h2 class=\"title is-2\">Full-Stack Solution for Angular and Ruby on Rails Developers.</h2>\n            <p class=\"content\">This boilerplate is based on Angular Front-End and Ruby on Rails Back-End.</p>\n            <a href=\"https://github.com/PetrNikolas/niklick\" target=\"_blank\" class=\"button is-primary is-medium\">Download!</a>\n\n        </div>\n        <!-- End Container -->\n    </div>\n    <!-- End Hero-body -->\n</section>\n<!-- End Section -->"
 
 /***/ }),
 
-/***/ "./src/app/welcome/pages/welcome.component.scss":
+/***/ "./client/app/welcome/pages/welcome.component.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/css-base.js")(false);
@@ -435,7 +435,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ "./src/app/welcome/pages/welcome.component.ts":
+/***/ "./client/app/welcome/pages/welcome.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -461,17 +461,17 @@ var WelcomeComponent = (function () {
 WelcomeComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* Component */])({
         selector: 'app-welcome',
-        template: __webpack_require__("./src/app/welcome/pages/welcome.component.html"),
-        styles: [__webpack_require__("./src/app/welcome/pages/welcome.component.scss")]
+        template: __webpack_require__("./client/app/welcome/pages/welcome.component.html"),
+        styles: [__webpack_require__("./client/app/welcome/pages/welcome.component.scss")]
     }),
     __metadata("design:paramtypes", [])
 ], WelcomeComponent);
 
-//# sourceMappingURL=/Users/petrnikolasprokop/Documents/work/niklick/src/welcome.component.js.map
+//# sourceMappingURL=/Users/petrnikolasprokop/Documents/work/niklick/client/welcome.component.js.map
 
 /***/ }),
 
-/***/ "./src/app/welcome/welcome.module.ts":
+/***/ "./client/app/welcome/welcome.module.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -479,7 +479,7 @@ WelcomeComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("./node_modules/@angular/common/@angular/common.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("./node_modules/@angular/forms/@angular/forms.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__("./node_modules/@angular/http/@angular/http.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_welcome_component__ = __webpack_require__("./src/app/welcome/pages/welcome.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_welcome_component__ = __webpack_require__("./client/app/welcome/pages/welcome.component.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WelcomeModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -511,11 +511,11 @@ WelcomeModule = __decorate([
     })
 ], WelcomeModule);
 
-//# sourceMappingURL=/Users/petrnikolasprokop/Documents/work/niklick/src/welcome.module.js.map
+//# sourceMappingURL=/Users/petrnikolasprokop/Documents/work/niklick/client/welcome.module.js.map
 
 /***/ }),
 
-/***/ "./src/environments/environment.ts":
+/***/ "./client/environments/environment.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -528,20 +528,20 @@ WelcomeModule = __decorate([
 var environment = {
     production: false
 };
-//# sourceMappingURL=/Users/petrnikolasprokop/Documents/work/niklick/src/environment.js.map
+//# sourceMappingURL=/Users/petrnikolasprokop/Documents/work/niklick/client/environment.js.map
 
 /***/ }),
 
-/***/ "./src/main.ts":
+/***/ "./client/main.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polyfills_ts__ = __webpack_require__("./src/polyfills.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polyfills_ts__ = __webpack_require__("./client/polyfills.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__("./node_modules/@angular/platform-browser-dynamic/@angular/platform-browser-dynamic.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__("./node_modules/@angular/core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__("./src/environments/environment.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_app_module__ = __webpack_require__("./src/app/app.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__("./client/environments/environment.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_app_module__ = __webpack_require__("./client/app/app.module.ts");
 
 
 
@@ -551,11 +551,11 @@ if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment *
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_core__["a" /* enableProdMode */])();
 }
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_4__app_app_module__["a" /* AppModule */]);
-//# sourceMappingURL=/Users/petrnikolasprokop/Documents/work/niklick/src/main.js.map
+//# sourceMappingURL=/Users/petrnikolasprokop/Documents/work/niklick/client/main.js.map
 
 /***/ }),
 
-/***/ "./src/polyfills.ts":
+/***/ "./client/polyfills.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -609,14 +609,14 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 
 
 
-//# sourceMappingURL=/Users/petrnikolasprokop/Documents/work/niklick/src/polyfills.js.map
+//# sourceMappingURL=/Users/petrnikolasprokop/Documents/work/niklick/client/polyfills.js.map
 
 /***/ }),
 
 /***/ 0:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__("./src/main.ts");
+module.exports = __webpack_require__("./client/main.ts");
 
 
 /***/ })

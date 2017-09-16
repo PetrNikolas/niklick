@@ -23,7 +23,7 @@ const { AotPlugin } = require('@ngtools/webpack');
 //------------------------------------------------------------------------------
 const nodeModules = path.join(process.cwd(), 'node_modules');
 const realNodeModules = fs.realpathSync(nodeModules);
-const genDirNodeModules = path.join(process.cwd(), 'src', '$$_gendir', 'node_modules');
+const genDirNodeModules = path.join(process.cwd(), 'client', '$$_gendir', 'node_modules');
 const entryPoints = ["inline","polyfills","sw-register","styles","vendor","main"];
 const minimizeCss = false;
 const baseHref = "";
@@ -91,10 +91,10 @@ module.exports = {
   },
   "entry": {
     "main": [
-      "./src/main.ts"
+      "./client/main.ts"
     ],
     "styles": [
-      "./src/styles.scss"
+      "./client/styles.scss"
     ]
   },
   "output": {
@@ -130,7 +130,7 @@ module.exports = {
       },
       {
         "exclude": [
-          path.join(process.cwd(), "src/styles.scss")
+          path.join(process.cwd(), "client/styles.scss")
         ],
         "test": /\.css$/,
         "use": [
@@ -153,7 +153,7 @@ module.exports = {
       },
       {
         "exclude": [
-          path.join(process.cwd(), "src/styles.scss")
+          path.join(process.cwd(), "client/styles.scss")
         ],
         "test": /\.scss$|\.sass$/,
         "use": [
@@ -184,7 +184,7 @@ module.exports = {
       },
       {
         "exclude": [
-          path.join(process.cwd(), "src/styles.scss")
+          path.join(process.cwd(), "client/styles.scss")
         ],
         "test": /\.less$/,
         "use": [
@@ -213,7 +213,7 @@ module.exports = {
       },
       {
         "exclude": [
-          path.join(process.cwd(), "src/styles.scss")
+          path.join(process.cwd(), "client/styles.scss")
         ],
         "test": /\.styl$/,
         "use": [
@@ -243,7 +243,7 @@ module.exports = {
       },
       {
         "include": [
-          path.join(process.cwd(), "src/styles.scss")
+          path.join(process.cwd(), "client/styles.scss")
         ],
         "test": /\.css$/,
         "use": [
@@ -266,7 +266,7 @@ module.exports = {
       },
       {
         "include": [
-          path.join(process.cwd(), "src/styles.scss")
+          path.join(process.cwd(), "client/styles.scss")
         ],
         "test": /\.scss$|\.sass$/,
         "use": [
@@ -297,7 +297,7 @@ module.exports = {
       },
       {
         "include": [
-          path.join(process.cwd(), "src/styles.scss")
+          path.join(process.cwd(), "client/styles.scss")
         ],
         "test": /\.less$/,
         "use": [
@@ -326,7 +326,7 @@ module.exports = {
       },
       {
         "include": [
-          path.join(process.cwd(), "src/styles.scss")
+          path.join(process.cwd(), "client/styles.scss")
         ],
         "test": /\.styl$/,
         "use": [
@@ -373,7 +373,7 @@ module.exports = {
         "favicon.ico"
       ],
       "globOptions": {
-        "cwd": "/Users/petrnikolasprokop/Documents/work/marley/src",
+        "cwd": "/Users/petrnikolasprokop/Documents/work/marley/client",
         "dot": true,
         "ignore": "**/.gitkeep"
       }
@@ -413,7 +413,7 @@ module.exports = {
         "environments/environment.ts": "environments/environment.ts"
       },
       "exclude": [],
-      "tsConfigPath": "src/tsconfig.json",
+      "tsConfigPath": "client/tsconfig.json",
       "skipCodeGeneration": true
     })
   ],

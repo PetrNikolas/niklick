@@ -20,7 +20,7 @@ Full-Stack Solution for Angular and Ruby on Rails Developers.
 * [PostgreSQL](https://www.postgresql.org/docs/),
 * [SQLite](https://sqlite.org/).
 
-## Ruby gems
+## Ruby Gems
 * Authentication solution for Rails --> https://github.com/plataformatec/devise,
 * Pagination library for Rails --> https://github.com/mislav/will_paginate,
 * Simple Ruby on Rails plugin for creating meta tags --> https://github.com/lassebunk/metamagic,
@@ -37,7 +37,7 @@ Full-Stack Solution for Angular and Ruby on Rails Developers.
 * bcrypt-ruby is a Ruby binding for the OpenBSD bcrypt() password hashing algorithm, allowing you to easily store a secure hash of your users' passwords --> https://github.com/codahale/bcrypt-ruby (you must uncommented in gemfile),
 * A Ruby client library for Redis --> https://github.com/redis/redis-rb (you must uncommented in gemfile).
 
-## Project Setup and start
+## Project Setup
 1. Clone or download this repo,
 2. Run `npm install`.
 3. Run `npm run build:prod`.
@@ -49,29 +49,65 @@ Full-Stack Solution for Angular and Ruby on Rails Developers.
 
 * OR Run just only `npm run setup` and `rails s` and visit --> http://localhost:3000/.
 
-### Build for Production
+## Directory Structure
+
+```shell
+.
+├── app                         # Visual Studio Code settings
+├── /bin                        # The folder for compiled output
+├── /config                     # The folder for compiled output
+├── /client/                    # Client-side app (frontend)
+│   ├── /components/            # Common or shared UI components
+│   ├── /utils/                 # Helper functions and utility classes
+│   ├── /views/                 # UI components for web pages (screens)
+│   ├── history.js              # HTML5 History API wrapper used for navigation
+│   ├── main.js                 # Entry point that bootstraps the app
+│   ├── router.js               # Lightweight application router
+│   ├── routes.json             # The list of application routes
+│   └── store.js                # Application state manager (Redux)
+├── /db                         # Unit and integration tests for the frontend app
+├── /log/                       # Documentation to the project
+├── /node_modules/              # Documentation to the project
+├── /public/                    # Static files such as favicon.ico etc.
+│   ├── robots.txt              # Instructions for search engine crawlers
+│   └── ...                     # etc.
+├── /test/                      # Unit and integration tests for the backend app
+├── /tmp/                       # Web server and data API (backend)
+├── /vendor/                    # Web server and data API (backend)
+│── .gitigonre                  # Visual Studio Code settings for JavaScript
+│── angular-cli.json            # Visual Studio Code settings for JavaScript
+│── config.ru                   # Visual Studio Code settings for JavaScript
+│── Gemfile                     # Visual Studio Code settings for JavaScript
+│── Gemfile.lock                # Visual Studio Code settings for JavaScript
+│── license                     # Visual Studio Code settings for JavaScript
+│── package-lock.json           # Visual Studio Code settings for JavaScript
+│── package.json                # The list of project dependencies and NPM scripts
+│── Rakefile.js                 # Build automation script (similar to gulpfile.js)
+└── tslint.json                 # Bundling and optimization settings for Webpack
+```
+
+## Build for Production
 1. Run `npm start`
 2. Visit http://localhost:3000/.
 
-### Build for Development
+## Build for Development
 1. Run `npm start:dev`
 2. Visit http://localhost:3000/.
 
-### Client Side development - without Rails backend
-
-#### For Development Server
+## Client Side Development - Without Rails Back-End
+### For Development Webpack Server
 1. Run `npm run build:dev`.
 2. Run `npm run dev` and visit http://localhost:4200/.
 
-#### Code scaffolding
+### Code Scaffolding
 3. Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
 
-#### Running unit tests
+### Running Unit Tests
 6. Run `npm run test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-#### Running end-to-end tests
+### Running End-to-End Tests
 7. Run `npm run e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 8. Before running the tests make sure you are serving the app via `npm run dev`.
 
-#### Running lint
+### Running Lint
 9. Run `npm run lint`.
