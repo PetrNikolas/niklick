@@ -47,7 +47,17 @@ Full-Stack Solution for Angular and Ruby on Rails Developers.
 7. Run `rails s`, 
 8. Visit --> http://localhost:3000/. That's it!.
 
-### Client Side development
+* OR Run just only `npm run setup` and `rails s` and visit --> http://localhost:3000/.
+
+### Build for Production
+1. Run `npm start`
+2. Visit http://localhost:3000/.
+
+### Build for Development
+1. Run `npm start:dev`
+2. Visit http://localhost:3000/.
+
+### Client Side development - without Rails backend
 
 #### For Development Server
 1. Run `npm run build:dev`.
@@ -55,10 +65,6 @@ Full-Stack Solution for Angular and Ruby on Rails Developers.
 
 #### Code scaffolding
 3. Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
-
-#### Build for Production
-4. Run `npm run build:prod`
-5. Run `npm start` and visit http://localhost:8080/.
 
 #### Running unit tests
 6. Run `npm run test` to execute the unit tests via [Karma](https://karma-runner.github.io).

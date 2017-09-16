@@ -17,7 +17,10 @@
     "rollup": "rollup --config ./src/config/rollup-inline.config.js && rollup --config ./src/config/rollup-main.config.js && rollup --config ./src/config/rollup-styles.config.js && rollup --config ./src/config/rollup-vendor.config.js",
     "build:dev": "webpack --config ./src/config/webpack.config.js",
     "build:prod": "npm run prefixcss && npm run build:dev && npm run rollup",
-    "dev": "webpack-dev-server --config ./src/config/webpack.config.js --port=4200"
+    "dev": "webpack-dev-server --config ./src/config/webpack.config.js --port=4200",
+    "setup": "npm install && npm run build:prod && bundle install && rake db:migrate && rake db:seed",
+    "start:dev": "npm run build:dev && rails s",
+    "start": "npm run build:prod && rails s"
   },
   "dependencies": {
     "@angular/common": "^4.0.2",

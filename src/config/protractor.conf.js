@@ -1,9 +1,16 @@
 // Protractor configuration file, see link for more information
 // https://github.com/angular/protractor/blob/master/lib/config.ts
 
-/*global jasmine */
+
+//------------------------------------------------------------------------------
+// Import all packages
+//------------------------------------------------------------------------------
 var SpecReporter = require('jasmine-spec-reporter');
 
+
+//------------------------------------------------------------------------------
+// Protractor module exports
+//------------------------------------------------------------------------------
 exports.config = {
   allScriptsTimeout: 11000,
   specs: [
