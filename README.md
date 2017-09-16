@@ -53,37 +53,31 @@ Full-Stack Solution for Angular and Ruby on Rails Developers.
 
 ```shell
 .
-├── app                         # Visual Studio Code settings
-├── /bin                        # The folder for compiled output
-├── /config                     # The folder for compiled output
-├── /client/                    # Client-side app (frontend)
-│   ├── /components/            # Common or shared UI components
-│   ├── /utils/                 # Helper functions and utility classes
-│   ├── /views/                 # UI components for web pages (screens)
-│   ├── history.js              # HTML5 History API wrapper used for navigation
-│   ├── main.js                 # Entry point that bootstraps the app
-│   ├── router.js               # Lightweight application router
-│   ├── routes.json             # The list of application routes
-│   └── store.js                # Application state manager (Redux)
-├── /db                         # Unit and integration tests for the frontend app
-├── /log/                       # Documentation to the project
-├── /node_modules/              # Documentation to the project
-├── /public/                    # Static files such as favicon.ico etc.
+├── app                         # Rails application - controllers, models, etc.
+├── /bin                        # Folder for Rake, bundle, spring setup, etc.
+├── /client/                    # Client-side app
+├── /config                     # Rails app configuration - database, app, environment, etc.
+├── /db                         # Database setup - migrate, seeds, schema
+├── /e2e                        # End-to-End tests for client-side app
+├── /lib                        # Lib folder
+├── /log/                       # Log folder
+├── /node_modules/              # Node modules for client-side app
+├── /public/                    # Static files such as client-side app build, favicon.ico etc.
 │   ├── robots.txt              # Instructions for search engine crawlers
 │   └── ...                     # etc.
-├── /test/                      # Unit and integration tests for the backend app
-├── /tmp/                       # Web server and data API (backend)
-├── /vendor/                    # Web server and data API (backend)
-│── .gitigonre                  # Visual Studio Code settings for JavaScript
-│── angular-cli.json            # Visual Studio Code settings for JavaScript
-│── config.ru                   # Visual Studio Code settings for JavaScript
-│── Gemfile                     # Visual Studio Code settings for JavaScript
-│── Gemfile.lock                # Visual Studio Code settings for JavaScript
-│── license                     # Visual Studio Code settings for JavaScript
-│── package-lock.json           # Visual Studio Code settings for JavaScript
-│── package.json                # The list of project dependencies and NPM scripts
-│── Rakefile.js                 # Build automation script (similar to gulpfile.js)
-└── tslint.json                 # Bundling and optimization settings for Webpack
+├── /test/                      # Unit and integration tests for the Rails app
+├── /tmp/                       # TMP folder - sockets, cache, etc.
+├── /vendor/                    # Vendor assets
+│── .gitigonre                  # Gitignore file
+│── angular-cli.json            # Angular-cli setup file
+│── config.ru                   # Config file for Rails app
+│── Gemfile                     # File for all Ruby gems
+│── Gemfile.lock                # File with Gemfile lock
+│── license                     # License file
+│── package-lock.json           # File with package lock
+│── package.json                # The list of client-side dependencies and NPM scripts
+│── Rakefile.js                 # File for rake tasks
+└── tslint.json                 # TSlint setup file
 ```
 
 ## Build for Production
