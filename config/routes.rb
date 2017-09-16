@@ -13,7 +13,9 @@ Rails.application.routes.draw do
   scope '/api' do
     # Version 1
     scope '/v1' do
-      get '/news' => 'news#index', defaults: { format: :json }
+      scope 'news' do 
+        get '/' => 'news#index', defaults: { format: :json }
+      end
     end
   end
 
