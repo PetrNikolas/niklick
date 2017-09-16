@@ -1,101 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+      <!-- Title -->
+      <title>Niklick</title>
 
-  <!-- Dynamic Meta tags -->
-  <%= metamagic %>
+      <base href="/">
 
+      <!-- Meta Tags-->
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="Petr Nikolas">
+      <meta http-equiv="Content-language" content="en">
+      <meta name='reply-to' content='petr.nikolas@icloud.com'>
+      <meta name='url' content=''>
+      <meta name='identifier-URL' content=''>
 
-  <!-- Static Meta Tags-->
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="">
-  <%= csrf_meta_tags %>
+      <!-- OG Meta tags -->
+      <meta property="og:title" content="Niklick">
+      <meta property="og:url" content="">
+      <meta property="og:image" content="">
+      <meta property="og:type" content="website">
+      <meta property="og:description" content="">
+      <meta property="og:site_name" content="">
 
+      <!-- Twitter Meta tags -->
+      <meta name="twitter:card" content="summary">
+      <meta name="twitter:title" content="">
+      <meta name="twitter:description" content="">
+      <meta name="twitter:image" content="">
 
-  <!-- OG Meta Tags-->
-  <meta property="og:title" content="Niklick">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta property="og:type" content="website">
+      <!-- MS Application -->
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-TileImage" content="">
 
+      <!-- Favicon -->
+      <link rel="icon" type="image/x-icon" href="favicon.ico">
+  </head>
 
-  <!-- Apple touch icon -->
-  <link rel="apple-touch-icon" href="../../../public/apple-touch-icon-precomposed.png">
+  <body>
 
-
-  <!-- CSS-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.18/css/uikit.min.css" />
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => 'true' %>
-  <%= stylesheet_link_tag params[:controller] %>
-</head>
-<body>
-
-  <!-- Nav-->
-  <div class="uk-position-relative">
-    <div class="uk-position-top">
-      <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
-
-        <div class="uk-navbar-left">
-
-          <ul class="uk-navbar-nav">
-            <li>
-              <%= link_to "Niklick", root_path, class: "brand" %>
-            </li>
-          </ul>
-
-        </div>
-
-        <div class="uk-navbar-right">
-
-          <ul class="uk-navbar-nav">
-            <li>
-              <%= link_to "Home", root_path %>
-            </li>
-            <li>
-              <%= link_to "Posts", posts_path %>
-            </li>
-
-            <% if user_signed_in? %>
-
-              <li>
-                <%= link_to "Log Out", destroy_user_session_path, :method => :delete %>
-              </li>
-
-            <% else %>
-
-              <li>
-                <%= link_to "Log In", new_user_session_path %>
-              </li>
-              <li>
-                <%= link_to "Sign Up", new_user_registration_path %>
-              </li>
-
-            <% end %>
-          </ul>
-
-        </div>
-
-      </nav>
-    </div>
-  </div>
-
-
-  <!-- Main Content-->
-  <main>
-
-
+    <!-- Content for client app -->
     <%= yield %>
 
-
-  </main>
-
-
-  <!-- JS-->
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'true' %>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.18/js/uikit.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.18/js/uikit-icons.min.js"></script>
-  <%= javascript_include_tag params[:controller] %>
-</body>
+    <!-- JS -->
+    <script type="text/javascript" src="inline.bundle.js"></script>
+    <script type="text/javascript" src="styles.bundle.js"></script>
+    <script type="text/javascript" src="vendor.bundle.js"></script>
+    <script type="text/javascript" src="main.bundle.js"></script>
+  </body>
 </html>
