@@ -52,6 +52,8 @@ Full-Stack Solution for Angular and Ruby on Rails Developers.
 
 * OR Run just only `npm run setup` and `rails s` and visit --> http://localhost:3000/.
 
+* You can test your API with CURL --> curl -H "accept: application/json; version=1" http://localhost:3000/api/v1/news
+
 ## Directory Structure
 
 ```shell
