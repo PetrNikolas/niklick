@@ -38,6 +38,9 @@ Full-Stack Solution for Angular and Ruby on Rails Developers.
 * A Ruby client library for Redis --> https://github.com/redis/redis-rb (you must uncommented in gemfile).
 
 ## Project Setup
+
+* For production, you need to replace the asterisk with the URL of your client-side application in ./config/application.rb file.
+
 1. Clone or download this repo,
 2. Run `npm install`.
 3. Run `npm run build:prod`.
