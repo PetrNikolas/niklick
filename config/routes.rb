@@ -9,7 +9,8 @@ Rails.application.routes.draw do
   # API endpoints
   scope '/api' do
     # Version 1
-    scope module: :v1 do
+    #scope module: :v1, constraints: ApiConstraint.new(version: 1) do
+    scope module: :v1 do  
       scope '/v1' do
         # News
         scope 'news' do 
