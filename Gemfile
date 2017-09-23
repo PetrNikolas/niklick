@@ -21,29 +21,11 @@ gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
-# Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem 'turbolinks', '~> 5'
-
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 
-# jQuery for Rails
-gem 'jquery-rails'
-
 # Authentication with Devise
 gem 'devise', '~> 4.2'
-
-# Autoprefixer
-gem 'autoprefixer-rails'
-
-# Pagination library for Rails
-gem 'will_paginate', '~> 3.1.0'
-
-# Simple Ruby on Rails plugin for creating meta tags
-gem 'metamagic'
-
-# Client Side Validations made easy for Ruby on Rails
-gem 'client_side_validations'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
@@ -65,10 +47,6 @@ gem 'rack-attack'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
-# See https://github.com/rails/execjs
-# Readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
