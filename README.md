@@ -51,7 +51,10 @@ Full-Stack Solution for Angular and Ruby on Rails Developers.
 
 * OR Run just only `npm run setup` and `rails s` and visit --> http://localhost:3000/.
 
-* You can test your API with CURL --> curl -H "accept: application/json; version=1" http://localhost:3000/api/v1/news
+* You can test your API with GET CURL --> curl -H "accept: application/json; version=1" http://localhost:3000/api/v1/news
+* You can test your API with POST CURL --> curl -H "accept: application/json; version=1" -X POST -d '{"title":"Post","subtitle":"My post","description":"My small and test post."}' http://localhost:3000/api/v1/posts
+* You can test your API with PUT CURL --> curl -H "accept: application/json; version=1" -X PUT -d '{"title":"NEW Post"}' http://localhost:3000/api/v1/posts/1
+* You can test your API with DELETE CURL --> curl -H "accept: application/json; version=1" -X DELETE -d http://localhost:3000/api/v1/posts/1
 
 ## Directory Structure
 
