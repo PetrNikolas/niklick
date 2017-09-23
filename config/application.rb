@@ -22,8 +22,5 @@ module RailsStarterKit
     end
 
     config.middleware.use Rack::Attack
-
-    # Explicitly add the 'node_modules' directory 
-    #config.assets.paths << Rails.root.join('node_modules')
   end
 end
