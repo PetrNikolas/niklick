@@ -11,10 +11,8 @@ Rails.application.routes.draw do
     # Version 1
     scope module: :v1, constraints: ApiConstraint.new(version: 1) do
       scope '/v1' do
-        # News
-        scope 'news' do 
-          get '/' => 'news#index', defaults: { format: :json }
-        end
+        # News resources
+        resources :news, only: :index
         # Posts resources
         resources :posts
       end
