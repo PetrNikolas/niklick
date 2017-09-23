@@ -48,20 +48,14 @@ gem 'client_side_validations'
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-# Forms made easy for Rails!
-# gem 'simple_form'
+# Rack middleware for blocking & throttling
+gem 'rack-attack'
 
 # The authorization Gem for Ruby on Rails
 # gem 'cancancan'
 
-# Template language
-# gem 'slim'
-
 # A Ruby static code analyzer
 # gem 'rubocop', '~> 0.47.1', require: false
-
-# Decorators/View-Models
-# gem 'draper'
 
 # Easy file attachment management for ActiveRecord
 # gem "paperclip", "~> 5.0.0"
@@ -82,6 +76,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  # Testing framework
+  gem 'rspec-rails', '~> 3.5'
 end
 
 group :development do
@@ -98,4 +94,15 @@ group :development do
   gem 'browser_sync_rails'
 
   gem 'better_errors'
+end
+
+group :test do
+  # A fixtures replacement with a more straightforward syntax. You'll see.
+  gem 'factory_girl_rails', '~> 4.0'
+  # Provides RSpec with additional matchers.
+  gem 'shoulda-matchers', '~> 3.1'
+  # A library for generating fake data. We'll use this to generate test data.
+  gem 'faker'
+  # You guessed it! It literally cleans our test database to ensure a clean state in each test suite.
+  gem 'database_cleaner'
 end
