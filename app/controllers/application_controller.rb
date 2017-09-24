@@ -1,6 +1,4 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
-  respond_to :html, :json
-  include Response
-  include ExceptionHandler
+  respond_to :json
 end
