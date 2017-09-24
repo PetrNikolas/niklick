@@ -8,12 +8,14 @@ module V1
     # GET /posts
     def index
       @posts = Post.all
-      json_response(@posts)
+      render json: {message: 'success', post: @posts}, status: 200
     end
 
     # GET /posts/:id
     def show
-      json_response(@posts)
+      #json_response(@posts)
+      post = Post.find(params[:id])
+      render json: post, status: 200
     end
 
     # GET /posts/:id
@@ -29,31 +31,30 @@ module V1
     def create
       @post = Post.new(post_params)
 
-      respond_to do |format|
-        if @post.save
-          format.json { render :show, status: :created, location: @post }
+      if @post.save
+          render json: {message: 'success', post: @post}, status: 200
         else
-          format.json { render json: @post.errors, status: :unprocessable_entity }
+          render json: {errors: @post.errors, message: 'error'}.to_json
         end
-      end
     end
 
     # PATCH/PUT /posts/:id
     def update
-      respond_to do |format|
-        if @post.update(post_params)
-          format.json { render :show, status: :ok, location: @post }
-        else
-          format.json { render json: @post.errors, status: :unprocessable_entity }
-        end
+      if @post.update(post_params)
+        render json: {message: 'success', post: @post}.to_json
+      else
+        render json: {message: 'error', post: @post, error: @post.errors}.to_json
       end
     end
 
     # DELETE /posts/:id
     def destroy
       @post.destroy
-      respond_to do |format|
-        format.json { head :no_content }
+
+      if @post.destroy
+        render json: {message: 'success'}.to_json
+      else
+        render json: {message: 'error', post: @post, error: @post.errors}.to_json
       end
     end
 
@@ -65,7 +66,7 @@ module V1
 
       # Never trust parameters from the scary internet, only allow the white list through.
       def post_params
-        params.require(:post).permit(:title, :subtitle, :description, :content)
+        params.permit(:title, :subtitle, :description, :content)
       end
   end
 end

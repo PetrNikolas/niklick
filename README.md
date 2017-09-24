@@ -51,10 +51,19 @@ Full-Stack Solution for Angular and Ruby on Rails Developers.
 
 * OR Run just only `npm run setup` and `rails s` and visit --> http://localhost:3000/.
 
-* You can test your API with GET CURL --> curl -H "accept: application/json; version=1" http://localhost:3000/api/v1/posts
-* You can test your API with POST CURL --> curl -i -X POST -H "accept: application/json; version=1" -d "{ post: { { "title": "First post"}, { "subtitle": "My first post"}, { "description": "My small and test first post."}, { "content": "This is a content of my first post."} } }" http://localhost:3000/api/v1/posts
-* You can test your API with PUT CURL --> curl -H "accept: application/json; version=1" -X PUT -d '{"title":"NEW Post"}' http://localhost:3000/api/v1/posts/1
-* You can test your API with DELETE CURL --> curl -H "accept: application/json; version=1" -X "DELETE" http://localhost:3000/api/v1/posts/1
+### Test API without front-end app
+* You can get all Posts --> curl -H "accept: application/json; version=1" http://localhost:3000/api/v1/posts
+* You can create Post --> curl -X POST \
+  'http://localhost:3000/api/v1/posts?title=First%20post&subtitle=My%20first%20post&description=My%20small%20and%20test%20first%20post.&content=This%20is%20a%20content%20of%20my%20first%20post' \
+  -H 'accept: application/json; version=1' \
+  -H 'cache-control: no-cache' 
+* You can update Post --> curl --request PUT \
+  --url 'http://localhost:3000/api/v1/posts/1?title=Updated%20First%20title' \
+  --header 'accept: application/json; version=1' \
+  --header 'cache-control: no-cache' \
+  --header 'postman-token: 26a1c125-c665-c6ab-08ba-464369d66deb'
+* You can get specific Post --> curl -H "accept: application/json; version=1" http://localhost:3000/api/v1/posts/1
+* You can delete Post --> curl -H "accept: application/json; version=1" -X "DELETE" http://localhost:3000/api/v1/posts/1
 
 ## Directory Structure
 
