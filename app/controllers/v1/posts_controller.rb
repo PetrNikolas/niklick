@@ -18,15 +18,6 @@ module V1
       render json: post, status: 200
     end
 
-    # GET /posts/:id
-    def new
-      @post = Post.new
-    end
-
-    # GET /posts/:id/edit
-    def edit
-    end
-
     # POST /posts
     def create
       @post = Post.new(post_params)
