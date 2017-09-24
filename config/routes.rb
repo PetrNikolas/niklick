@@ -14,7 +14,7 @@ Rails.application.routes.draw do
         # News resources
         resources :news, only: :index
         # Posts resources
-        resources :posts
+        resources :posts, only: [:index, :create, :show, :update, :destroy]
       end
     end
   end
