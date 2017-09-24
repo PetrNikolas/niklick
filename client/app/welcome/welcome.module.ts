@@ -6,6 +6,9 @@ import { HttpModule } from '@angular/http';
 // Container
 import { WelcomeComponent } from './pages/welcome.component';
 
+// Service
+import { HttpApiService } from './services/http-api.service';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -14,6 +17,9 @@ import { WelcomeComponent } from './pages/welcome.component';
   ],
   declarations: [
     WelcomeComponent
+  ],
+  providers: [
+    HttpApiService
   ]
 })
 export class WelcomeModule { }

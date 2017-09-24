@@ -101,7 +101,7 @@ Full-Stack Solution for Angular and Ruby on Rails Developers.
 2. Visit http://localhost:3000/.
 
 ## Build for Development
-1. Run `npm start:dev`
+1. Run `npm run start:dev`
 2. Visit http://localhost:3000/.
 
 ## Client Side Development - Without Rails Back-End
