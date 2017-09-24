@@ -1,9 +1,7 @@
 module V1
   class PostsController < ApplicationController
     before_action :set_post, only: [:show, :edit, :update, :destroy]
-    #before_action :authenticate_user!, except: [:index, :show]
     skip_before_action :verify_authenticity_token 
-    #skip_before_action :verify_authenticity_token, :only => [:index, :show]
 
     # GET /posts
     def index
