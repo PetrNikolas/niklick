@@ -2,6 +2,8 @@ module V1
   class PostsController < ApplicationController
     before_action :set_post, only: [:show, :edit, :update, :destroy]
     #before_action :authenticate_user!, except: [:index, :show]
+    skip_before_action :verify_authenticity_token 
+    #skip_before_action :verify_authenticity_token, :only => [:index, :show]
 
     # GET /posts
     def index
@@ -63,7 +65,7 @@ module V1
 
       # Never trust parameters from the scary internet, only allow the white list through.
       def post_params
-        params.require(:post).permit(:subtitle, :title, :description, :content)
+        params.require(:post).permit(:title, :subtitle, :description, :content)
       end
   end
 end
