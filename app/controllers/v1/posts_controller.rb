@@ -11,7 +11,6 @@ module V1
 
     # GET /posts/:id
     def show
-      #json_response(@posts)
       post = Post.find(params[:id])
       render json: post, status: 200
     end
