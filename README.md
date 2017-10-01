@@ -1,7 +1,7 @@
 # Niklick
 Full-Stack Solution for Angular and Ruby on Rails Developers. 
 
-* Version 2.1.1
+* Version 2.1.2
 
 ## Prerequisites and Main Libraries
 * [Ruby 2.3.1 and +](https://www.ruby-lang.org/en/downloads/),
