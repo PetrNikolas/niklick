@@ -1,21 +1,21 @@
 class BaseApiController < ApplicationController
-    before_filter :parse_request, :authenticate_user_from_token!
-    before_filter :indicate_source
+    before_filter :parse_request, :indicate_source # :authenticate_user_from_token!
+    # before_filter :indicate_source
 
     private
         # Authorization
-        def authenticate_user_from_token!
-            if !@json['api_token']
-                render nothing: true, status: :unauthorized
-            else
-                @user = nil
-                User.find_each do |u|
-                    if Devise.secure_compare(u.api_token, @json['api_token'])
-                        @user = u
-                    end
-                end
-            end
-        end
+        # def authenticate_user_from_token!
+        #    if !@json['api_token']
+        #        render nothing: true, status: :unauthorized
+        #    else
+        #        @user = nil
+        #        User.find_each do |u|
+        #            if Devise.secure_compare(u.api_token, @json['api_token'])
+        #                @user = u
+        #            end
+        #        end
+        #    end
+        #end
 
         # Method for validate json
         def validate_json(condition)
@@ -52,6 +52,7 @@ class BaseApiController < ApplicationController
 
         # Method for parse request
         def parse_request
-            @json = JSON.parse(request.body.read)
+            # @json = JSON.parse(request.body.read)
+            @json = request.body.read && request.body.read.length >= 2 ? JSON.parse(request.body.read) : nil
         end
 end
