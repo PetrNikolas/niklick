@@ -1,7 +1,7 @@
 # Niklick
 Full-Stack Solution for Angular and Ruby on Rails Developers. 
 
-* Version 2.1.2
+* Version 2.1.3
 
 ## Prerequisites and Main Libraries
 * [Ruby 2.3.1 and +](https://www.ruby-lang.org/en/downloads/),
@@ -103,6 +103,10 @@ Full-Stack Solution for Angular and Ruby on Rails Developers.
 ## Build for Development
 1. Run `npm run start:dev`
 2. Visit http://localhost:3000/.
+
+## Backend Side Development - Without Front-End
+1. Run `rails s`.
+2. And visit http://localhost:3000/.
 
 ## Client Side Development - Without Rails Back-End
 ### For Development Webpack Server
