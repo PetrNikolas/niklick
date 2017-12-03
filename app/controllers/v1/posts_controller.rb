@@ -1,17 +1,19 @@
 module V1
-  class PostsController < BaseApiController #< ApplicationController
+  class PostsController < BaseApiController
     before_action :set_post, only: [:show, :edit, :update, :destroy]
     skip_before_action :verify_authenticity_token 
 
     # GET /posts
     def index
       @posts = Post.all
+
       render json: {message: 'success', post: @posts}, status: 200
     end
 
     # GET /posts/:id
     def show
       post = Post.find(params[:id])
+
       render json: post, status: 200
     end
 

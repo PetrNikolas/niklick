@@ -1,6 +1,7 @@
 module V1
-   #class NewsController < ApplicationController
    class NewsController < BaseApiController    
+        #before_action :set_new, only: [:show, :edit, :update, :destroy]
+        #skip_before_action :verify_authenticity_token 
 
         before_filter only: :create do |c|
             meth = c.method(:validate_json) 
@@ -12,6 +13,21 @@ module V1
             meth.call (@json.has_key?('project'))
         end
 
+        # GET /news
+        def index
+            @news = New.all
+
+            render json: {message: 'success', news: @news}, status: 200
+        end
+
+        # GET /news/:id
+        def show
+            news = New.find(params[:id])
+
+            render json: news, status: 200
+        end
+
+        # POST /news
         def create
             if @news.present?
                 render nothing: true, status: :conflict
@@ -21,8 +37,10 @@ module V1
             end
         end
 
+        # PATCH/PUT /news/:id
         def update
             @news.assign_attributes(@json['news'])
+
             if @news.save
                 render json: @news
             else
@@ -30,44 +48,25 @@ module V1
             end
         end
 
-
-
-
-
-        before_action :set_new, only: [:show, :edit, :update, :destroy]
-        skip_before_action :verify_authenticity_token 
-
-        # GET /news
-        def index
-            @news = New.all
-            render json: {message: 'success', news: @news}, status: 200
-        end
-
-        # GET /news/:id
-        def show
-            news = New.find(params[:id])
-            render json: news, status: 200
-        end
-
         # POST /news
-        def create
-            @new = New.new(new_params)
-
-            if @new.save
-                render json: {message: 'success', news: @new}, status: 200
-            else
-                render json: {errors: @new.errors, message: 'error'}.to_json
-            end
-        end
+        #def create
+        #    @new = New.new(new_params)
+        #
+        #    if @new.save
+        #        render json: {message: 'success', news: @new}, status: 200
+        #    else
+        #        render json: {errors: @new.errors, message: 'error'}.to_json
+        #    end
+        #end
 
         # PATCH/PUT /news/:id
-        def update
-            if @new.update(new_params)
-                render json: {message: 'success', news: @new}.to_json
-            else
-                render json: {message: 'error', post: @new, error: @new.errors}.to_json
-            end
-        end
+        #def update
+        #    if @new.update(new_params)
+        #        render json: {message: 'success', news: @new}.to_json
+        #    else
+        #        render json: {message: 'error', post: @new, error: @new.errors}.to_json
+        #    end
+        #end
 
         # DELETE /news/:id
         def destroy
