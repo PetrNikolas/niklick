@@ -1,13 +1,11 @@
 module V1
    class NewsController < BaseApiController    
-        #before_action :set_new, only: [:show, :edit, :update, :destroy]
-        #skip_before_action :verify_authenticity_token 
-
+        before_action :set_new, only: [:show, :edit, :update, :destroy]
+        skip_before_action :verify_authenticity_token 
         before_filter only: :create do |c|
             meth = c.method(:validate_json) 
             meth.call (@json.has_key?('news') && @json['news'].responds_to?(:[]) && @json['news']['name'])
         end
-
         before_filter only: :update do |c|
             meth = c.method(:validate_json)
             meth.call (@json.has_key?('project'))
