@@ -1,6 +1,5 @@
 class BaseApiController < ApplicationController
     before_filter :parse_request, :indicate_source # :authenticate_user_from_token!
-    # before_filter :indicate_source
 
     private
         # Authorization
