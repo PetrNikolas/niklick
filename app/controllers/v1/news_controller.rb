@@ -1,5 +1,5 @@
 module V1
-   class NewsController < BaseApiController    
+    class NewsController < BaseApiController    
         before_action :set_new, only: [:show, :edit, :update, :destroy]
         skip_before_action :verify_authenticity_token 
 

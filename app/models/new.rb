@@ -3,10 +3,9 @@ class New < ApplicationRecord
 
     # Validations
     validates :title, :presence => true, :length => { :minimum => 5 }, if: lambda{ |model| model.instance_variable_get(:@strict_priority_validation) }
-    validates :description, :presence => true, :length => { :minimum => 5, :maximum => 350 }
+    validates :description, :presence => true, :length => { :minimum => 5, :maximum => 350 }, if: lambda{ |model| model.instance_variable_get(:@strict_priority_validation) }
 
     private
-
         def set_ivars
             @strict_priority_validation = true
         end
