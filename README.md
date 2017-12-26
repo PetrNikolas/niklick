@@ -1,20 +1,12 @@
 # Niklick
-Full-Stack Solution for Angular and Ruby on Rails Developers. 
+API template for Ruby on Rails Developers. 
 
-* Version 2.1.6
+* Version 2.2.0
 
 ## Prerequisites and Main Libraries
 * [Ruby 2.3.1 and +](https://www.ruby-lang.org/en/downloads/),
 * [Rails 5 and +](http://guides.rubyonrails.org/getting_started.html),
-* [RVM](https://rvm.io/),
-* [Angular 2+](https://angular.io/),
-* [Angular-cli](https://github.com/angular/angular-cli),
-* [Node.js](https://nodejs.org/en/),
-* [Webpack](https://webpack.js.org/),
-* [Rollup.js](https://rollupjs.org/),
-* [Bulma](http://bulma.io/),
-* [SASS](http://sass-lang.com/),
-* [Animate.css](https://github.com/daneden/animate.css).
+* [RVM](https://rvm.io/).
 
 ### Databases
 * [PostgreSQL](https://www.postgresql.org/docs/),
@@ -41,15 +33,11 @@ Full-Stack Solution for Angular and Ruby on Rails Developers.
 * For production, you need to replace the asterisk with the URL of your client-side application in ./config/application.rb file.
 
 1. Clone or download this repo,
-2. Run `npm install`.
-3. Run `npm run build:prod`.
-4. Run `bundle install`,
-5. Run `rake db:migrate`,
-6. Run `rake db:seed`,
-7. Run `rails s`, 
-8. Visit --> http://localhost:3000/. That's it!.
-
-* OR Run just only `npm run setup` and `rails s` and visit --> http://localhost:3000/.
+2. Run `bundle install`,
+3. Run `rake db:migrate`,
+4. Run `rake db:seed`,
+5. Run `rails s`, 
+6. Visit --> http://localhost:3000/. That's it!.
 
 ### Test API without front-end app
 * You can get all Posts --> curl -H "accept: application/json; version=1" http://localhost:3000/api/v1/posts
@@ -71,57 +59,21 @@ Full-Stack Solution for Angular and Ruby on Rails Developers.
 .
 ├── app                         # Rails application - controllers, models, etc.
 ├── /bin                        # Folder for Rake, bundle, spring setup, etc.
-├── /client/                    # Client-side app
 ├── /config                     # Rails app configuration - database, app, environment, etc.
 ├── /db                         # Database setup - migrate, seeds, schema
-├── /e2e                        # End-to-End tests for client-side app
 ├── /lib                        # Lib folder
 ├── /log/                       # Log folder
-├── /node_modules/              # Node modules for client-side app
-├── /public/                    # Static files such as client-side app build, favicon.ico etc.
-│   ├── robots.txt              # Instructions for search engine crawlers
-│   └── ...                     # etc.
 ├── /test/                      # Unit and integration tests for the Rails app
 ├── /tmp/                       # TMP folder - sockets, cache, etc.
 ├── /vendor/                    # Vendor assets
 │── .gitigonre                  # Gitignore file
-│── angular-cli.json            # Angular-cli setup file
 │── config.ru                   # Config file for Rails app
 │── Gemfile                     # File for all Ruby gems
 │── Gemfile.lock                # File with Gemfile lock
 │── license                     # License file
-│── package-lock.json           # File with package lock
-│── package.json                # The list of client-side dependencies and NPM scripts
 │── Rakefile.js                 # File for rake tasks
-└── tslint.json                 # TSlint setup file
 ```
 
-## Build for Production
-1. Run `npm start`
-2. Visit http://localhost:3000/.
-
-## Build for Development
-1. Run `npm run start:dev`
-2. Visit http://localhost:3000/.
-
-## Backend Side Development - Without Front-End
+## Backend Side Development
 1. Run `rails s`.
 2. And visit http://localhost:3000/.
-
-## Client Side Development - Without Rails Back-End
-### For Development Webpack Server
-1. Run `npm run build:dev`.
-2. Run `npm run dev` and visit http://localhost:4200/.
-
-### Code Scaffolding
-3. Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
-
-### Running Unit Tests
-6. Run `npm run test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-### Running End-to-End Tests
-7. Run `npm run e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-8. Before running the tests make sure you are serving the app via `npm run dev`.
-
-### Running Lint
-9. Run `npm run lint`.
