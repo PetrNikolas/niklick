@@ -1,7 +1,7 @@
 # Niklick
 API template for Ruby on Rails Developers. 
 
-* Version 2.2.0
+* Version 2.2.1
 
 ## Prerequisites and Main Libraries
 * [Ruby 2.3.1 and +](https://www.ruby-lang.org/en/downloads/),

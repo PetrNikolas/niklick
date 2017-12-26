@@ -12,6 +12,13 @@ module RailsStarterKit
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
 
+    # Skip assets, templates and helpers from being generated with your controllers.
+    config.generators do |g|
+      g.assets false
+      g.helper false
+      g.template_engine false
+    end
+
     # CORS configuration
     config.middleware.insert_before 0, 'Rack::Cors' do 
       allow do 
