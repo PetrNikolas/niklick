@@ -1,7 +1,7 @@
 # Niklick
-API template for Ruby on Rails Developers. 
+Versioned API template for Ruby on Rails Developers. 
 
-* Version 2.2.1
+* Version 2.2.2
 
 ## Prerequisites and Main Libraries
 * [Ruby 2.3.1 and +](https://www.ruby-lang.org/en/downloads/),
@@ -14,6 +14,7 @@ API template for Ruby on Rails Developers.
 
 ## Ruby Gems
 * Authentication solution for Rails --> https://github.com/plataformatec/devise,
+* Faster Pathname handling for Ruby written in Rust  --> https://github.com/danielpclark/faster_path,
 * Better error page for Rack apps --> https://github.com/charliesome/better_errors,
 * RSpec for Rails-3+ --> https://github.com/rspec/rspec-rails
 * Factory Girl ♥ Rails --> https://github.com/thoughtbot/factory_girl_rails

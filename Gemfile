@@ -33,6 +33,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Rack middleware for blocking & throttling
 gem 'rack-attack'
 
+# Faster Pathname handling for Ruby written in Rust 
+gem 'faster_path', '~> 0.1.13'
+
 # The authorization Gem for Ruby on Rails
 # gem 'cancancan'
 
