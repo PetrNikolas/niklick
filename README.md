@@ -16,23 +16,23 @@ Full-Stack Solution - Versioned API and SPA template for hipsters!
 * [SQLite](https://sqlite.org/).
 
 ## Ruby Gems
-* [Use Webpack to manage app-like JavaScript modules in Rails](https://github.com/rails/webpacker),
-* [Manage Procfile-based applications](https://github.com/ddollar/foreman),
-* [Authentication solution for Rails](https://github.com/plataformatec/devise),
-* [Faster Pathname handling for Ruby written in Rust](https://github.com/danielpclark/faster_path),
-* [Better error page for Rack apps](https://github.com/charliesome/better_errors),
-* [RSpec for Rails-3+](https://github.com/rspec/rspec-rails),
-* [Factory Girl ♥ Rails](https://github.com/thoughtbot/factory_girl_rails),
-* [Collection of testing matchers extracted from Shoulda](http://matchers.shoulda.io/),
-* [Strategies for cleaning databases in Ruby. Can be used to ensure a clean state for testing.](http://databasecleaner.github.io/),
-* [A library for generating fake data such as names, addresses, and phone numbers.](https://github.com/stympy/faker),
-* [Rack middleware for blocking & throttling](https://github.com/kickstarter/rack-attack),
-* [The authorization Gem for Ruby on Rails](https://github.com/CanCanCommunity/cancancan) (you must uncommented in gemfile),
-* [Easy file attachment management for ActiveRecord](https://github.com/thoughtbot/paperclip) (you must uncommented in gemfile),
-* [A Ruby static code analyzer](https://github.com/bbatsov/rubocop) (you must uncommented in gemfile),
-* [Official Ruby on Rails specific tasks for Capistrano](https://github.com/capistrano/rails) (you must uncommented in gemfile),  
-* [bcrypt-ruby is a Ruby binding for the OpenBSD bcrypt() password hashing algorithm, allowing you to easily store a secure hash of your users' passwords](https://github.com/codahale/bcrypt-ruby) (you must uncommented in gemfile),
-* [A Ruby client library for Redis](https://github.com/redis/redis-rb) (you must uncommented in gemfile).
+* [Webpacker](https://github.com/rails/webpacker) - Use Webpack to manage app-like JavaScript modules in Rails,
+* [Foreman](https://github.com/ddollar/foreman) - Manage Procfile-based applications,
+* [Devise](https://github.com/plataformatec/devise) - Authentication solution for Rails,
+* [Fasterpath](https://github.com/danielpclark/faster_path) - Faster Pathname handling for Ruby written in Rust,
+* [Better errors](https://github.com/charliesome/better_errors) - Better error page for Rack apps,
+* [RSpec](https://github.com/rspec/rspec-rails) - RSpec for Rails-3+,
+* [Factory Girl Rails](https://github.com/thoughtbot/factory_girl_rails) - Factory Girl ♥ Rails,
+* [Shoulda](http://matchers.shoulda.io/) - Collection of testing matchers extracted from Shoulda,
+* [Database cleaner](http://databasecleaner.github.io/) - Strategies for cleaning databases in Ruby. Can be used to ensure a clean state for testing,
+* [Faker](https://github.com/stympy/faker) - A library for generating fake data such as names, addresses, and phone numbers,
+* [Rack attack](https://github.com/kickstarter/rack-attack) - Rack middleware for blocking & throttling,
+* [Cancancan](https://github.com/CanCanCommunity/cancancan) - The authorization Gem for Ruby on Rails (you must uncommented in gemfile),
+* [Paperclip](https://github.com/thoughtbot/paperclip) - Easy file attachment management for ActiveRecord (you must uncommented in gemfile),
+* [Rubocop](https://github.com/bbatsov/rubocop) - A Ruby static code analyzer (you must uncommented in gemfile),
+* [Capistrano](https://github.com/capistrano/rails) - Official Ruby on Rails specific tasks for Capistrano (you must uncommented in gemfile),  
+* [Bcrypt](https://github.com/codahale/bcrypt-ruby) - bcrypt-ruby is a Ruby binding for the OpenBSD bcrypt() password hashing algorithm, allowing you to easily store a secure hash of your users' passwords (you must uncommented in gemfile),
+* [Redis](https://github.com/redis/redis-rb) - A Ruby client library for Redis (you must uncommented in gemfile).
 
 ## Project Setup
 
