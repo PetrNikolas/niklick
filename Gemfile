@@ -12,6 +12,9 @@ gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 
+# Manage Procfile-based applications
+gem 'foreman'
+
 # Provides Sprockets implementation for Rails 4.x (and beyond) Asset Pipeline
 gem 'sprockets'
 

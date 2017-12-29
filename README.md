@@ -1,7 +1,7 @@
 # Niklick
 Full-Stack Solution - Versioned API and SPA template for hipsters!
 
-* Version 2.3.0
+* Version 2.3.1
 
 ## Prerequisites and Main Libraries
 * [Ruby 2.3.1 and +](https://www.ruby-lang.org/en/downloads/),
@@ -16,22 +16,23 @@ Full-Stack Solution - Versioned API and SPA template for hipsters!
 * [SQLite](https://sqlite.org/).
 
 ## Ruby Gems
-* Use Webpack to manage app-like JavaScript modules in Rails --> https://github.com/rails/webpacker,
-* Authentication solution for Rails --> https://github.com/plataformatec/devise,
-* Faster Pathname handling for Ruby written in Rust  --> https://github.com/danielpclark/faster_path,
-* Better error page for Rack apps --> https://github.com/charliesome/better_errors,
-* RSpec for Rails-3+ --> https://github.com/rspec/rspec-rails
-* Factory Girl ♥ Rails --> https://github.com/thoughtbot/factory_girl_rails
-* Collection of testing matchers extracted from Shoulda --> http://matchers.shoulda.io/
-* Strategies for cleaning databases in Ruby. Can be used to ensure a clean state for testing. --> http://databasecleaner.github.io/
-* A library for generating fake data such as names, addresses, and phone numbers. --> https://github.com/stympy/faker
-* Rack middleware for blocking & throttling --> https://github.com/kickstarter/rack-attack
-* The authorization Gem for Ruby on Rails --> https://github.com/CanCanCommunity/cancancan (you must uncommented in gemfile),
-* Easy file attachment management for ActiveRecord --> https://github.com/thoughtbot/paperclip (you must uncommented in gemfile),
-* A Ruby static code analyzer --> https://github.com/bbatsov/rubocop (you must uncommented in gemfile),
-* Official Ruby on Rails specific tasks for Capistrano --> https://github.com/capistrano/rails (you must uncommented in gemfile),  
-* bcrypt-ruby is a Ruby binding for the OpenBSD bcrypt() password hashing algorithm, allowing you to easily store a secure hash of your users' passwords --> https://github.com/codahale/bcrypt-ruby (you must uncommented in gemfile),
-* A Ruby client library for Redis --> https://github.com/redis/redis-rb (you must uncommented in gemfile).
+* [Use Webpack to manage app-like JavaScript modules in Rails](https://github.com/rails/webpacker),
+* [Manage Procfile-based applications](https://github.com/ddollar/foreman),
+* [Authentication solution for Rails](https://github.com/plataformatec/devise),
+* [Faster Pathname handling for Ruby written in Rust](https://github.com/danielpclark/faster_path),
+* [Better error page for Rack apps](https://github.com/charliesome/better_errors),
+* [RSpec for Rails-3+](https://github.com/rspec/rspec-rails),
+* [Factory Girl ♥ Rails](https://github.com/thoughtbot/factory_girl_rails),
+* [Collection of testing matchers extracted from Shoulda](http://matchers.shoulda.io/),
+* [Strategies for cleaning databases in Ruby. Can be used to ensure a clean state for testing.](http://databasecleaner.github.io/),
+* [A library for generating fake data such as names, addresses, and phone numbers.](https://github.com/stympy/faker),
+* [Rack middleware for blocking & throttling](https://github.com/kickstarter/rack-attack),
+* [The authorization Gem for Ruby on Rails](https://github.com/CanCanCommunity/cancancan) (you must uncommented in gemfile),
+* [Easy file attachment management for ActiveRecord](https://github.com/thoughtbot/paperclip) (you must uncommented in gemfile),
+* [A Ruby static code analyzer](https://github.com/bbatsov/rubocop) (you must uncommented in gemfile),
+* [Official Ruby on Rails specific tasks for Capistrano](https://github.com/capistrano/rails) (you must uncommented in gemfile),  
+* [bcrypt-ruby is a Ruby binding for the OpenBSD bcrypt() password hashing algorithm, allowing you to easily store a secure hash of your users' passwords](https://github.com/codahale/bcrypt-ruby) (you must uncommented in gemfile),
+* [A Ruby client library for Redis](https://github.com/redis/redis-rb) (you must uncommented in gemfile).
 
 ## Project Setup
 
@@ -41,7 +42,7 @@ Full-Stack Solution - Versioned API and SPA template for hipsters!
 2. Run `bundle install` and maybe `rails webpacker:install:elm`,
 3. Run `rake db:migrate`,
 4. Run `rake db:seed`,
-5. Run `rails s`, 
+5. Run `foreman start`, 
 6. Visit --> http://localhost:3000/. That's it!.
 
 ### Test API without front-end app
@@ -91,8 +92,8 @@ Full-Stack Solution - Versioned API and SPA template for hipsters!
 ```
 
 ## Backend Side Development
-1. Run `rails s`.
-2. And visit http://localhost:3000/.
+1. Run `foreman start`.
+2. And visit http://localhost:5000/.
 
 ## Frontend Side Development
 1. Run `webpack-dev-server`.
