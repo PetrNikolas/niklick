@@ -82,4 +82,4 @@ Versioned API template for Ruby on Rails Developers.
 
 ## Frontend Side Development
 1. Run `webpack-dev-server`.
-2. And visit http://localhost:3000/.
+2. And visit http://localhost:3035/.
