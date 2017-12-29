@@ -43,21 +43,31 @@ Full-Stack Solution - Versioned API and SPA template for hipsters!
 3. Run `rake db:migrate`,
 4. Run `rake db:seed`,
 5. Run `foreman start`, 
-6. Visit --> http://localhost:3000/. That's it!.
+6. Visit --> http://localhost:5000/. That's it!.
 
 ### Test API without front-end app
-* You can get all Posts --> curl -H "accept: application/json; version=1" http://localhost:3000/api/v1/posts
-* You can create Post --> curl -X POST \
-  'http://localhost:3000/api/v1/posts?title=First%20post&subtitle=My%20first%20post&description=My%20small%20and%20test%20first%20post.&content=This%20is%20a%20content%20of%20my%20first%20post' \
-  -H 'accept: application/json; version=1' \
-  -H 'cache-control: no-cache' 
-* You can update Post --> curl --request PUT \
-  --url 'http://localhost:3000/api/v1/posts/1?title=Updated%20First%20title' \
+```shell
+# You can get all Posts
+curl -H "accept: application/json; version=1" http://localhost:5000/api/v1/posts
+
+# You can create Post
+curl -X POST 
+  --url 'http://localhost:5000/api/v1/posts?title=First%20post&subtitle=My%20first%20postdescription=My%20small%20and%20test%20first%20post.&content=This%20is%20a%20content%20of%20my%20first%20post' \ 
+  --header 'accept: application/json; version=1' \
+  --header 'cache-control: no-cache' 
+
+# You can update Post  
+curl --request PUT \
+  --url 'http://localhost:5000/api/v1/posts/1?title=Updated%20First%20title' \
   --header 'accept: application/json; version=1' \
   --header 'cache-control: no-cache' \
-  --header 'postman-token: 26a1c125-c665-c6ab-08ba-464369d66deb'
-* You can get specific Post --> curl -H "accept: application/json; version=1" http://localhost:3000/api/v1/posts/1
-* You can delete Post --> curl -H "accept: application/json; version=1" -X "DELETE" http://localhost:3000/api/v1/posts/1
+
+# You can get specific Post 
+curl -H "accept: application/json; version=1" http://localhost:5000/api/v1/posts/1
+
+# You can delete Post 
+curl -H "accept: application/json; version=1" -X "DELETE" http://localhost:5000/api/v1/posts/1
+```
 
 ## Directory Structure
 
