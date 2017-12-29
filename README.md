@@ -1,12 +1,15 @@
 # Niklick
-Versioned API template for Ruby on Rails Developers. 
+Full-Stack Solution - Versioned API and SPA template for hipsters!
 
 * Version 2.3.0
 
 ## Prerequisites and Main Libraries
 * [Ruby 2.3.1 and +](https://www.ruby-lang.org/en/downloads/),
 * [Rails 5 and +](http://guides.rubyonrails.org/getting_started.html),
-* [RVM](https://rvm.io/).
+* [RVM](https://rvm.io/),
+* [Yarn](https://yarnpkg.com/lang/en/)
+* [Node.js](https://nodejs.org/en/)
+* [Elm](http://elm-lang.org/).
 
 ### Databases
 * [PostgreSQL](https://www.postgresql.org/docs/),
@@ -61,19 +64,30 @@ Versioned API template for Ruby on Rails Developers.
 .
 ├── app                         # Rails application - controllers, models, etc.
 ├── /bin                        # Folder for Rake, bundle, spring setup, etc.
+├── /client                     # Fron-End app folder - Elm files
 ├── /config                     # Rails app configuration - database, app, environment, etc.
 ├── /db                         # Database setup - migrate, seeds, schema
+├── /elm-stuff                  # Elm packages, etc.
 ├── /lib                        # Lib folder
 ├── /log/                       # Log folder
+├── /node_modules               # NPM packages, modules
+├── /public                     # Public files, compiled javascrcipts, etc.
+├── /spec/                      # Tests for the Rails app
 ├── /test/                      # Unit and integration tests for the Rails app
 ├── /tmp/                       # TMP folder - sockets, cache, etc.
 ├── /vendor/                    # Vendor assets
+│── .babelrc                    # Babel configuration file
 │── .gitigonre                  # Gitignore file
+│── .postcssrc.yml              # PostCSS configuration file
+│── .rspec                      # Tests file
 │── config.ru                   # Config file for Rails app
+│── elm-package.json            # File with Elm packages
 │── Gemfile                     # File for all Ruby gems
 │── Gemfile.lock                # File with Gemfile lock
 │── license                     # License file
-│── Rakefile.js                 # File for rake tasks
+│── package.json                # File with npm packages
+│── Rakefile                    # File for rake tasks
+│── yarn.lock                   # File with yarn lock
 ```
 
 ## Backend Side Development
