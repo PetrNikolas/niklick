@@ -1,10 +1,10 @@
 {
-    "version": "1.0.0",
-    "summary": "helpful summary of your project, less than 80 characters",
-    "repository": "https://github.com/user/project.git",
+    "version": "2.3.0",
+    "summary": "Full-Stack Solution - Versioned API and SPA template for hipsters!",
+    "repository": "https://github.com/PetrNikolas/niklick.git",
     "license": "BSD3",
     "source-directories": [
-        "app/javascript"
+        "client"
     ],
     "exposed-modules": [],
     "dependencies": {
