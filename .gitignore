@@ -26,4 +26,5 @@
 node_modules
 ./node_modules/public/packs
 /public/packs-test
+/elm-stuff
 /node_modules

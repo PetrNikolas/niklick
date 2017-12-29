@@ -1,9 +1,12 @@
 {
   "dependencies": {
     "@rails/webpacker": "^3.2.0",
-    "coffeescript": "1.12.7"
+    "coffeescript": "1.12.7",
+    "elm": "^0.18.0",
+    "elm-webpack-loader": "^4.4.0"
   },
   "devDependencies": {
+    "elm-hot-loader": "^0.5.4",
     "webpack-dev-server": "^2.9.7"
   }
 }

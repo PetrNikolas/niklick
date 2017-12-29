@@ -1,7 +1,7 @@
 # Niklick
 Versioned API template for Ruby on Rails Developers. 
 
-* Version 2.2.3
+* Version 2.3.0
 
 ## Prerequisites and Main Libraries
 * [Ruby 2.3.1 and +](https://www.ruby-lang.org/en/downloads/),
@@ -35,7 +35,7 @@ Versioned API template for Ruby on Rails Developers.
 * For production, you need to replace the asterisk with the URL of your client-side application in ./config/application.rb file.
 
 1. Clone or download this repo,
-2. Run `bundle install`,
+2. Run `bundle install` and maybe `rails webpacker:install:elm`,
 3. Run `rake db:migrate`,
 4. Run `rake db:seed`,
 5. Run `rails s`, 
@@ -78,4 +78,8 @@ Versioned API template for Ruby on Rails Developers.
 
 ## Backend Side Development
 1. Run `rails s`.
+2. And visit http://localhost:3000/.
+
+## Frontend Side Development
+1. Run `webpack-dev-server`.
 2. And visit http://localhost:3000/.
