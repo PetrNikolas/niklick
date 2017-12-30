@@ -1,7 +1,7 @@
 module V1
   class PostsController < BaseApiController
     before_action :set_post, only: [:show, :edit, :update, :destroy]
-    before_action :authenticate_user!, except: [ :index ]
+    before_action :authenticate_user!, except: [ :index, :show ]
 
     # GET /posts
     def index
@@ -19,32 +19,38 @@ module V1
 
     # POST /posts
     def create
+      @user_id = current_user.id
+
       @post = Post.new(post_params)
 
       if @post.save
-          render json: {message: 'success', post: @post}, status: 200
+          render json: {message: 'success', user_id: @user_id, post: @post}, status: 200
         else
-          render json: {errors: @post.errors, message: 'error'}.to_json
+          render json: {errors: @post.errors, user_id: @user_id, message: 'error'}.to_json
         end
     end
 
     # PATCH/PUT /posts/:id
     def update
+      @user_id = current_user.id
+
       if @post.update(post_params)
-        render json: {message: 'success', post: @post}.to_json
+        render json: {message: 'success', user_id: @user_id, post: @post}.to_json
       else
-        render json: {message: 'error', post: @post, error: @post.errors}.to_json
+        render json: {message: 'error', user_id: @user_id, post: @post, error: @post.errors}.to_json
       end
     end
 
     # DELETE /posts/:id
     def destroy
+      @user_id = current_user.id
+
       @post.destroy
 
       if @post.destroy
-        render json: {message: 'success'}.to_json
+        render json: {user_id: @user_id, message: 'success'}.to_json
       else
-        render json: {message: 'error', post: @post, error: @post.errors}.to_json
+        render json: {message: 'error', user_id: @user_id, post: @post, error: @post.errors}.to_json
       end
     end
 
