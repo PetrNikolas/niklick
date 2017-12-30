@@ -218,7 +218,6 @@ DEPENDENCIES
   browser_sync_rails
   byebug
   database_cleaner
-  devise (~> 4.2)
   devise_token_auth
   factory_girl_rails (~> 4.0)
   faker

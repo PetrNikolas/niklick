@@ -1,7 +1,7 @@
 # Niklick
 Full-Stack Solution - Versioned API and SPA template for hipsters!
 
-* Version 2.3.2
+* Version 2.3.3
 
 ## Prerequisites and Main Libraries
 * [Ruby 2.3.1 and +](https://www.ruby-lang.org/en/downloads/),
@@ -18,7 +18,7 @@ Full-Stack Solution - Versioned API and SPA template for hipsters!
 ## Ruby Gems
 * [Webpacker](https://github.com/rails/webpacker) - Use Webpack to manage app-like JavaScript modules in Rails,
 * [Foreman](https://github.com/ddollar/foreman) - Manage Procfile-based applications,
-* [Devise](https://github.com/plataformatec/devise) - Authentication solution for Rails,
+* [devise_token_auth](https://github.com/lynndylanhurley/devise_token_auth) - Token based authentication for Rails JSON APIs. Designed to work with jToker and ng-token-auth.,
 * [Fasterpath](https://github.com/danielpclark/faster_path) - Faster Pathname handling for Ruby written in Rust,
 * [Better errors](https://github.com/charliesome/better_errors) - Better error page for Rack apps,
 * [RSpec](https://github.com/rspec/rspec-rails) - RSpec for Rails-3+,
