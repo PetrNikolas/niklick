@@ -1,6 +1,7 @@
 module V1
   class PostsController < BaseApiController
     before_action :set_post, only: [:show, :edit, :update, :destroy]
+    before_action :authenticate_user!, except: [ :index ]
     skip_before_action :verify_authenticity_token 
 
     # GET /posts

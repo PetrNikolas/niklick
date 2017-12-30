@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  # Devise for authentication
-  devise_for :users
+  # Devise for token authentication
+  mount_devise_token_auth_for 'User', at: 'auth'
 
   # Root of application
   root :to => "home#index"
