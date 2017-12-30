@@ -17,7 +17,6 @@
       <meta name='url' content=''>
       <meta name='identifier-URL' content=''>
 
-      <!-- CSRF token -->
       <%= csrf_meta_tags %>
 
       <!-- OG Meta tags -->
@@ -41,14 +40,11 @@
       <!-- Favicon -->
       <link rel="icon" type="image/x-icon" href="favicon.ico">
   </head>
-
   <body>
-
     <!-- Content for client app -->
     <%= yield %>
 
     <!-- JS -->
     <%= javascript_pack_tag 'app' %>
-
   </body>
 </html>

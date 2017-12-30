@@ -1,4 +1,4 @@
-import Elm from '../app/Main'
+import Elm from '../src/Main'
 
 document.addEventListener('DOMContentLoaded', () => {
   const target = document.createElement('div')
