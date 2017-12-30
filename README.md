@@ -1,7 +1,7 @@
 # Niklick
 Full-Stack Solution - Versioned API and SPA template for hipsters!
 
-* Version 2.3.1
+* Version 2.3.2
 
 ## Prerequisites and Main Libraries
 * [Ruby 2.3.1 and +](https://www.ruby-lang.org/en/downloads/),

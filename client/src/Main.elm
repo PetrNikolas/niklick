@@ -1,7 +1,11 @@
 module Main exposing (..)
 
-import Html exposing (Html, h1, text)
+import Html exposing (Html, h1, p, text)
 import Html.Attributes exposing (style)
+import Html.Attributes exposing (..)
+import Html.Events exposing (..)
+import Http
+import Json.Decode as Decode
 
 -- MODEL
 
@@ -22,7 +26,7 @@ view model =
   -- The inline style is being used for example purposes in order to keep this example simple and
   -- avoid loading additional resources. Use a proper stylesheet when building your own app.
   h1 [style [("display", "flex"), ("justify-content", "center")]]
-     [text "Full-Stack Solution - Versioned API and SPA template for hipsters!"]
+     [text "Full-Stack Solution - Versioned API and SPA template for hipsters!"] 
 
 -- MESSAGE
 
@@ -40,6 +44,10 @@ update message model =
 subscriptions : Model -> Sub Message
 subscriptions model =
   Sub.none
+
+-- HTTP
+
+
 
 -- MAIN
 
