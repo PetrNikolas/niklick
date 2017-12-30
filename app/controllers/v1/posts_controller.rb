@@ -1,6 +1,7 @@
 module V1
   class PostsController < BaseApiController
     before_action :set_post, only: [:show, :edit, :update, :destroy]
+    before_action :set_current_user, except: [ :index, :show ]
     before_action :authenticate_user!, except: [ :index, :show ]
 
     # GET /posts
@@ -19,8 +20,6 @@ module V1
 
     # POST /posts
     def create
-      @user_id = current_user.id
-
       @post = Post.new(post_params)
 
       if @post.save
@@ -32,8 +31,6 @@ module V1
 
     # PATCH/PUT /posts/:id
     def update
-      @user_id = current_user.id
-
       if @post.update(post_params)
         render json: {message: 'success', user_id: @user_id, post: @post}.to_json
       else
@@ -43,8 +40,6 @@ module V1
 
     # DELETE /posts/:id
     def destroy
-      @user_id = current_user.id
-
       @post.destroy
 
       if @post.destroy
@@ -56,6 +51,10 @@ module V1
 
     private
       # Use callbacks to share common setup or constraints between actions.
+      def set_current_user
+        @user_id = current_user.id
+      end
+
       def set_post
         @post = Post.find(params[:id])
       end
