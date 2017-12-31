@@ -97,5 +97,5 @@ In `config/environment.rb` is ActionMailer settings to point to SendGrid’s ser
 You can modify all files and use it in controller with `UserNotifier.send_signup_email(@user).deliver`
 or you can use Job for sending emails with `SendEmailJob.set(wait: 20.seconds).perform_later(@user)`.
 
-## Jobs
+## Jobs (for production environment)
 You can start jobs with `bundle exec rake jobs:work`.
