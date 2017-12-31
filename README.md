@@ -14,7 +14,8 @@ Versioned API solution template for hipsters!
 
 ## Ruby Gems
 * [Foreman](https://github.com/ddollar/foreman) - Manage Procfile-based applications,
-* [devise_token_auth](https://github.com/lynndylanhurley/devise_token_auth) - Token based authentication for Rails JSON APIs. Designed to work with jToker and ng-token-auth.,
+* [devise_token_auth](https://github.com/lynndylanhurley/devise_token_auth) - Token based authentication for Rails JSON APIs. Designed to work with jToker and ng-token-auth,
+* [delayed_job_active_record](https://github.com/collectiveidea/delayed_job_active_record) - ActiveRecord backend integration for DelayedJob 3.0+,
 * [Fasterpath](https://github.com/danielpclark/faster_path) - Faster Pathname handling for Ruby written in Rust,
 * [Better errors](https://github.com/charliesome/better_errors) - Better error page for Rack apps,
 * [RSpec](https://github.com/rspec/rspec-rails) - RSpec for Rails-3+,
