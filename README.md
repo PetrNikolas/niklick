@@ -1,22 +1,18 @@
 # Niklick
-Full-Stack Solution - Versioned API and SPA template for hipsters!
+Versioned API solution template for hipsters!
 
-* Version 2.3.6
+* Version 2.3.7
 
 ## Prerequisites and Main Libraries
 * [Ruby 2.3.1 and +](https://www.ruby-lang.org/en/downloads/),
 * [Rails 5 and +](http://guides.rubyonrails.org/getting_started.html),
-* [RVM](https://rvm.io/),
-* [Yarn](https://yarnpkg.com/lang/en/)
-* [Node.js](https://nodejs.org/en/)
-* [Elm](http://elm-lang.org/).
+* [RVM](https://rvm.io/).
 
 ### Databases
 * [PostgreSQL](https://www.postgresql.org/docs/),
 * [SQLite](https://sqlite.org/).
 
 ## Ruby Gems
-* [Webpacker](https://github.com/rails/webpacker) - Use Webpack to manage app-like JavaScript modules in Rails,
 * [Foreman](https://github.com/ddollar/foreman) - Manage Procfile-based applications,
 * [devise_token_auth](https://github.com/lynndylanhurley/devise_token_auth) - Token based authentication for Rails JSON APIs. Designed to work with jToker and ng-token-auth.,
 * [Fasterpath](https://github.com/danielpclark/faster_path) - Faster Pathname handling for Ruby written in Rust,
@@ -39,7 +35,7 @@ Full-Stack Solution - Versioned API and SPA template for hipsters!
 * For production, you need to replace the asterisk with the URL of your client-side application in ./config/application.rb file.
 
 1. Clone or download this repo,
-2. Run `bundle install` and maybe `rails webpacker:install:elm`,
+2. Run `bundle install`,
 3. Run `rake db:migrate`,
 4. Run `rake db:seed`,
 5. Run `foreman start`, 
@@ -75,36 +71,23 @@ curl -H "accept: application/json; version=1" -X "DELETE" http://localhost:5000/
 .
 ├── app                         # Rails application - controllers, models, etc.
 ├── /bin                        # Folder for Rake, bundle, spring setup, etc.
-├── /client                     # Fron-End app folder - Elm files
 ├── /config                     # Rails app configuration - database, app, environment, etc.
 ├── /db                         # Database setup - migrate, seeds, schema
-├── /elm-stuff                  # Elm packages, etc.
 ├── /lib                        # Lib folder
 ├── /log/                       # Log folder
-├── /node_modules               # NPM packages, modules
-├── /public                     # Public files, compiled javascrcipts, etc.
 ├── /spec/                      # Tests for the Rails app
 ├── /test/                      # Unit and integration tests for the Rails app
 ├── /tmp/                       # TMP folder - sockets, cache, etc.
 ├── /vendor/                    # Vendor assets
-│── .babelrc                    # Babel configuration file
 │── .gitigonre                  # Gitignore file
-│── .postcssrc.yml              # PostCSS configuration file
 │── .rspec                      # Tests file
 │── config.ru                   # Config file for Rails app
-│── elm-package.json            # File with Elm packages
 │── Gemfile                     # File for all Ruby gems
 │── Gemfile.lock                # File with Gemfile lock
 │── license                     # License file
-│── package.json                # File with npm packages
 │── Rakefile                    # File for rake tasks
-│── yarn.lock                   # File with yarn lock
 ```
 
 ## Backend Side Development
 1. Run `foreman start`.
 2. And visit http://localhost:5000/.
-
-## Frontend Side Development
-1. Run `webpack-dev-server`.
-2. And visit http://localhost:3035/.
