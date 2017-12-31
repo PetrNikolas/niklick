@@ -5,14 +5,23 @@ module V1
 
     # GET /posts
     def index
-      @posts = Post.all
+      @posts = Post.find_by_sql(["
+        SELECT  posts.*
+          FROM `posts`
+          ORDER BY posts.id desc", 3.months.ago
+      ])
 
       render json: {message: 'success', post: @posts}, status: 200
     end
 
     # GET /posts/:id
     def show
-      post = Post.find(params[:id])
+      post = Post.find_by_sql(["
+        SELECT  posts.*
+          FROM `posts`
+          WHERE (posts.id = #{params[:id]})", 
+          3.months.ago
+      ])
 
       render json: post, status: 200
     end
