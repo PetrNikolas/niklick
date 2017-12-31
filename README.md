@@ -31,7 +31,6 @@ Versioned API solution template for hipsters!
 * [Redis](https://github.com/redis/redis-rb) - A Ruby client library for Redis (you must uncommented in gemfile).
 
 ## Project Setup
-
 * For production, you need to replace the asterisk with the URL of your client-side application in ./config/application.rb file.
 
 1. Clone or download this repo,
@@ -66,7 +65,6 @@ curl -H "accept: application/json; version=1" -X "DELETE" http://localhost:5000/
 ```
 
 ## Directory Structure
-
 ```shell
 .
 ├── app                         # Rails application - controllers, models, etc.
@@ -93,8 +91,11 @@ curl -H "accept: application/json; version=1" -X "DELETE" http://localhost:5000/
 2. And visit http://localhost:5000/.
 
 ## Sending emails
-
 In `app/mailers/user_notifier_mailer.rb` is method for sending emails. 
 In `app/views/User_notifier/send_signup_email.html.erb` is html template for emails.
 In `config/environment.rb` is ActionMailer settings to point to SendGrid’s servers.
-You can modify all files and use it in controller with `UserNotifier.send_signup_email(@user).deliver`.
+You can modify all files and use it in controller with `UserNotifier.send_signup_email(@user).deliver`
+or you can use Job for sending emails with `SendEmailJob.set(wait: 20.seconds).perform_later(@user)`.
+
+## Jobs
+You can start jobs with `bundle exec rake jobs:work`.

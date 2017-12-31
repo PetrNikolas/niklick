@@ -12,6 +12,9 @@ gem 'puma', '~> 3.0'
 # Manage Procfile-based applications
 gem 'foreman'
 
+# Background process
+gem 'delayed_job_active_record'
+
 # Provides Sprockets implementation for Rails 4.x (and beyond) Asset Pipeline
 gem 'sprockets'
 
