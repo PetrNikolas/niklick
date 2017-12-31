@@ -1,7 +1,7 @@
 # Niklick
 Versioned API solution template for hipsters!
 
-* Version 2.3.7
+* Version 2.3.8
 
 ## Prerequisites and Main Libraries
 * [Ruby 2.3.1 and +](https://www.ruby-lang.org/en/downloads/),
@@ -91,3 +91,10 @@ curl -H "accept: application/json; version=1" -X "DELETE" http://localhost:5000/
 ## Backend Side Development
 1. Run `foreman start`.
 2. And visit http://localhost:5000/.
+
+## Sending emails
+
+In `app/mailers/user_notifier_mailer.rb` is method for sending emails. 
+In `app/views/User_notifier/send_signup_email.html.erb` is html template for emails.
+In `config/environment.rb` is ActionMailer settings to point to SendGrid’s servers.
+You can modify all files and use it in controller with `UserNotifier.send_signup_email(@user).deliver`.
