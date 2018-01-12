@@ -92,10 +92,10 @@ curl -H "accept: application/json; version=1" -X "DELETE" http://localhost:5000/
 2. And visit http://localhost:5000/.
 
 ## Sending emails
-In `app/mailers/user_notifier_mailer.rb` is method for sending emails. 
-In `app/views/User_notifier/send_signup_email.html.erb` is html template for emails.
-In `config/environment.rb` is ActionMailer settings to point to SendGrid’s servers.
-You can modify all files and use it in controller with `UserNotifier.send_signup_email(@user).deliver`
+* In `app/mailers/user_notifier_mailer.rb` is method for sending emails. 
+* In `app/views/User_notifier/send_signup_email.html.erb` is html template for emails.
+* In `config/environment.rb` is ActionMailer settings to point to SendGrid’s servers.
+* You can modify all files and use it in controller with `UserNotifier.send_signup_email(@user).deliver`
 or you can use Job for sending emails with `SendEmailJob.set(wait: 20.seconds).perform_later(@user)`.
 
 ## Jobs (for production environment)
