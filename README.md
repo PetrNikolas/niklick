@@ -1,7 +1,7 @@
 # Niklick
 Versioned API solution template for hipsters!
 
-* Version 2.3.9
+* Version 2.4.0
 
 ## Prerequisites and Main Libraries
 * [Ruby 2.3.1 and +](https://www.ruby-lang.org/en/downloads/),
@@ -84,6 +84,7 @@ curl -H "accept: application/json; version=1" -X "DELETE" http://localhost:5000/
 │── Gemfile                     # File for all Ruby gems
 │── Gemfile.lock                # File with Gemfile lock
 │── license                     # License file
+│── Procfile                    # Foreman file with script for start server
 │── Rakefile                    # File for rake tasks
 ```
 
@@ -100,3 +101,6 @@ or you can use Job for sending emails with `SendEmailJob.set(wait: 20.seconds).p
 
 ## Jobs (for production environment)
 You can start jobs with `bundle exec rake jobs:work`.
+
+## Docker
+run: dockerize -wait tcp://localhost:5432 -timeout 1m
