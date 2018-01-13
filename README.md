@@ -25,6 +25,7 @@ Versioned API solution template for hipsters!
 * [Database cleaner](http://databasecleaner.github.io/) - Strategies for cleaning databases in Ruby. Can be used to ensure a clean state for testing,
 * [Faker](https://github.com/stympy/faker) - A library for generating fake data such as names, addresses, and phone numbers,
 * [Rack attack](https://github.com/kickstarter/rack-attack) - Rack middleware for blocking & throttling,
+* [Pry Rails](https://github.com/rweng/pry-rails) - Rails >= 3 pry initializer,
 * [Bundler audit](https://github.com/rubysec/bundler-audit) - Patch-level verification for Bundler,
 * [Cancancan](https://github.com/CanCanCommunity/cancancan) - The authorization Gem for Ruby on Rails (you must uncommented in gemfile),
 * [Paperclip](https://github.com/thoughtbot/paperclip) - Easy file attachment management for ActiveRecord (you must uncommented in gemfile),
@@ -105,4 +106,13 @@ or you can use Job for sending emails with `SendEmailJob.set(wait: 20.seconds).p
 You can start jobs with `bundle exec rake jobs:work`.
 
 ## Docker
-run: dockerize -wait tcp://localhost:5432 -timeout 1m
+* Run `dockerize -wait tcp://localhost:5432 -timeout 1m`
+
+## Bundle audit 
+* Run `bundle audit` for audito your bundle.
+
+# Pry initializer
+Avoid repeating yourself, use pry-rails instead of copying the initializer to every rails project.
+* Run `rails console` and in Rails console:
+* For showing models --> `show-models`.
+* For showing routes --> `show-routes`.

@@ -88,6 +88,9 @@ group :development do
   gem 'browser_sync_rails'
 
   gem 'better_errors'
+
+  # Rails >= 3 pry initializer
+  gem 'pry-rails'
 end
 
 group :test do
