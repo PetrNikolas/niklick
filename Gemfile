@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 
+# Ruby interface to the PostgreSQL RDBMS.
+#gem "pg"
+
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
@@ -63,8 +66,12 @@ gem 'faster_path', '~> 0.1.13'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+
   # Testing framework
   gem 'rspec-rails', '~> 3.5'
+
+  # Patch-level verification for Bundler
+  gem "bundler-audit", require: false
 end
 
 group :development do
@@ -86,10 +93,13 @@ end
 group :test do
   # A fixtures replacement with a more straightforward syntax. You'll see.
   gem 'factory_girl_rails', '~> 4.0'
+
   # Provides RSpec with additional matchers.
   gem 'shoulda-matchers', '~> 3.1'
+
   # A library for generating fake data. We'll use this to generate test data.
   gem 'faker'
+
   # You guessed it! It literally cleans our test database to ensure a clean state in each test suite.
   gem 'database_cleaner'
 end

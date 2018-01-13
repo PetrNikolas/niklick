@@ -13,6 +13,7 @@ Versioned API solution template for hipsters!
 * [SQLite](https://sqlite.org/).
 
 ## Ruby Gems
+* [Pg](https://bitbucket.org/ged/ruby-pg/wiki/Home) - Ruby interface to the PostgreSQL RDBMS,
 * [Foreman](https://github.com/ddollar/foreman) - Manage Procfile-based applications,
 * [devise_token_auth](https://github.com/lynndylanhurley/devise_token_auth) - Token based authentication for Rails JSON APIs. Designed to work with jToker and ng-token-auth,
 * [delayed_job_active_record](https://github.com/collectiveidea/delayed_job_active_record) - ActiveRecord backend integration for DelayedJob 3.0+,
@@ -24,6 +25,7 @@ Versioned API solution template for hipsters!
 * [Database cleaner](http://databasecleaner.github.io/) - Strategies for cleaning databases in Ruby. Can be used to ensure a clean state for testing,
 * [Faker](https://github.com/stympy/faker) - A library for generating fake data such as names, addresses, and phone numbers,
 * [Rack attack](https://github.com/kickstarter/rack-attack) - Rack middleware for blocking & throttling,
+* [Bundler audit](https://github.com/rubysec/bundler-audit) - Patch-level verification for Bundler,
 * [Cancancan](https://github.com/CanCanCommunity/cancancan) - The authorization Gem for Ruby on Rails (you must uncommented in gemfile),
 * [Paperclip](https://github.com/thoughtbot/paperclip) - Easy file attachment management for ActiveRecord (you must uncommented in gemfile),
 * [Rubocop](https://github.com/bbatsov/rubocop) - A Ruby static code analyzer (you must uncommented in gemfile),
