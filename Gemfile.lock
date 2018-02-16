@@ -92,6 +92,9 @@ GEM
       thor (>= 0.13.6)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
+    graphiql-rails (1.4.8)
+      rails
+    graphql (1.7.12)
     i18n (0.9.1)
       concurrent-ruby (~> 1.0)
     jbuilder (2.7.0)
@@ -232,6 +235,8 @@ DEPENDENCIES
   faker
   faster_path (~> 0.1.13)
   foreman
+  graphiql-rails
+  graphql
   jbuilder (~> 2.5)
   listen (~> 3.0.5)
   pry-rails
