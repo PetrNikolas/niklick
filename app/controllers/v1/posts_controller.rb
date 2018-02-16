@@ -36,7 +36,7 @@ module V1
           render json: {message: 'success', user_id: @user_id, post: @post}, status: 200
         else
           render json: {errors: @post.errors, user_id: @user_id, message: 'error'}.to_json
-        end
+      end
     end
 
     # PATCH/PUT /posts/:id
