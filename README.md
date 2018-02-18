@@ -60,7 +60,7 @@ Versioned API solution template for hipsters!
 * url: `http://localhost:5000/api/v1/graphql?query=mutation{createPost(title: "Deadly Weapon 4", subtitle: "Deadly Weapon 3", description: "Even deadlier!", content: "Even deadlier!"){id}}`  
 
 # Update Post  
-* url: `http://localhost:5000/api/v1/graphql?query={allPosts{title, subtitle, description}}`
+* url: `http://localhost:5000/api/v1/graphql?query=mutation{updatePost(id: 46, title: "Deadly Weapon 55", subtitle: "Deadly Weapon 33", description: "Even deadlier!", content: "Even deadlier!"){id}}`
 
 # Delete Post 
 * url: `http://localhost:5000/api/v1/graphql?query=mutation{deletePost(id:17){id}}`
