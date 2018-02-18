@@ -1,7 +1,7 @@
 # Niklick
 Versioned API solution template for hipsters!
 
-* Version 2.4.0
+* Version 2.5.0
 
 ## Prerequisites and Main Libraries
 * [Ruby 2.3.1 and +](https://www.ruby-lang.org/en/downloads/),
@@ -96,7 +96,7 @@ curl -H "accept: application/json; version=1" -X "DELETE" http://localhost:5000/
 1. Run `foreman start`.
 2. And visit http://localhost:5000/.
 
-## GraphQL API
+## GraphQL API playground
 * Open `http://localhost:5000/graphiql` and play with GraphQL.
 
 ## Sending emails

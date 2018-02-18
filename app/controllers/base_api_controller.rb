@@ -1,5 +1,5 @@
 class BaseApiController < ApplicationController
-    before_filter :parse_request, :indicate_source
+    before_action :parse_request, :indicate_source
 
     private
         # Method for indicate source

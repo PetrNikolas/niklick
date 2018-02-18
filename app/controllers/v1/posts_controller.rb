@@ -5,13 +5,17 @@ module V1
 
     # GET /posts
     def index
-      @posts = Post.find_by_sql(["
-        SELECT  posts.*
-          FROM `posts`
-          ORDER BY posts.id desc", 3.months.ago
-      ])
+      #@posts = Post.find_by_sql(["
+      #  SELECT  posts.*
+      #    FROM `posts`
+      #    ORDER BY posts.id desc", 3.months.ago
+      #])
 
-      render json: {message: 'success', post: @posts}, status: 200
+      #render json: {message: 'success', posts: @posts}, status: 200
+
+      result = Schema.execute params[:query]
+
+      render json: result
     end
 
     # GET /posts/:id

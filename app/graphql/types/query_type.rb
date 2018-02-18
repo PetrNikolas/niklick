@@ -14,8 +14,12 @@ Types::QueryType = GraphQL::ObjectType.define do
 
   field :post do
     type Types::PostType
-    description "Return a post"
+    description "Return a one selected post"
+
     argument :id, !types.ID
-    resolve -> (obj, args, ctx) { Post.find(args[:id]) }
+
+    resolve -> (obj, args, ctx) {
+      Post.find(args[:id])
+    }
   end
 end
