@@ -2,7 +2,7 @@ module V1
   class GraphqlController < BaseApiController
     before_action :authenticate_user!, except: [ :execute_non_authorized ]
 
-    # Non-authorized requests - GET
+    # Non-authorized requests - GET (get data)
     def execute_non_authorized
       query = params[:query]
       result = Schema.execute(query)
@@ -10,7 +10,7 @@ module V1
       render json: result
     end
 
-    # Authorized requests - POST
+    # Authorized requests - POST (create, update, delete data)
     def execute_authorized
       set_current_user
 
