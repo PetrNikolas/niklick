@@ -45,28 +45,32 @@ Versioned API solution template for hipsters!
 5. Run `foreman start`, 
 6. Visit --> http://localhost:5000/. That's it!.
 
-### Test API without front-end app
+### Test API with Postman
 ```shell
 # You can get all Posts
-curl -H "accept: application/json; version=1" http://localhost:5000/api/v1/posts
-
-# You can create Post
-curl -X POST 
-  --url 'http://localhost:5000/api/v1/posts?title=First%20post&subtitle=My%20first%20postdescription=My%20small%20and%20test%20first%20post.&content=This%20is%20a%20content%20of%20my%20first%20post' \ 
-  --header 'accept: application/json; version=1' \
-  --header 'cache-control: no-cache' 
-
-# You can update Post  
-curl --request PUT \
-  --url 'http://localhost:5000/api/v1/posts/1?title=Updated%20First%20title' \
-  --header 'accept: application/json; version=1' \
-  --header 'cache-control: no-cache' \
+* headers: "accept: application/json; version=1"
+* method: GET
+* url: `http://localhost:5000/api/v1/posts?query={allPosts{title, subtitle, description}}`
 
 # You can get specific Post 
-curl -H "accept: application/json; version=1" http://localhost:5000/api/v1/posts/1
+* headers: "accept: application/json; version=1"
+* method: GET
+* url: `http://localhost:5000/api/v1/posts?query={post(id:2){id,title, subtitle, description}}`
+
+# You can create Post
+* headers: "accept: application/json; version=1", "access-token: v9S2milc1aEcx4hhIGupbg", "client: LCYog4PFg_PN_eCVWyQtYw", "expiry: 1515865278", "uid: petr@nikolas.com"
+* method: POST
+* url: `http://localhost:5000/api/v1/posts?query=mutation{createPost(title: "Deadly Weapon 4", subtitle: "Deadly Weapon 3", description: "Even deadlier!", content: "Even deadlier!"){id}}`  
+
+# You can update Post  
+* headers: "accept: application/json; version=1", "access-token: v9S2milc1aEcx4hhIGupbg", "client: LCYog4PFg_PN_eCVWyQtYw", "expiry: 1515865278", "uid: petr@nikolas.com"
+* method: PUT
+* url: `http://localhost:5000/api/v1/posts?query={allPosts{title, subtitle, description}}`
 
 # You can delete Post 
-curl -H "accept: application/json; version=1" -X "DELETE" http://localhost:5000/api/v1/posts/1
+* headers: "accept: application/json; version=1", "access-token: v9S2milc1aEcx4hhIGupbg", "client: LCYog4PFg_PN_eCVWyQtYw", "expiry: 1515865278", "uid: petr@nikolas.com"
+* method: DELETE
+* url: `http://localhost:5000/api/v1/posts?query=mutation{deletePost(id:17){id}}`
 ```
 
 ## Directory Structure
