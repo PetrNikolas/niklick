@@ -47,30 +47,23 @@ Versioned API solution template for hipsters!
 
 ### Test API with Postman
 ```shell
-# You can get all Posts
-* headers: "accept: application/json; version=1"
-* method: GET
-* url: `http://localhost:5000/api/v1/posts?query={allPosts{title, subtitle, description}}`
-
-# You can get specific Post 
-* headers: "accept: application/json; version=1"
-* method: GET
-* url: `http://localhost:5000/api/v1/posts?query={post(id:2){id,title, subtitle, description}}`
-
-# You can create Post
 * headers: "accept: application/json; version=1", "access-token: v9S2milc1aEcx4hhIGupbg", "client: LCYog4PFg_PN_eCVWyQtYw", "expiry: 1515865278", "uid: petr@nikolas.com"
 * method: POST
-* url: `http://localhost:5000/api/v1/posts?query=mutation{createPost(title: "Deadly Weapon 4", subtitle: "Deadly Weapon 3", description: "Even deadlier!", content: "Even deadlier!"){id}}`  
 
-# You can update Post  
-* headers: "accept: application/json; version=1", "access-token: v9S2milc1aEcx4hhIGupbg", "client: LCYog4PFg_PN_eCVWyQtYw", "expiry: 1515865278", "uid: petr@nikolas.com"
-* method: PUT
-* url: `http://localhost:5000/api/v1/posts?query={allPosts{title, subtitle, description}}`
+# Get all Posts
+* url: `http://localhost:5000/api/v1/graphql?query={allPosts{title, subtitle, description}}`
 
-# You can delete Post 
-* headers: "accept: application/json; version=1", "access-token: v9S2milc1aEcx4hhIGupbg", "client: LCYog4PFg_PN_eCVWyQtYw", "expiry: 1515865278", "uid: petr@nikolas.com"
-* method: DELETE
-* url: `http://localhost:5000/api/v1/posts?query=mutation{deletePost(id:17){id}}`
+# Get specific Post 
+* url: `http://localhost:5000/api/v1/graphql?query={post(id:2){id,title, subtitle, description}}`
+
+# Create Post
+* url: `http://localhost:5000/api/v1/graphql?query=mutation{createPost(title: "Deadly Weapon 4", subtitle: "Deadly Weapon 3", description: "Even deadlier!", content: "Even deadlier!"){id}}`  
+
+# Update Post  
+* url: `http://localhost:5000/api/v1/graphql?query={allPosts{title, subtitle, description}}`
+
+# Delete Post 
+* url: `http://localhost:5000/api/v1/graphql?query=mutation{deletePost(id:17){id}}`
 ```
 
 ## Directory Structure

@@ -4,13 +4,16 @@ source 'https://rubygems.org'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 
 # Ruby interface to the PostgreSQL RDBMS.
-#gem "pg"
+gem "pg"
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
 # GraphQL integrations
 gem 'graphql', '1.7.12'
+
+# Use ActiveModel has_secure_password
+gem 'bcrypt', '~> 3.1.7'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
@@ -59,9 +62,6 @@ gem 'faster_path', '~> 0.1.13'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
-
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

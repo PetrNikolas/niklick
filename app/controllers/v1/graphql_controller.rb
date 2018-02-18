@@ -1,29 +1,21 @@
 module V1
   class GraphqlController < BaseApiController
-    before_action :authenticate_user!, except: [ :execute_non_authorized ]
+    before_action :authenticate_user!
+    before_action :set_current_user
 
-    # Non-authorized requests - GET (get data)
-    def execute_non_authorized
+    def execute
       query = params[:query]
-      result = Schema.execute(query)
+      query_variables = JSON.load(params[:variables]) || {}
+      context = { current_user: @user }
+
+      result = Schema.execute(query, variables: query_variables, context: context)
 
       render json: result
     end
 
-    # Authorized requests - POST (create, update, delete data)
-    def execute_authorized
-      set_current_user
-
-      query = params[:query]
-      result = Schema.execute(query)
-
-      render json: {message: 'success', user_id: @user_id, post: result}, status: 200
-    end
-
     private
-      # Use callbacks to share common setup or constraints between actions.
       def set_current_user
-        @user_id = current_user.id
+        @user = current_user
       end
   end
 end
