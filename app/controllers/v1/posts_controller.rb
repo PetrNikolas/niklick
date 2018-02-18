@@ -1,24 +1,6 @@
 module V1
   class PostsController < BaseApiController
-    before_action :authenticate_user!, except: [ :index, :show ]
-
-    # GET /posts
-    # Get all posts and one selected post
-    def index
-      result = Schema.execute params[:query]
-
-      render json: result
-    end
-
-    # POST /posts
-    # Create and deleting posts
-    def create
-      set_current_user
-
-      result = Schema.execute params[:query]
-
-      render json: {message: 'success', user_id: @user_id, post: result}, status: 200
-    end
+    before_action :authenticate_user!
 
     # PATCH/PUT /posts/:id
     def update
