@@ -1,4 +1,4 @@
-class Mutations::UpdatePost < GraphQL::Function
+class Mutations::Post::CreatePost < GraphQL::Function
     # Define the arguments this field will receive
     argument :title, !types.String
     argument :subtitle, !types.String
@@ -10,7 +10,7 @@ class Mutations::UpdatePost < GraphQL::Function
 
     # Resolve the field's response
     def call(obj, args, ctx)
-        Post.create(
+        Post.create!(
             title: args[:title],
             subtitle: args[:subtitle],
             description: args[:description],
