@@ -1,4 +1,4 @@
-class Mutations::Post::DeletePost < GraphQL::Function
+class Mutations::Posts::DeletePost < GraphQL::Function
     # Define the arguments this field will receive
     argument :id, !types.ID
 

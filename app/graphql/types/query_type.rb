@@ -22,4 +22,24 @@ Types::QueryType = GraphQL::ObjectType.define do
       Post.find(args[:id])
     }
   end
+
+  field :allUsers do
+    type types[Types::UserType]
+    description "A list of all the users"
+
+    resolve -> (obj, args, ctx) {
+      User.all
+    }
+  end
+
+  field :user do
+    type Types::UserType
+    description "Return a one selected user"
+
+    argument :id, !types.ID
+
+    resolve -> (obj, args, ctx) {
+      User.find(args[:id])
+    }
+  end
 end

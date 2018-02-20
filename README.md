@@ -1,7 +1,7 @@
 # Niklick
 Versioned API solution template for hipsters!
 
-* Version 2.5.0
+* Version 2.5.1
 
 ## Prerequisites and Main Libraries
 * [Ruby 2.3.1 and +](https://www.ruby-lang.org/en/downloads/),
@@ -50,6 +50,10 @@ Versioned API solution template for hipsters!
 * headers: "accept: application/json; version=1", "access-token: v9S2milc1aEcx4hhIGupbg", "client: LCYog4PFg_PN_eCVWyQtYw", "expiry: 1515865278", "uid: petr@nikolas.com"
 * method: POST
 
+#
+# POSTS
+#
+
 # Get all Posts
 * url: `http://localhost:5000/api/v1/graphql?query={allPosts{title, subtitle, description}}`
 
@@ -64,6 +68,16 @@ Versioned API solution template for hipsters!
 
 # Delete Post 
 * url: `http://localhost:5000/api/v1/graphql?query=mutation{deletePost(id:17){id}}`
+
+#
+# USERS
+#
+
+# Get all Users
+* url: `http://localhost:5000/api/v1/graphql?query={allUsers{id,email}}`
+
+# Get specific User 
+* url: `http://localhost:5000/api/v1/graphql?query={user(id:1){id,email}}`
 ```
 
 ## Directory Structure

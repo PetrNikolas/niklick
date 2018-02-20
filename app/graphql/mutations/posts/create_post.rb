@@ -1,4 +1,4 @@
-class Mutations::Post::CreatePost < GraphQL::Function
+class Mutations::Posts::CreatePost < GraphQL::Function
     # Define the arguments this field will receive
     argument :title, !types.String
     argument :subtitle, !types.String
