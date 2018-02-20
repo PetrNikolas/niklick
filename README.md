@@ -9,8 +9,7 @@ Versioned API solution template for hipsters!
 * [RVM](https://rvm.io/).
 
 ### Databases
-* [PostgreSQL](https://www.postgresql.org/docs/),
-* [SQLite](https://sqlite.org/).
+* [PostgreSQL](https://www.postgresql.org/docs/).
 
 ## Ruby Gems
 * [Pg](https://bitbucket.org/ged/ruby-pg/wiki/Home) - Ruby interface to the PostgreSQL RDBMS,
