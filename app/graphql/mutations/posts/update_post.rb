@@ -5,13 +5,20 @@ class Mutations::Posts::UpdatePost < GraphQL::Function
     argument :subtitle, !types.String
     argument :description, !types.String
     argument :content, !types.String
+    argument :user_id, !types.ID
 
     # Return type from the mutation
     type Types::PostType
 
     # Resolve the field's response
     def call(obj, args, ctx)
-        Post.find(args[:id]).update(title: args[:title], subtitle: args[:subtitle], description: args[:description], content: args[:content])
+        Post.find(args[:id]).update(
+            title: args[:title],
+            subtitle: args[:subtitle],
+            description: args[:description],
+            content: args[:content],
+            user_id: args[:user_id]
+        )
         Post.find(args[:id])
     end
 end

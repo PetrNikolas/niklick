@@ -4,6 +4,7 @@ class Mutations::Posts::CreatePost < GraphQL::Function
     argument :subtitle, !types.String
     argument :description, !types.String
     argument :content, !types.String
+    argument :user_id, !types.ID
 
     # Return type from the mutation
     type Types::PostType
@@ -14,7 +15,8 @@ class Mutations::Posts::CreatePost < GraphQL::Function
             title: args[:title],
             subtitle: args[:subtitle],
             description: args[:description],
-            content: args[:content]
+            content: args[:content],
+            user_id: args[:user_id]
         )
     end
 end
