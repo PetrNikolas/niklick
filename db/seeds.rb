@@ -8,10 +8,18 @@
 
 User.create({
   uid: 'johnreed',
-  username: 'johnreed',
+  nickname: 'johnreed',
   provider: 'email',
   name: 'John Reed',
   email: 'johnreed@johnreed.com',
+  password: '12345678',
+  password_confirmation: '12345678'
+},{
+  uid: 'petrnikolas',
+  nickname: 'petrnikolas',
+  provider: 'email',
+  name: 'Petr Nikolas',
+  email: 'petrnikolas@hello.com',
   password: '12345678',
   password_confirmation: '12345678'
 })

@@ -1,7 +1,7 @@
 # Niklick
 Versioned API solution template for hipsters!
 
-* Version 2.5.1
+* Version 2.5.3
 
 ## Prerequisites and Main Libraries
 * [Ruby 2.3.1 and +](https://www.ruby-lang.org/en/downloads/),
@@ -40,14 +40,15 @@ Versioned API solution template for hipsters!
 
 1. Clone or download this repo,
 2. Run `bundle install`,
-3. Run `rake db:migrate`,
-4. Run `rake db:seed`,
-5. Run `foreman start`, 
-6. Visit --> http://localhost:5000/. That's it!.
+3. Run `rake db:create`,
+4. Run `bin/rails db:migrate RAILS_ENV=development`,
+5. Run `bin/rails db:seed RAILS_ENV=development`,
+6. Run `foreman start`, 
+7. Visit --> http://localhost:5000/. That's it!.
 
 ### Test API with Postman
 ```shell
-* headers: "accept: application/json; version=1", "access-token: v9S2milc1aEcx4hhIGupbg", "client: LCYog4PFg_PN_eCVWyQtYw", "expiry: 1515865278", "uid: petr@nikolas.com"
+* headers: "accept: application/json; version=1", "access-token: v9S2milc1aEcx4hhIGupbg", "client: LCYog4PFg_PN_eCVWyQtYw", "expiry: 1515865278", "uid: your@email.com"
 * method: POST
 
 #
