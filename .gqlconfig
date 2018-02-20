@@ -1,0 +1,13 @@
+{
+  "schema": {
+    "files": "data/schema.graphql"
+  },
+  "query": {
+    "files": [
+      {
+        "match": "spec/graphql/**/*.rb",
+        "parser": ["EmbeddedQueryParser", { "startTag": "<<-GRAPHQL", "endTag": "GRAPHQL" }]
+      }
+    ]
+  }
+}
