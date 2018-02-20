@@ -3,6 +3,7 @@ Types::QueryType = GraphQL::ObjectType.define do
   # Add root-level fields here.
   # They will be entry points for queries on your schema.
 
+  # POSTS
   field :allPosts do
     type types[Types::PostType]
     description "A list of all the posts"
@@ -23,6 +24,7 @@ Types::QueryType = GraphQL::ObjectType.define do
     }
   end
 
+  # USERS
   field :allUsers do
     type types[Types::UserType]
     description "A list of all the users"
