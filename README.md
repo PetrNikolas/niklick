@@ -74,10 +74,10 @@ Versioned API solution template for hipsters!
 #
 
 # Get all Users
-* url: `http://localhost:5000/api/v1/graphql?query={allUsers{id,email}}`
+* url: `http://localhost:5000/api/v1/graphql?query={allUsers{id,email,posts{id, title}}}`
 
 # Get specific User 
-* url: `http://localhost:5000/api/v1/graphql?query={user(id:1){id,email}}`
+* url: `http://localhost:5000/api/v1/graphql?query={user(id:1){id,email,posts{id, title}}}`
 ```
 
 ## Directory Structure
