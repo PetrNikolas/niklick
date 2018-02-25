@@ -27,12 +27,9 @@ Versioned API solution template for hipsters!
 * [Rack attack](https://github.com/kickstarter/rack-attack) - Rack middleware for blocking & throttling,
 * [Pry Rails](https://github.com/rweng/pry-rails) - Rails >= 3 pry initializer,
 * [Bundler audit](https://github.com/rubysec/bundler-audit) - Patch-level verification for Bundler,
-* [Cancancan](https://github.com/CanCanCommunity/cancancan) - The authorization Gem for Ruby on Rails (you must uncommented in gemfile),
-* [Paperclip](https://github.com/thoughtbot/paperclip) - Easy file attachment management for ActiveRecord (you must uncommented in gemfile),
-* [Rubocop](https://github.com/bbatsov/rubocop) - A Ruby static code analyzer (you must uncommented in gemfile),
-* [Capistrano](https://github.com/capistrano/rails) - Official Ruby on Rails specific tasks for Capistrano (you must uncommented in gemfile),  
-* [Bcrypt](https://github.com/codahale/bcrypt-ruby) - bcrypt-ruby is a Ruby binding for the OpenBSD bcrypt() password hashing algorithm, allowing you to easily store a secure hash of your users' passwords (you must uncommented in gemfile),
-* [Redis](https://github.com/redis/redis-rb) - A Ruby client library for Redis (you must uncommented in gemfile).
+* [Rubocop](https://github.com/bbatsov/rubocop) - A Ruby static code analyzer (you must uncommented in gemfile), 
+* [LogAnalyzer](https://github.com/igorkasyanchuk/log_analyzer) - Rails logs analyzer (see how fast your views are rendering),
+* [Bcrypt](https://github.com/codahale/bcrypt-ruby) - bcrypt-ruby is a Ruby binding for the OpenBSD bcrypt() password hashing algorithm, allowing you to easily store a secure hash of your users' passwords.
 
 ## Project Setup
 * For production, you need to replace the asterisk with the URL of your client-side application in ./config/application.rb file.

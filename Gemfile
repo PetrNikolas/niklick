@@ -48,20 +48,11 @@ gem 'rack-attack'
 # Faster Pathname handling for Ruby written in Rust 
 gem 'faster_path', '~> 0.1.13'
 
-# The authorization Gem for Ruby on Rails
-# gem 'cancancan'
-
 # A Ruby static code analyzer
 # gem 'rubocop', '~> 0.47.1', require: false
 
-# Easy file attachment management for ActiveRecord
-# gem "paperclip", "~> 5.0.0"
-
-# Use Redis adapter to run Action Cable in production
-# gem 'redis', '~> 3.0'
-
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
+# Rails logs analyzer (see how fast your views are rendering) 
+gem 'log_analyzer'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
