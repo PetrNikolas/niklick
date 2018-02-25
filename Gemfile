@@ -49,7 +49,7 @@ gem 'rack-attack'
 gem 'faster_path', '~> 0.1.13'
 
 # A Ruby static code analyzer
-# gem 'rubocop', '~> 0.47.1', require: false
+gem 'rubocop', '~> 0.52.1', require: false
 
 # Rails logs analyzer (see how fast your views are rendering) 
 gem 'log_analyzer'

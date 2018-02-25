@@ -1,7 +1,7 @@
 # Niklick
 Versioned API solution template for hipsters!
 
-* Version 2.5.4
+* Version 2.5.5
 
 ## Prerequisites and Main Libraries
 * [Ruby 2.3.1 and +](https://www.ruby-lang.org/en/downloads/),
@@ -27,7 +27,7 @@ Versioned API solution template for hipsters!
 * [Rack attack](https://github.com/kickstarter/rack-attack) - Rack middleware for blocking & throttling,
 * [Pry Rails](https://github.com/rweng/pry-rails) - Rails >= 3 pry initializer,
 * [Bundler audit](https://github.com/rubysec/bundler-audit) - Patch-level verification for Bundler,
-* [Rubocop](https://github.com/bbatsov/rubocop) - A Ruby static code analyzer (you must uncommented in gemfile), 
+* [Rubocop](https://github.com/bbatsov/rubocop) - A Ruby static code analyzer, 
 * [LogAnalyzer](https://github.com/igorkasyanchuk/log_analyzer) - Rails logs analyzer (see how fast your views are rendering),
 * [Bcrypt](https://github.com/codahale/bcrypt-ruby) - bcrypt-ruby is a Ruby binding for the OpenBSD bcrypt() password hashing algorithm, allowing you to easily store a secure hash of your users' passwords.
 
