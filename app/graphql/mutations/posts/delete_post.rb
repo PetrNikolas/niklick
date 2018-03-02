@@ -7,6 +7,10 @@ class Mutations::Posts::DeletePost < GraphQL::Function
 
     # Resolve the field's response
     def call(obj, args, ctx)
-        Post.destroy(args[:id])
+        begin
+            Post.destroy(args[:id])
+        rescue ActiveRecord::RecordInvalid => err
+            GraphQL::ExecutionError.new("#{post.errors.full_messages.join(", ")}")
+        end
     end
 end

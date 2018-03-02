@@ -15,4 +15,8 @@ Types::UserType = GraphQL::ObjectType.define do
       obj.posts
     }
   end
+
+  field :errors, types[types.String] do
+    resolve -> (obj, args, ctx) { obj.errors.full_messages }
+  end
 end

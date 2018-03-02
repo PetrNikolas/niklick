@@ -1,14 +1,14 @@
 # Niklick
 Versioned API solution template for hipsters!
 
-* Version 2.5.5
+* Version 2.5.6
 
 ## Prerequisites and Main Libraries
 * [Ruby 2.3.1 and +](https://www.ruby-lang.org/en/downloads/),
 * [Rails 5 and +](http://guides.rubyonrails.org/getting_started.html),
 * [RVM](https://rvm.io/).
 
-### Databases
+### Database
 * [PostgreSQL](https://www.postgresql.org/docs/).
 
 ## Ruby Gems
@@ -58,7 +58,7 @@ Versioned API solution template for hipsters!
 * url: `http://localhost:5000/api/v1/graphql?query={post(id:2){id,title, subtitle, description}}`
 
 # Create Post
-* url: `http://localhost:5000/api/v1/graphql?query=mutation{createPost(title: "Deadly Weapon 4", subtitle: "Deadly Weapon 3", description: "Even deadlier!", content: "Even deadlier!"){id}}`  
+* url: `http://localhost:5000/api/v1/graphql?query=mutation{createPost(title: "Deadly Weapon 4", subtitle: "Deadly Weapon 3", description: "Even deadlier!", content: "Even deadlier!"){id, errors}}`  
 
 # Update Post  
 * url: `http://localhost:5000/api/v1/graphql?query=mutation{updatePost(id: 46, title: "Deadly Weapon 55", subtitle: "Deadly Weapon 33", description: "Even deadlier!", content: "Even deadlier!"){id}}`
@@ -71,10 +71,10 @@ Versioned API solution template for hipsters!
 #
 
 # Get all Users
-* url: `http://localhost:5000/api/v1/graphql?query={allUsers{id,email,posts{id, title}}}`
+* url: `http://localhost:5000/api/v1/graphql?query={allUsers{id,email,posts{id, title}, errors}}`
 
 # Get specific User 
-* url: `http://localhost:5000/api/v1/graphql?query={user(id:1){id,email,posts{id, title}}}`
+* url: `http://localhost:5000/api/v1/graphql?query={user(id:1){id,email,posts{id, title}, errors}}`
 ```
 
 ## Directory Structure

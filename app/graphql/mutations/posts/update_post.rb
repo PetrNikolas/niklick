@@ -12,13 +12,17 @@ class Mutations::Posts::UpdatePost < GraphQL::Function
 
     # Resolve the field's response
     def call(obj, args, ctx)
-        Post.find(args[:id]).update(
-            title: args[:title],
-            subtitle: args[:subtitle],
-            description: args[:description],
-            content: args[:content],
-            user_id: args[:user_id]
-        )
-        Post.find(args[:id])
+        begin
+            Post.find(args[:id]).update(
+                title: args[:title],
+                subtitle: args[:subtitle],
+                description: args[:description],
+                content: args[:content],
+                user_id: args[:user_id]
+            )
+            Post.find(args[:id])
+        rescue ActiveRecord::RecordInvalid => err
+            GraphQL::ExecutionError.new("#{post.errors.full_messages.join(", ")}")
+        end
     end
 end

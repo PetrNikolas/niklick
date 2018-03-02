@@ -11,12 +11,16 @@ class Mutations::Posts::CreatePost < GraphQL::Function
 
     # Resolve the field's response
     def call(obj, args, ctx)
-        Post.create!(
-            title: args[:title],
-            subtitle: args[:subtitle],
-            description: args[:description],
-            content: args[:content],
-            user_id: args[:user_id]
-        )
+        begin
+            Post.create!(
+                title: args[:title],
+                subtitle: args[:subtitle],
+                description: args[:description],
+                content: args[:content],
+                user_id: args[:user_id]
+            )
+        rescue ActiveRecord::RecordInvalid => err
+            GraphQL::ExecutionError.new("#{post.errors.full_messages.join(", ")}")
+        end
     end
 end
