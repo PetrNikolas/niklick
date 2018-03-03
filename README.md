@@ -1,7 +1,7 @@
 # Niklick
 Versioned API solution template for hipsters!
 
-* Version 2.5.6
+* Version 2.5.7
 
 ## Prerequisites and Main Libraries
 * [Ruby 2.3.1 and +](https://www.ruby-lang.org/en/downloads/),
