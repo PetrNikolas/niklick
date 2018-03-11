@@ -28,7 +28,6 @@ Versioned API solution template for hipsters!
 * [Rubocop](https://github.com/bbatsov/rubocop) - A Ruby static code analyzer, 
 * [LogAnalyzer](https://github.com/igorkasyanchuk/log_analyzer) - Rails logs analyzer (see how fast your views are rendering),
 * [Bcrypt](https://github.com/codahale/bcrypt-ruby) - bcrypt-ruby is a Ruby binding for the OpenBSD bcrypt() password hashing algorithm, allowing you to easily store a secure hash of your users' passwords.
-* [Overcommit](https://github.com/brigade/overcommit) - A fully configurable and extendable Git hook manager.
 * [Fasterer](https://github.com/DamirSvrtan/fasterer) - Make your Rubies go faster with this command line tool highly inspired by fast-ruby and Sferik's talk at Baruco Conf.
 * [Reek](https://github.com/troessner/reek) - Code smell detector for Ruby.
 * [Brakeman](https://github.com/presidentbeef/brakeman) - A static analysis security vulnerability scanner for Ruby on Rails applications.
@@ -61,7 +60,6 @@ Versioned API solution template for hipsters!
 │── .fasterer.yml               # Fasterer config file
 │── .gitigonre                  # Gitignore file
 │── .gqlconfig                  # GraphQl config file
-│── .overcommit.yml             # Overcommit config file
 │── .rspec                      # Tests file
 │── .rubocop.yml                # Rubocop config file
 │── .ruby-version               # Ruby version file
@@ -92,15 +90,12 @@ or you can use Job for sending emails with `SendEmailJob.set(wait: 20.seconds).p
 You can start jobs with `bundle exec rake jobs:work`.
 
 ## Code analyzer, linter, bundle audit and tools
-```shell
-# Firstly you need run these scripts:
-* overcommit --install
-* overcommit --sign
-```
 * Run `rubocop` for Ruby lint.
 * Run `rubocop -a` for fixed some issues automatically.
+* Run `reek .` for analyzing code.
 * Run `fasterer` for code analyzer.
 * Run `bundle audit` for audito your bundle.
+* Run `brakeman` for static analysis and for security vulnerabilities.
 * Run `rails_best_practices .` in root app directory. Helps to find unused methods, missing indexes into database tables and many other things.
 
 ## Docker

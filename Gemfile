@@ -85,9 +85,6 @@ group :development do
 
   gem 'graphiql-rails', '1.4.8'
 
-  # A fully configurable and extendable Git hook manager
-  gem 'overcommit'
-
   # Make your Rubies go faster with this command line tool highly inspired by fast-ruby and Sferik's talk at Baruco Conf
   gem 'fasterer'
 
