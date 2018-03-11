@@ -1,5 +1,5 @@
 Types::MutationType = GraphQL::ObjectType.define do
-  name "Mutation"
+  name 'Mutation'
 
   field :createPost, function: Mutations::Posts::CreatePost.new
   field :deletePost, function: Mutations::Posts::DeletePost.new

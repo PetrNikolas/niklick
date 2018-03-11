@@ -1,5 +1,5 @@
 Types::PostType = GraphQL::ObjectType.define do
-  name "Post"
+  name 'Post'
 
   field :id, !types.ID
   field :title, !types.String
@@ -9,6 +9,6 @@ Types::PostType = GraphQL::ObjectType.define do
   field :user_id, !types.ID
 
   field :errors, types[types.String] do
-    resolve -> (obj, args, ctx) { obj.errors.full_messages }
+    resolve ->(obj, _args, _ctx) { obj.errors.full_messages }
   end
 end

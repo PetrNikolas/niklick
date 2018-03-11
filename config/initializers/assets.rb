@@ -5,7 +5,7 @@ Rails.application.config.assets.version = '1.0'
 
 # Precompile additional assets.
 # application.scss, and all CSS in app/assets folder are already added.
-Rails.application.config.assets.precompile += %w( application.scss home.scss posts.scss )
+Rails.application.config.assets.precompile += %w[application.scss home.scss posts.scss]
 
 # application.js and all non-JS in app/assets folder are already added.
-Rails.application.config.assets.precompile += %w( application.js home.js posts.js )
+Rails.application.config.assets.precompile += %w[application.js home.js posts.js]

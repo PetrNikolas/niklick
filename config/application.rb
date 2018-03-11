@@ -20,18 +20,18 @@ module RailsStarterKit
     end
 
     # CORS configuration
-    config.middleware.insert_before 0, 'Rack::Cors' do 
-      allow do 
+    config.middleware.insert_before 0, 'Rack::Cors' do
+      allow do
         # For production, you need to replace the asterisk with the URL of your client-side application
         origins '*'
-        resource '*', :headers => :any, :methods => [:get, :post, :options] 
-      end 
+        resource '*', headers: :any, methods: %i[get post options]
+      end
     end
 
     # All times in UTC, defaults to the Eastern timezone when displaying the values, and applies optimistic locking
-    config.active_record.default_timezone = :utc  
-    config.time_zone = 'Eastern Time (US & Canada)'  
-    config.active_record.lock_optimistically = true 
+    config.active_record.default_timezone = :utc
+    config.time_zone = 'Eastern Time (US & Canada)'
+    config.active_record.lock_optimistically = true
 
     config.middleware.use Rack::Attack
   end

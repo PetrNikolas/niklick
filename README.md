@@ -1,14 +1,12 @@
 # Niklick
 Versioned API solution template for hipsters!
 
-* Version 2.5.7
+* Version 2.5.8
 
-## Prerequisites and Main Libraries
+## Prerequisites
 * [Ruby 2.3.1 and +](https://www.ruby-lang.org/en/downloads/),
 * [Rails 5 and +](http://guides.rubyonrails.org/getting_started.html),
-* [RVM](https://rvm.io/).
-
-### Database
+* [RVM](https://rvm.io/),
 * [PostgreSQL](https://www.postgresql.org/docs/).
 
 ## Ruby Gems
@@ -30,6 +28,11 @@ Versioned API solution template for hipsters!
 * [Rubocop](https://github.com/bbatsov/rubocop) - A Ruby static code analyzer, 
 * [LogAnalyzer](https://github.com/igorkasyanchuk/log_analyzer) - Rails logs analyzer (see how fast your views are rendering),
 * [Bcrypt](https://github.com/codahale/bcrypt-ruby) - bcrypt-ruby is a Ruby binding for the OpenBSD bcrypt() password hashing algorithm, allowing you to easily store a secure hash of your users' passwords.
+* [Overcommit](https://github.com/brigade/overcommit) - A fully configurable and extendable Git hook manager.
+* [Fasterer](https://github.com/DamirSvrtan/fasterer) - Make your Rubies go faster with this command line tool highly inspired by fast-ruby and Sferik's talk at Baruco Conf.
+* [Reek](https://github.com/troessner/reek) - Code smell detector for Ruby.
+* [Brakeman](https://github.com/presidentbeef/brakeman) - A static analysis security vulnerability scanner for Ruby on Rails applications.
+* [rails_best_practices](https://github.com/flyerhzm/rails_best_practices) - A code metric tool for rails projects.
 
 ## Project Setup
 * For production, you need to replace the asterisk with the URL of your client-side application in ./config/application.rb file.
@@ -42,7 +45,74 @@ Versioned API solution template for hipsters!
 6. Run `foreman start`, 
 7. Visit --> http://localhost:5000/. That's it!.
 
-### Test API with Postman
+## Directory Structure (Main folders and files)
+```shell
+.
+├── app                         # Rails application - controllers, models, etc.
+├── /bin                        # Folder for Rake, bundle, spring setup, etc.
+├── /config                     # Rails app configuration - database, app, environment, etc.
+├── /db                         # Database setup - migrate, seeds, schema
+├── /lib                        # Lib folder
+├── /log/                       # Log folder
+├── /spec/                      # Tests for the Rails app
+├── /test/                      # Unit and integration tests for the Rails app
+├── /tmp/                       # TMP folder - sockets, cache, etc.
+├── /vendor/                    # Vendor assets
+│── .fasterer.yml               # Fasterer config file
+│── .gitigonre                  # Gitignore file
+│── .gqlconfig                  # GraphQl config file
+│── .overcommit.yml             # Overcommit config file
+│── .rspec                      # Tests file
+│── .rubocop.yml                # Rubocop config file
+│── .ruby-version               # Ruby version file
+│── config.reek                 # Reek config file
+│── config.ru                   # Config file for Rails app
+│── Gemfile                     # File for all Ruby gems
+│── Gemfile.lock                # File with Gemfile lock
+│── license                     # License file
+│── Procfile                    # Foreman file with script for start server
+│── Rakefile                    # File for rake tasks
+```
+
+## Backend Side Development
+1. Run `foreman start`.
+2. And visit http://localhost:5000/.
+
+## GraphQL API playground
+* Open `http://localhost:5000/graphiql` and play with GraphQL.
+
+## Sending emails
+* In `app/mailers/user_notifier_mailer.rb` is method for sending emails. 
+* In `app/views/User_notifier/send_signup_email.html.erb` is html template for emails.
+* In `config/environment.rb` is ActionMailer settings to point to SendGrid’s servers.
+* You can modify all files and use it in controller with `UserNotifier.send_signup_email(@user).deliver`
+or you can use Job for sending emails with `SendEmailJob.set(wait: 20.seconds).perform_later(@user)`.
+
+## Jobs (for production environment)
+You can start jobs with `bundle exec rake jobs:work`.
+
+## Code analyzer, linter, bundle audit and tools
+```shell
+# Firstly you need run these scripts:
+* overcommit --install
+* overcommit --sign
+```
+* Run `rubocop` for Ruby lint.
+* Run `rubocop -a` for fixed some issues automatically.
+* Run `fasterer` for code analyzer.
+* Run `bundle audit` for audito your bundle.
+* Run `rails_best_practices .` in root app directory. Helps to find unused methods, missing indexes into database tables and many other things.
+
+## Docker
+* Run `dockerize -wait tcp://localhost:5432 -timeout 1m`
+
+# Pry initializer
+Avoid repeating yourself, use pry-rails instead of copying the initializer to every rails project.
+* Run `rails console` and in Rails console:
+* For showing models --> `show-models`.
+* For showing routes --> `show-routes`.
+
+## Test API with Postman
 ```shell
 * headers: "accept: application/json; version=1", "access-token: v9S2milc1aEcx4hhIGupbg", "client: LCYog4PFg_PN_eCVWyQtYw", "expiry: 1515865278", "uid: your@email.com"
 * method: POST
@@ -76,55 +146,3 @@ Versioned API solution template for hipsters!
 # Get specific User 
 * url: `http://localhost:5000/api/v1/graphql?query={user(id:1){id,email,posts{id, title}, errors}}`
 ```
-
-## Directory Structure
-```shell
-.
-├── app                         # Rails application - controllers, models, etc.
-├── /bin                        # Folder for Rake, bundle, spring setup, etc.
-├── /config                     # Rails app configuration - database, app, environment, etc.
-├── /db                         # Database setup - migrate, seeds, schema
-├── /lib                        # Lib folder
-├── /log/                       # Log folder
-├── /spec/                      # Tests for the Rails app
-├── /test/                      # Unit and integration tests for the Rails app
-├── /tmp/                       # TMP folder - sockets, cache, etc.
-├── /vendor/                    # Vendor assets
-│── .gitigonre                  # Gitignore file
-│── .rspec                      # Tests file
-│── config.ru                   # Config file for Rails app
-│── Gemfile                     # File for all Ruby gems
-│── Gemfile.lock                # File with Gemfile lock
-│── license                     # License file
-│── Procfile                    # Foreman file with script for start server
-│── Rakefile                    # File for rake tasks
-```
-
-## Backend Side Development
-1. Run `foreman start`.
-2. And visit http://localhost:5000/.
-
-## GraphQL API playground
-* Open `http://localhost:5000/graphiql` and play with GraphQL.
-
-## Sending emails
-* In `app/mailers/user_notifier_mailer.rb` is method for sending emails. 
-* In `app/views/User_notifier/send_signup_email.html.erb` is html template for emails.
-* In `config/environment.rb` is ActionMailer settings to point to SendGrid’s servers.
-* You can modify all files and use it in controller with `UserNotifier.send_signup_email(@user).deliver`
-or you can use Job for sending emails with `SendEmailJob.set(wait: 20.seconds).perform_later(@user)`.
-
-## Jobs (for production environment)
-You can start jobs with `bundle exec rake jobs:work`.
-
-## Docker
-* Run `dockerize -wait tcp://localhost:5432 -timeout 1m`
-
-## Bundle audit 
-* Run `bundle audit` for audito your bundle.
-
-# Pry initializer
-Avoid repeating yourself, use pry-rails instead of copying the initializer to every rails project.
-* Run `rails console` and in Rails console:
-* For showing models --> `show-models`.
-* For showing routes --> `show-routes`.

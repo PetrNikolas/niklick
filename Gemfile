@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 
 # Ruby interface to the PostgreSQL RDBMS.
-gem "pg"
+gem 'pg'
 
 # GraphQL integrations
 gem 'graphql', '1.7.12'
@@ -40,18 +40,18 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise_token_auth'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 # Rack middleware for blocking & throttling
 gem 'rack-attack'
 
-# Faster Pathname handling for Ruby written in Rust 
+# Faster Pathname handling for Ruby written in Rust
 gem 'faster_path', '~> 0.1.13'
 
 # A Ruby static code analyzer
 gem 'rubocop', '~> 0.52.1', require: false
 
-# Rails logs analyzer (see how fast your views are rendering) 
+# Rails logs analyzer (see how fast your views are rendering)
 gem 'log_analyzer'
 
 group :development, :test do
@@ -62,7 +62,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.5'
 
   # Patch-level verification for Bundler
-  gem "bundler-audit", require: false
+  gem 'bundler-audit', require: false
 end
 
 group :development do
@@ -84,6 +84,23 @@ group :development do
   gem 'pry-rails'
 
   gem 'graphiql-rails', '1.4.8'
+
+  # A fully configurable and extendable Git hook manager
+  gem 'overcommit'
+
+  # Make your Rubies go faster with this command line tool highly inspired by fast-ruby and Sferik's talk at Baruco Conf
+  gem 'fasterer'
+
+  # Code smell detector for Ruby
+  gem 'reek'
+
+  # A code metric tool for rails projects
+  gem 'rails_best_practices'
+
+  # A static analysis security vulnerability scanner for Ruby on Rails applications
+  gem 'brakeman', require: false
+
+  gem 'fukuzatsu'
 end
 
 group :test do
