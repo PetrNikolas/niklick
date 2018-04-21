@@ -45,9 +45,6 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 # Rack middleware for blocking & throttling
 gem 'rack-attack'
 
-# Faster Pathname handling for Ruby written in Rust
-gem 'faster_path', '~> 0.1.13'
-
 # A Ruby static code analyzer
 gem 'rubocop', '~> 0.52.1', require: false
 
@@ -75,8 +72,6 @@ group :development do
   gem 'spring'
 
   gem 'spring-watcher-listen', '~> 2.0.0'
-
-  gem 'browser_sync_rails'
 
   gem 'better_errors'
 

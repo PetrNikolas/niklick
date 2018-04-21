@@ -1,7 +1,7 @@
 # Niklick
 Versioned API solution template for hipsters!
 
-* Version 2.5.9
+* Version 2.6.0
 
 ## Prerequisites
 * [Ruby 2.3.1 and +](https://www.ruby-lang.org/en/downloads/),
@@ -15,7 +15,6 @@ Versioned API solution template for hipsters!
 * [devise_token_auth](https://github.com/lynndylanhurley/devise_token_auth) - Token based authentication for Rails JSON APIs. Designed to work with jToker and ng-token-auth,
 * [GraphQL](https://github.com/rmosolgo/graphql-ruby) - Ruby implementation of GraphQL,
 * [delayed_job_active_record](https://github.com/collectiveidea/delayed_job_active_record) - ActiveRecord backend integration for DelayedJob 3.0+,
-* [Fasterpath](https://github.com/danielpclark/faster_path) - Faster Pathname handling for Ruby written in Rust,
 * [Better errors](https://github.com/charliesome/better_errors) - Better error page for Rack apps,
 * [RSpec](https://github.com/rspec/rspec-rails) - RSpec for Rails-3+,
 * [Factory Girl Rails](https://github.com/thoughtbot/factory_girl_rails) - Factory Girl ♥ Rails,

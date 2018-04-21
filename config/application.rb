@@ -19,6 +19,8 @@ module RailsStarterKit
       g.template_engine false
     end
 
+    config.assets.initialize_on_precompile = false
+
     # CORS configuration
     config.middleware.insert_before 0, 'Rack::Cors' do
       allow do

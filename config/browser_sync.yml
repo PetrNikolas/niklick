@@ -1,6 +1,0 @@
-host: 'localhost'
-port: 3000
-
-# either watch this files along with `app/assets` and `app/views`
-#files:
-#  - 'some/file/**/*.css'

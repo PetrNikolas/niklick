@@ -62,8 +62,6 @@ GEM
       bundler (~> 1.2)
       thor (~> 0.18)
     byebug (9.1.0)
-    childprocess (0.9.0)
-      ffi (~> 1.0, >= 1.0.11)
     code_analyzer (0.4.8)
       sexp_processor
     codeclimate-engine-rb (0.4.1)
@@ -104,10 +102,6 @@ GEM
       railties (>= 3.0.0)
     faker (1.8.7)
       i18n (>= 0.7)
-    faster_path (0.1.13)
-      bundler (~> 1.12)
-      ffi (~> 1.9)
-      rake (~> 12.0)
     fasterer (0.4.0)
       colorize (~> 0.7)
       ruby_parser (~> 3.9)
@@ -134,7 +128,6 @@ GEM
     i18n (0.9.1)
       concurrent-ruby (~> 1.0)
     ice_nine (0.11.2)
-    iniparse (1.4.4)
     jbuilder (2.7.0)
       activesupport (>= 4.2.0)
       multi_json (>= 1.2)
@@ -161,9 +154,6 @@ GEM
     nokogiri (1.8.1)
       mini_portile2 (~> 2.3.0)
     orm_adapter (0.5.0)
-    overcommit (0.43.0)
-      childprocess (~> 0.6, >= 0.6.3)
-      iniparse (~> 1.4)
     parallel (1.12.1)
     parser (2.5.0.2)
       ast (~> 2.4.0)
@@ -321,7 +311,6 @@ DEPENDENCIES
   devise_token_auth
   factory_girl_rails (~> 4.0)
   faker
-  faster_path (~> 0.1.13)
   fasterer
   foreman
   fukuzatsu
@@ -330,7 +319,6 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   listen (~> 3.0.5)
   log_analyzer
-  overcommit
   pg
   pry-rails
   puma (~> 3.0)
