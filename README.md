@@ -1,7 +1,7 @@
 # Niklick
 Versioned API solution template for hipsters!
 
-* Version 2.6.0
+* Version 2.6.1
 
 ## Prerequisites
 * [Ruby 2.3.1 and +](https://www.ruby-lang.org/en/downloads/),
@@ -96,9 +96,6 @@ You can start jobs with `bundle exec rake jobs:work`.
 * Run `bundle audit` for audito your bundle.
 * Run `brakeman` for static analysis and for security vulnerabilities.
 * Run `rails_best_practices .` in root app directory. Helps to find unused methods, missing indexes into database tables and many other things.
-
-## Docker
-* Run `dockerize -wait tcp://localhost:5432 -timeout 1m`
 
 # Pry initializer
 Avoid repeating yourself, use pry-rails instead of copying the initializer to every rails project.
