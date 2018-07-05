@@ -13,6 +13,9 @@ Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
 Shoulda::Matchers.configure do |config|
   config.integrate do |with|
     with.test_framework :rspec
+    with.library :active_record
+    with.library :active_model
+    with.library :action_controller
     with.library :rails
   end
 end
