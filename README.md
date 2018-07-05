@@ -31,6 +31,7 @@ Versioned API solution template for hipsters!
 * [Reek](https://github.com/troessner/reek) - Code smell detector for Ruby
 * [Brakeman](https://github.com/presidentbeef/brakeman) - A static analysis security vulnerability scanner for Ruby on Rails applications
 * [rails_best_practices](https://github.com/flyerhzm/rails_best_practices) - A code metric tool for rails projects
+* [Cucumber-Rails](https://github.com/cucumber/cucumber-rails) - Rails Generators for Cucumber with special support for Capybara and DatabaseCleaner.
 
 ## Project Setup
 * For production, you need to replace the asterisk with the URL of your client-side application in ./config/application.rb file.

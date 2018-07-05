@@ -58,6 +58,9 @@ group :development, :test do
   # Testing framework
   gem 'rspec-rails', '~> 3.5'
 
+  # Rails Generators for Cucumber with special support for Capybara and DatabaseCleaner
+  gem 'cucumber-rails', require: false
+
   # Patch-level verification for Bundler
   gem 'bundler-audit', require: false
 end

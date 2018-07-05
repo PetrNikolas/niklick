@@ -20,7 +20,7 @@ development:
   <<: *default
   database: niklick_development
 
-test:
+test: &test
   <<: *default
   database: niklick_test
 
@@ -31,3 +31,5 @@ production: &prod
   password: <%= ENV['RDS_PASSWORD'] %>
   port: <%= ENV['RDS_PORT'] %>
   username: <%= ENV['RDS_USERNAME'] %>
+cucumber:
+  <<: *test

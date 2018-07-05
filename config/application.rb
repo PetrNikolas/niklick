@@ -19,6 +19,7 @@ module RailsStarterKit
       g.template_engine false
     end
 
+    # Precompilation assets -> disable
     config.assets.initialize_on_precompile = false
 
     # CORS configuration
@@ -35,6 +36,7 @@ module RailsStarterKit
     config.time_zone = 'Eastern Time (US & Canada)'
     config.active_record.lock_optimistically = true
 
+    # Rack middleware for blocking & throttling
     config.middleware.use Rack::Attack
   end
 end
