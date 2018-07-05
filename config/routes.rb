@@ -10,6 +10,9 @@ Rails.application.routes.draw do
   mount GraphiQL::Rails::Engine, at: '/graphiql', graphql_path: '/graphql' if Rails.env.development?
   post '/graphql', to: 'graphql#execute'
 
+  # Wallaby management data
+  mount Wallaby::Engine => '/desired_path' if Rails.env.development?
+
   # API endpoints
   scope '/api' do
     # Version 1 of API
