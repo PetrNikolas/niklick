@@ -63,6 +63,9 @@ group :development, :test do
 
   # Patch-level verification for Bundler
   gem 'bundler-audit', require: false
+
+  # factory_bot is a fixtures replacement with a straightforward definition syntax
+  gem 'factory_bot_rails'
 end
 
 group :development do

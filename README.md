@@ -1,7 +1,7 @@
 # Niklick
 Versioned API solution template for hipsters!
 
-* Version 2.6.1.
+* Version 2.6.2.
 
 ## Prerequisites
 * [Ruby 2.3.1 and +](https://www.ruby-lang.org/en/downloads/)
@@ -32,6 +32,7 @@ Versioned API solution template for hipsters!
 * [Brakeman](https://github.com/presidentbeef/brakeman) - A static analysis security vulnerability scanner for Ruby on Rails applications
 * [rails_best_practices](https://github.com/flyerhzm/rails_best_practices) - A code metric tool for rails projects
 * [Cucumber-Rails](https://github.com/cucumber/cucumber-rails) - Rails Generators for Cucumber with special support for Capybara and DatabaseCleaner.
+* [factory_bot_rails](https://github.com/thoughtbot/factory_bot_rails) - factory_bot is a fixtures replacement with a straightforward definition syntax.
 
 ## Project Setup
 * For production, you need to replace the asterisk with the URL of your client-side application in ./config/application.rb file.
