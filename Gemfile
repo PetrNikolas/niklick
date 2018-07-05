@@ -113,4 +113,7 @@ group :test do
 
   # You guessed it! It literally cleans our test database to ensure a clean state in each test suite.
   gem 'database_cleaner'
+
+  # Brings back `assigns` and `assert_template` to your Rails tests
+  gem 'rails-controller-testing'
 end

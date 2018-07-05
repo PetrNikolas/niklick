@@ -33,6 +33,7 @@ Versioned API solution template for hipsters!
 * [rails_best_practices](https://github.com/flyerhzm/rails_best_practices) - A code metric tool for rails projects
 * [Cucumber-Rails](https://github.com/cucumber/cucumber-rails) - Rails Generators for Cucumber with special support for Capybara and DatabaseCleaner.
 * [factory_bot_rails](https://github.com/thoughtbot/factory_bot_rails) - factory_bot is a fixtures replacement with a straightforward definition syntax.
+* [Rails::Controller::Testing](https://github.com/rails/rails-controller-testing) - Brings back `assigns` and `assert_template` to your Rails tests.
 
 ## Project Setup
 * For production, you need to replace the asterisk with the URL of your client-side application in ./config/application.rb file.
