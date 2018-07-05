@@ -22,3 +22,6 @@
 
 # Ignore IDE files
 .idea
+
+# Ignore vendor bundle.
+vendor/bundle
