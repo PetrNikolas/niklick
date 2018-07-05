@@ -47,34 +47,6 @@ Versioned API solution template for hipsters!
 6. Run `foreman start`
 7. Visit --> http://localhost:5000/. That's it!.
 
-## Directory Structure (Main folders and files)
-```shell
-.
-├── app                         # Rails application - controllers, models, etc.
-├── /bin                        # Folder for Rake, bundle, spring setup, etc.
-├── /config                     # Rails app configuration - database, app, environment, etc.
-├── /db                         # Database setup - migrate, seeds, schema
-├── /lib                        # Lib folder
-├── /log/                       # Log folder
-├── /spec/                      # Tests for the Rails app
-├── /test/                      # Unit and integration tests for the Rails app
-├── /tmp/                       # TMP folder - sockets, cache, etc.
-├── /vendor/                    # Vendor assets
-│── .fasterer.yml               # Fasterer config file
-│── .gitigonre                  # Gitignore file
-│── .gqlconfig                  # GraphQl config file
-│── .rspec                      # Tests file
-│── .rubocop.yml                # Rubocop config file
-│── .ruby-version               # Ruby version file
-│── config.reek                 # Reek config file
-│── config.ru                   # Config file for Rails app
-│── Gemfile                     # File for all Ruby gems
-│── Gemfile.lock                # File with Gemfile lock
-│── license                     # License file
-│── Procfile                    # Foreman file with script for start server
-│── Rakefile                    # File for rake tasks
-```
-
 ## Backend Side Development
 1. Run `foreman start`.
 2. And visit http://localhost:5000/.
