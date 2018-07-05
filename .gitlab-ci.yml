@@ -1,0 +1,59 @@
+image: ruby:2.3.1
+
+before_script:
+  - >
+   : "${HEROKU_EMAIL:?Please set HEROKU_EMAIL in your CI/CD config vars}"
+  - >
+   : "${HEROKU_AUTH_TOKEN:?Please set HEROKU_AUTH_TOKEN in your CI/CD config vars}"
+  - curl https://cli-assets.heroku.com/install-standalone.sh | sh
+  - |
+    cat >~/.netrc <<EOF
+    machine api.heroku.com
+      login $HEROKU_EMAIL
+      password $HEROKU_AUTH_TOKEN
+    machine git.heroku.com
+      login $HEROKU_EMAIL
+      password $HEROKU_AUTH_TOKEN
+    EOF
+  - chmod 600 ~/.netrc
+  - git config --global user.email "ci@example.com"
+  - git config --global user.name "CI/CD"
+
+variables:
+  APPNAME_PRODUCTION: niklick-pipeline
+
+test:
+  stage: test
+  variables:
+    POSTGRES_USER: test
+    POSTGRES_PASSSWORD: test-password
+    POSTGRES_DB: test
+    DATABASE_URL: postgres://${POSTGRES_USER}:${POSTGRES_PASSSWORD}@postgres/${POSTGRES_DB}
+    RAILS_ENV: test
+  services:
+    - postgres:alpine
+  before_script:
+    - curl -sL https://deb.nodesource.com/setup_8.x | bash
+    - apt-get update -qq && apt-get install -yqq nodejs libpq-dev
+    - curl -o- -L https://yarnpkg.com/install.sh | bash
+    - source ~/.bashrc
+    - yarn
+    - gem install bundler  --no-ri --no-rdoc
+    - bundle install -j $(nproc) --path vendor
+    - bundle exec rake db:setup RAILS_ENV=test
+  script:
+    - bundle exec rake spec
+    - bundle exec rubocop
+
+deploy_to_production:
+  stage: deploy
+  environment:
+    name: production
+    url: https://$APPNAME_PRODUCTION.herokuapp.com/
+  script:
+    - git remote add heroku https://git.heroku.com/$APPNAME_PRODUCTION.git
+    - git push heroku master
+    - heroku pg:backups:capture --app $APPNAME_PRODUCTION
+    - heroku run rails db:migrate --app $APPNAME_PRODUCTION
+  only:
+    - master

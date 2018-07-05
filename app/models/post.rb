@@ -11,8 +11,7 @@ class Post < ApplicationRecord
   validates :user_id, presence: true, if: ->(model) { model.instance_variable_get(:@strict_priority_validation) }
 
   private
-
-  def set_ivars
-    @strict_priority_validation = true
-  end
+    def set_ivars
+      @strict_priority_validation = true
+    end
 end
