@@ -101,6 +101,9 @@ You can start jobs with `bundle exec rake jobs:work`.
 * Run `brakeman` for static analysis and for security vulnerabilities.
 * Run `rails_best_practices .` in root app directory. Helps to find unused methods, missing indexes into database tables and many other things.
 
+# Gitlab CI
+* You need configure `.gitlab-ci.yml` file with your Heroku credentials.
+
 # Pry initializer
 Avoid repeating yourself, use pry-rails instead of copying the initializer to every rails project.
 * Run `rails console` and in Rails console:
