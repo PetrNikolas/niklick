@@ -93,6 +93,9 @@ Avoid repeating yourself, use pry-rails instead of copying the initializer to ev
 # Get all Posts
 * url: `http://localhost:5000/api/v1/graphql?query={allPosts{title, subtitle, description}}`
 
+# Get all Posts for current user which is logged in
+* url: `http://localhost:5000/api/v1/graphql?query={userPosts{title, subtitle, description}}`
+
 # Get specific Post 
 * url: `http://localhost:5000/api/v1/graphql?query={post(id:2){id,title, subtitle, description}}`
 

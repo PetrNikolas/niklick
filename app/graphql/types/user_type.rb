@@ -11,6 +11,9 @@ Types::UserType = GraphQL::ObjectType.define do
 
   field :posts do
     type types[Types::PostType]
+
+    preload :posts
+
     resolve ->(obj, _args, _ctx) {
       obj.posts
     }

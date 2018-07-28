@@ -8,6 +8,7 @@ gem 'pg'
 
 # GraphQL integrations
 gem 'graphql', '1.7.12'
+gem 'graphql-preload'
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'

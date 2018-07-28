@@ -13,6 +13,15 @@ Types::QueryType = GraphQL::ObjectType.define do
     }
   end
 
+  field :userPosts do
+    type types[Types::PostType]
+    description 'A list of all the posts for current user'
+
+    resolve ->(_obj, _args, _ctx) {
+      _ctx[:current_user].posts
+    }
+  end
+
   field :post do
     type Types::PostType
     description 'Return a one selected post'

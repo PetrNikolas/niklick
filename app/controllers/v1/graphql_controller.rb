@@ -5,12 +5,12 @@ module V1
     def execute
       query = params[:query]
       variables = ensure_hash(params[:variables])
+      operation_name = params[:operationName]
       context = {
-        # Set current user as context of schema
-        # current_user: current_user
+        current_user: current_user
       }
 
-      result = Schema.execute(query, variables: variables, context: context)
+      result = Schema.execute(query, variables: variables, context: context, operation_name: operation_name)
 
       render json: result
     end
