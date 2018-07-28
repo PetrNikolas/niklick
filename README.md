@@ -86,25 +86,25 @@ You can start jobs with `bundle exec rake jobs:work`.
 ### Docker Compose useful commands
 ```shell
 # Builds, (re)creates, starts, and attaches to containers for a service:
-* $ docker-compose up
+$ docker-compose up
 
 # Lists containers:
-* $ docker-compose ps
+$ docker-compose ps
 
 # Managing containers lifecycle:
-* $ docker-compose [start|stop|kill|restart|pause|unpause|rm] SERVICE
+$ docker-compose [start|stop|kill|restart|pause|unpause|rm] SERVICE
 
 # Displays log output from services.:
-* $ docker-compose logs [SERVICE...]
+$ docker-compose logs [SERVICE...]
 
 # Run arbitrary commands in your services:
-* $ docker-compose exec SERVICE COMMAND
+$ docker-compose exec SERVICE COMMAND
 
 # Runs a one-time command against a service.:
-* $ docker-compose run SERVICE [COMMAND]
+$ docker-compose run SERVICE [COMMAND]
 
 # Rebuilding a Docker Image:
-* $ docker-compose build [SERVICE...]
+$ docker-compose build [SERVICE...]
 ```
 
 ## Pry initializer
@@ -115,36 +115,36 @@ Avoid repeating yourself, use pry-rails instead of copying the initializer to ev
 
 ## Test API with Postman
 ```shell
-* headers: "accept: application/json; version=1", "access-token: v9S2milc1aEcx4hhIGupbg", "client: LCYog4PFg_PN_eCVWyQtYw", "expiry: 1515865278", "uid: your@email.com"
-* method: POST
+headers: "accept: application/json; version=1", "access-token: v9S2milc1aEcx4hhIGupbg", "client: LCYog4PFg_PN_eCVWyQtYw", "expiry: 1515865278", "uid: your@email.com"
+method: POST
 
 #
 # POSTS
 #
 # Get all Posts
-* url: `http://localhost:5000/api/v1/graphql?query={allPosts{title, subtitle, description}}`
+url: `http://localhost:5000/api/v1/graphql?query={allPosts{title, subtitle, description}}`
 
 # Get all Posts for current user which is logged in
-* url: `http://localhost:5000/api/v1/graphql?query={userPosts{title, subtitle, description}}`
+url: `http://localhost:5000/api/v1/graphql?query={userPosts{title, subtitle, description}}`
 
 # Get specific Post 
-* url: `http://localhost:5000/api/v1/graphql?query={post(id:2){id,title, subtitle, description}}`
+url: `http://localhost:5000/api/v1/graphql?query={post(id:2){id,title, subtitle, description}}`
 
 # Create Post
-* url: `http://localhost:5000/api/v1/graphql?query=mutation{createPost(title: "Deadly Weapon 4", subtitle: "Deadly Weapon 3", description: "Even deadlier!", content: "Even deadlier!"){id, errors}}`  
+url: `http://localhost:5000/api/v1/graphql?query=mutation{createPost(title: "Deadly Weapon 4", subtitle: "Deadly Weapon 3", description: "Even deadlier!", content: "Even deadlier!"){id, errors}}`  
 
 # Update Post  
-* url: `http://localhost:5000/api/v1/graphql?query=mutation{updatePost(id: 46, title: "Deadly Weapon 55", subtitle: "Deadly Weapon 33", description: "Even deadlier!", content: "Even deadlier!"){id}}`
+url: `http://localhost:5000/api/v1/graphql?query=mutation{updatePost(id: 46, title: "Deadly Weapon 55", subtitle: "Deadly Weapon 33", description: "Even deadlier!", content: "Even deadlier!"){id}}`
 
 # Delete Post 
-* url: `http://localhost:5000/api/v1/graphql?query=mutation{deletePost(id:17){id}}`
+url: `http://localhost:5000/api/v1/graphql?query=mutation{deletePost(id:17){id}}`
 
 #
 # USERS
 #
 # Get all Users
-* url: `http://localhost:5000/api/v1/graphql?query={allUsers{id,email,posts{id, title}, errors}}`
+url: `http://localhost:5000/api/v1/graphql?query={allUsers{id,email,posts{id, title}, errors}}`
 
 # Get specific User 
-* url: `http://localhost:5000/api/v1/graphql?query={user(id:1){id,email,posts{id, title}, errors}}`
+url: `http://localhost:5000/api/v1/graphql?query={user(id:1){id,email,posts{id, title}, errors}}`
 ```
