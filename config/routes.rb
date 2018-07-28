@@ -10,6 +10,9 @@ Rails.application.routes.draw do
   mount GraphiQL::Rails::Engine, at: '/graphiql', graphql_path: '/graphql' if Rails.env.development?
   post '/graphql', to: 'graphql#execute'
 
+  # A performance dashboard for Postgres
+  mount PgHero::Engine, at: "pghero" if Rails.env.development?
+
   # Wallaby management data
   mount Wallaby::Engine => '/desired_path' if Rails.env.development?
 

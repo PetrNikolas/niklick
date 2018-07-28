@@ -35,6 +35,7 @@ Versioned API solution template for hipsters!
 * [factory_bot_rails](https://github.com/thoughtbot/factory_bot_rails) - factory_bot is a fixtures replacement with a straightforward definition syntax.
 * [Rails::Controller::Testing](https://github.com/rails/rails-controller-testing) - Brings back `assigns` and `assert_template` to your Rails tests.
 * [Wallaby](https://github.com/reinteractive/wallaby) - Wallaby is a Rails engine for managing data.
+* [PgHero](https://github.com/ankane/pghero) - A performance dashboard for Postgres.
 
 ## Project Setup
 * For production, you need to replace the asterisk with the URL of your client-side application in ./config/application.rb file.
@@ -53,6 +54,9 @@ Versioned API solution template for hipsters!
 
 ## GraphQL API playground
 * Open `http://localhost:5000/graphiql` and play with GraphQL.
+
+## PgHero dashboard
+* Open `http://localhost:5000/pghero/` and that's it!.
 
 ## Sending emails
 * In `app/mailers/user_notifier_mailer.rb` is method for sending emails. 

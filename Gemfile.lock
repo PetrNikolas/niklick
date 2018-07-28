@@ -240,6 +240,9 @@ GEM
       ast (~> 2.4.0)
     parslet (1.8.2)
     pg (0.18.4)
+    pg_query (1.0.2)
+    pghero (2.1.1)
+      activerecord
     powerpack (0.1.1)
     promise.rb (0.7.4)
     pry (0.11.3)
@@ -435,6 +438,8 @@ DEPENDENCIES
   listen (~> 3.0.5)
   log_analyzer
   pg
+  pg_query (>= 0.9.0)
+  pghero
   pry-rails
   puma (~> 3.0)
   rack-attack
