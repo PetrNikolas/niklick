@@ -1,7 +1,7 @@
 # Niklick
 Versioned API solution template for hipsters!
 
-* Version 2.6.2.
+* Version 2.6.3.
 
 ## Prerequisites
 * [Ruby 2.3.1 and +](https://www.ruby-lang.org/en/downloads/)
@@ -73,10 +73,37 @@ You can start jobs with `bundle exec rake jobs:work`.
 * Run `brakeman` for static analysis and for security vulnerabilities.
 * Run `rails_best_practices .` in root app directory. Helps to find unused methods, missing indexes into database tables and many other things.
 
-# Gitlab CI
+## Gitlab CI
 * You need configure `.gitlab-ci.yml` file with your Heroku credentials.
 
-# Pry initializer
+## Docker
+* Basic configuration of Docker image is in Dockerfile and docker-compose.yml files in root of project.
+
+### Docker Compose useful commands
+```shell
+# Builds, (re)creates, starts, and attaches to containers for a service:
+* $ docker-compose up
+
+# Lists containers:
+* $ docker-compose ps
+
+# Managing containers lifecycle:
+* $ docker-compose [start|stop|kill|restart|pause|unpause|rm] SERVICE
+
+# Displays log output from services.:
+* $ docker-compose logs [SERVICE...]
+
+# Run arbitrary commands in your services:
+* $ docker-compose exec SERVICE COMMAND
+
+# Runs a one-time command against a service.:
+* $ docker-compose run SERVICE [COMMAND]
+
+# Rebuilding a Docker Image:
+* $ docker-compose build [SERVICE...]
+```
+
+## Pry initializer
 Avoid repeating yourself, use pry-rails instead of copying the initializer to every rails project.
 * Run `rails console` and in Rails console:
 * For showing models --> `show-models`.
