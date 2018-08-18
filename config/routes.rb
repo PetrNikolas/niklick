@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   post '/graphql', to: 'graphql#execute'
 
   # A performance dashboard for Postgres
-  mount PgHero::Engine, at: "pghero" if Rails.env.development?
+  mount PgHero::Engine, at: 'pghero' if Rails.env.development?
 
   # Wallaby management data
   mount Wallaby::Engine => '/desired_path' if Rails.env.development?
@@ -19,7 +19,7 @@ Rails.application.routes.draw do
   # API endpoints
   scope '/api' do
     # Version 1 of API
-    scope module: :v1, constraints: ApiConstraint.new(version: 1) do
+    scope module: :v1, constraints: Constraint::VersionConstraint.new(version: 1) do
       scope '/v1' do
         post '/graphql' => 'graphql#execute'
       end
