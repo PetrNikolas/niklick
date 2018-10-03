@@ -1,5 +1,3 @@
-# **WARNING: The project is not maintained.**
-
 # Niklick
 Versioned API solution template for hipsters!
 
