@@ -12,12 +12,9 @@ Versioned API solution template for hipsters!
 ## Ruby Gems
 * [Pg](https://bitbucket.org/ged/ruby-pg/wiki/Home) - Ruby interface to the PostgreSQL RDBMS
 * [Foreman](https://github.com/ddollar/foreman) - Manage Procfile-based applications
-* [devise_token_auth](https://github.com/lynndylanhurley/devise_token_auth) - Token based authentication for Rails JSON APIs. Designed to work with jToker and ng-token-auth
 * [GraphQL](https://github.com/rmosolgo/graphql-ruby) - Ruby implementation of GraphQL
-* [delayed_job_active_record](https://github.com/collectiveidea/delayed_job_active_record) - ActiveRecord backend integration for DelayedJob 3.0+
 * [Better errors](https://github.com/charliesome/better_errors) - Better error page for Rack apps
 * [RSpec](https://github.com/rspec/rspec-rails) - RSpec for Rails-3+
-* [Factory Girl Rails](https://github.com/thoughtbot/factory_girl_rails) - Factory Girl ♥ Rails
 * [Shoulda](http://matchers.shoulda.io/) - Collection of testing matchers extracted from Shoulda
 * [Database cleaner](http://databasecleaner.github.io/) - Strategies for cleaning databases in Ruby. Can be used to ensure a clean state for testing
 * [Faker](https://github.com/stympy/faker) - A library for generating fake data such as names, addresses, and phone numbers
@@ -31,11 +28,7 @@ Versioned API solution template for hipsters!
 * [Reek](https://github.com/troessner/reek) - Code smell detector for Ruby
 * [Brakeman](https://github.com/presidentbeef/brakeman) - A static analysis security vulnerability scanner for Ruby on Rails applications
 * [rails_best_practices](https://github.com/flyerhzm/rails_best_practices) - A code metric tool for rails projects
-* [Cucumber-Rails](https://github.com/cucumber/cucumber-rails) - Rails Generators for Cucumber with special support for Capybara and DatabaseCleaner.
-* [factory_bot_rails](https://github.com/thoughtbot/factory_bot_rails) - factory_bot is a fixtures replacement with a straightforward definition syntax.
 * [Rails::Controller::Testing](https://github.com/rails/rails-controller-testing) - Brings back `assigns` and `assert_template` to your Rails tests.
-* [Wallaby](https://github.com/reinteractive/wallaby) - Wallaby is a Rails engine for managing data.
-* [PgHero](https://github.com/ankane/pghero) - A performance dashboard for Postgres.
 
 ## Project Setup
 * For production, you need to replace the asterisk with the URL of your client-side application in ./config/application.rb file.
@@ -48,7 +41,15 @@ Versioned API solution template for hipsters!
 6. Run `foreman start`
 7. Visit --> http://localhost:5000/. That's it!.
 
-## Backend Side Development
+## Development
+1. Run `foreman start -f Procfile.dev` for run your front-end and server-side application.
+2. Open `http://localhost:3000/` in your browser.
+
+### Just only backend side development
+1. Run `foreman start`.
+2. And visit http://localhost:5000/.
+
+### Just only frontend side development
 1. Run `foreman start`.
 2. And visit http://localhost:5000/.
 

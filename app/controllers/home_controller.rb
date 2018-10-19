@@ -1,5 +1,9 @@
-class HomeController < BaseApiController
+# frozen_string_literal: true
+
+class HomeController < ApplicationController
+  layout "home"
+
   def index
-    render text: 'Versioned API solution template for hipsters!'
+    @hello_world_props = { name: "Stranger" }
   end
 end

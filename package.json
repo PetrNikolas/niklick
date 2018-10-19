@@ -1,0 +1,8 @@
+{
+  "name": "niklick",
+  "private": true,
+  "dependencies": {},
+  "scripts": {
+    "postinstall": "cd client && yarn install"
+  }
+}
