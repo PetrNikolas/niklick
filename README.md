@@ -123,30 +123,21 @@ method: POST
 #
 # POSTS
 #
-# Get all Posts
-url: `http://localhost:5000/api/v1/graphql?query={allPosts{title, subtitle, description}}`
+# Get all News
+url: `/api/v1/graphql?query={allNews{id, title, content, description}}`
 
-# Get all Posts for current user which is logged in
-url: `http://localhost:5000/api/v1/graphql?query={userPosts{title, subtitle, description}}`
+# Get all News for current user which is logged in
+url: `/api/v1/graphql?query={userPosts{title, subtitle, description}}`
 
-# Get specific Post 
-url: `http://localhost:5000/api/v1/graphql?query={post(id:2){id,title, subtitle, description}}`
+# Get specific News 
+url: `/api/v1/graphql?query={post(id:2){id,title, subtitle, description}}`
 
-# Create Post
-url: `http://localhost:5000/api/v1/graphql?query=mutation{createPost(title: "Deadly Weapon 4", subtitle: "Deadly Weapon 3", description: "Even deadlier!", content: "Even deadlier!"){id, errors}}`  
+# Create News
+url: `/api/v1/graphql?query=mutation{createPost(title: "Deadly Weapon 4", subtitle: "Deadly Weapon 3", description: "Even deadlier!", content: "Even deadlier!"){id, errors}}`  
 
-# Update Post  
-url: `http://localhost:5000/api/v1/graphql?query=mutation{updatePost(id: 46, title: "Deadly Weapon 55", subtitle: "Deadly Weapon 33", description: "Even deadlier!", content: "Even deadlier!"){id}}`
+# Update News  
+url: `/api/v1/graphql?query=mutation{updatePost(id: 46, title: "Deadly Weapon 55", subtitle: "Deadly Weapon 33", description: "Even deadlier!", content: "Even deadlier!"){id}}`
 
-# Delete Post 
-url: `http://localhost:5000/api/v1/graphql?query=mutation{deletePost(id:17){id}}`
-
-#
-# USERS
-#
-# Get all Users
-url: `http://localhost:5000/api/v1/graphql?query={allUsers{id,email,posts{id, title}, errors}}`
-
-# Get specific User 
-url: `http://localhost:5000/api/v1/graphql?query={user(id:1){id,email,posts{id, title}, errors}}`
+# Delete News 
+url: `/api/v1/graphql?query=mutation{deletePost(id:17){id}}`
 ```

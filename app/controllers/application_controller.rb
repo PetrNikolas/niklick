@@ -1,3 +1,13 @@
 class ApplicationController < ActionController::Base
-  protect_from_forgery with: :exception
+  around_action :collect_metrics
+
+  protect_from_forgery with: :null_session
+
+  # Request metrics for each controller
+  def collect_metrics
+    start = Time.now
+    yield
+    duration = Time.now - start
+    Rails.logger.info "Controller #{controller_name} and #{action_name} action - duration #{duration}s"
+  end
 end

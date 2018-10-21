@@ -9,13 +9,13 @@ end
 gem 'rails', '~> 5.0.6'
 
 # Ruby interface to the PostgreSQL RDBMS.
-# gem 'pg'
+gem 'pg'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
 # GraphQL integrations
-# gem 'graphql', '1.7.12'
+gem 'graphql', '1.7.12'
 # gem 'graphql-preload'
 
 # Manage Procfile-based applications
@@ -99,7 +99,7 @@ group :development do
   # Rails >= 3 pry initializer
   # gem 'pry-rails'
 
-  # gem 'graphiql-rails', '1.4.8'
+  gem 'graphiql-rails', '1.4.8'
 
   # Make your Rubies go faster with this command line tool highly inspired by fast-ruby and Sferik's talk at Baruco Conf
   # gem 'fasterer'
