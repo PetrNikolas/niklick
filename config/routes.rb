@@ -9,9 +9,7 @@ Rails.application.routes.draw do
   # Url for check if API is running
   get '/healthz' => 'healthz#index'
 
-  if Rails.env.development?
-    mount GraphiQL::Rails::Engine, at: '/graphiql', graphql_path: '/api/v1/graphql'
-  end
+  mount GraphiQL::Rails::Engine, at: '/graphiql', graphql_path: '/api/v1/graphql' if Rails.env.development?
 
   # API endpoints
   scope '/api' do

@@ -4,6 +4,6 @@ Types::QueryType = GraphQL::ObjectType.define do
   # queries are just represented as fields
   field :allNews, !types[Types::NewsType] do
     # resolve would be called in order to fetch data for that field
-    resolve -> (obj, args, ctx) { News.all }
+    resolve ->(_obj, _args, _ctx) { News.all }
   end
 end
