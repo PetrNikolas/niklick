@@ -13,5 +13,21 @@ module Niklick
     # -- all .rb files in that directory are automatically loaded.
 
     config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
+
+    # Skip assets, templates and helpers from being generated with your controllers.
+    config.generators do |g|
+      g.assets false
+      g.helper false
+      g.template_engine false
+    end
+
+    config.assets.initialize_on_precompile = false
+
+    # All times in UTC, defaults to the Eastern timezone when displaying the values, and applies optimistic locking
+    config.active_record.default_timezone = :utc
+    config.time_zone = 'Eastern Time (US & Canada)'
+    config.active_record.lock_optimistically = true
+
+    config.middleware.use Rack::Attack
   end
 end

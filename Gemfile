@@ -28,7 +28,7 @@ gem 'puma', '~> 3.0'
 # gem 'rack-cors'
 
 # Rack middleware for blocking & throttling
-# gem 'rack-attack'
+gem 'rack-attack'
 
 # A Ruby static code analyzer
 gem 'rubocop', '~> 0.52.1', require: false
