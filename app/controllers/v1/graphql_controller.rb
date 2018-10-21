@@ -1,4 +1,4 @@
-#module V1
+module V1
   class GraphqlController < ApplicationController
     def execute
       variables = ensure_hash(params[:variables])
@@ -32,4 +32,4 @@
       end
     end
   end
-#end
+end
