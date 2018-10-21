@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   get '/healthz' => 'healthz#index'
 
   # API endpoints
-  scope '/api', constraints: AuthConstraint.new(token: 'OllBS57MeAW041dgR7xolpZaiO87kjnMVVK3qrtgtTbcBolB7K3TugZBuM6wy8SjyXh1cP') do
+  scope '/api', constraints: AuthConstraint.new(token: 'OllBS57MeAW041dgR7xolpZaiO87kjnMVVK3qrtgtTbcBolB7K3TugZBuM6') do
     # Version 1 of API
     scope module: :v1, defaults: { format: :json } do
       scope '/v1' do
