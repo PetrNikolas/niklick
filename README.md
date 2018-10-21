@@ -124,16 +124,13 @@ method: POST
 # POSTS
 #
 # Get all News
-url: `/api/v1/graphql?query={allNews{id, title, content, description}}`
-
-# Get all News for current user which is logged in
-url: `/api/v1/graphql?query={userPosts{title, subtitle, description}}`
+url: `/api/v1/graphql?query={allNews{id, title, content, description, errors}}`
 
 # Get specific News 
-url: `/api/v1/graphql?query={post(id:2){id,title, subtitle, description}}`
+url: `/api/v1/graphql?query={news(id:1){id, title, content, description, errors}}`
 
 # Create News
-url: `/api/v1/graphql?query=mutation{createPost(title: "Deadly Weapon 4", subtitle: "Deadly Weapon 3", description: "Even deadlier!", content: "Even deadlier!"){id, errors}}`  
+url: `/api/v1/graphql?query=mutation{createNews(title: "Deadly Weapon 4", description: "Even deadlier!", content: "Even deadlier!"){id, errors}}`  
 
 # Update News  
 url: `/api/v1/graphql?query=mutation{updatePost(id: 46, title: "Deadly Weapon 55", subtitle: "Deadly Weapon 33", description: "Even deadlier!", content: "Even deadlier!"){id}}`
