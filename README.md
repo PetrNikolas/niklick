@@ -32,7 +32,7 @@ React on Rails and Versioned API solution template for hipsters!
 * [Rails::Controller::Testing](https://github.com/rails/rails-controller-testing) - Brings back `assigns` and `assert_template` to your Rails tests.
 
 ## Project Setup
-* For production, you need to replace the asterisk with the URL of your client-side application in ./config/application.rb file.
+* For production, you need to replace the asterisk with the URL of your client-side application in ./config/initializers/cors.rb file.
 
 1. Clone or download this repo
 2. Run `bundle install`

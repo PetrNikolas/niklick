@@ -25,7 +25,7 @@ gem 'foreman'
 gem 'puma', '~> 3.0'
 
 # Rack Middleware for handling Cross-Origin Resource Sharing (CORS), which makes cross-origin AJAX possible
-# gem 'rack-cors'
+gem 'rack-cors'
 
 # Rack middleware for blocking & throttling
 gem 'rack-attack'
