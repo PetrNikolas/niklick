@@ -1,7 +1,7 @@
 # Niklick
 React on Rails and Versioned API solution template for hipsters!
 
-* Version 2.6.3.
+* Version 3.0.0
 
 ## Prerequisites
 * [Ruby 2.3.1 and +](https://www.ruby-lang.org/en/downloads/)
