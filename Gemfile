@@ -19,7 +19,7 @@ gem 'sqlite3'
 # gem 'graphql-preload'
 
 # Manage Procfile-based applications
-# gem 'foreman'
+gem 'foreman'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
