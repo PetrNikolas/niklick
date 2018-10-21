@@ -1,9 +1,19 @@
 # frozen_string_literal: true
 
 class HomeController < ApplicationController
-  layout "home"
+  layout 'home'
 
   def index
-    @hello_world_props = { name: "Stranger" }
+    @images = {
+      instagram: path_to_asset('landing/server-instagram'),
+      twitter: path_to_asset('landing/server-twitter'),
+      medium: path_to_asset('landing/server-medium')
+    }
+  end
+
+  private
+
+  def path_to_asset(asset)
+    ApplicationController.helpers.asset_path(asset)
   end
 end

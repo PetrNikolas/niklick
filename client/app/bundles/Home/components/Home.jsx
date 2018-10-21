@@ -1,9 +1,15 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
+import Footer from './Footer'
+import Header from './Header'
+
 export default class Home extends React.Component {
   static propTypes = {
-    name: PropTypes.string.isRequired, // this is passed from the Rails view
+    // This is passed from the Rails view
+    instagram: PropTypes.string.isRequired,
+    twitter: PropTypes.string.isRequired,
+    medium: PropTypes.string.isRequired
   };
 
   /**
@@ -13,33 +19,41 @@ export default class Home extends React.Component {
   constructor(props, _railsContext) {
     super(props);
 
-    // How to set initial state in ES6 class syntax
-    // https://facebook.github.io/react/docs/reusable-components.html#es6-classes
-    this.state = { name: this.props.name };
+    this.state = {
+      instagram: this.props.instagram,
+      twitter: this.props.twitter,
+      medium: this.props.medium
+    };
   }
-
-  updateName = (name) => {
-    this.setState({ name });
-  };
 
   render() {
     return (
-      <div>
-        <h3>
-          Hello, {this.state.name}!
-        </h3>
-        <hr />
-        <form >
-          <label htmlFor="name">
-            Say hello to:
-          </label>
-          <input
-            id="name"
-            type="text"
-            value={this.state.name}
-            onChange={(e) => this.updateName(e.target.value)}
-          />
-        </form>
+      <div className="landing-container">
+        <div className="landing-dashboard">
+          <Header />
+
+          <div className="dashboard-container">
+            <div className="dashboard-title">
+              <h1>React on Rails and GraphQL</h1>
+            </div>
+
+            <div className="dashboard-text">
+              <p>React on Rails and Versioned API solution template for hipsters!</p>
+              <p>With GraphQL support - query, types, mutations, etc..</p>
+              <p>And Versioned REST API.</p>
+            </div>
+
+            <div className="dashboard-button-container">
+              <a href="https://github.com/PetrNikolas/niklick" target="_blank">
+                <div className="dashboard-button">
+                  <p>GET STARTED</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <Footer instagram={this.props.instagram} twitter={this.props.twitter} medium={this.props.medium} />
       </div>
     );
   }

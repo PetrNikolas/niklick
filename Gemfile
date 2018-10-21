@@ -9,32 +9,32 @@ end
 gem 'rails', '~> 5.0.6'
 
 # Ruby interface to the PostgreSQL RDBMS.
-#gem 'pg'
+# gem 'pg'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
 # GraphQL integrations
-#gem 'graphql', '1.7.12'
-#gem 'graphql-preload'
+# gem 'graphql', '1.7.12'
+# gem 'graphql-preload'
 
 # Manage Procfile-based applications
-#gem 'foreman'
+# gem 'foreman'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 
 # Rack Middleware for handling Cross-Origin Resource Sharing (CORS), which makes cross-origin AJAX possible
-#gem 'rack-cors'
+# gem 'rack-cors'
 
 # Rack middleware for blocking & throttling
-#gem 'rack-attack'
+# gem 'rack-attack'
 
 # A Ruby static code analyzer
 gem 'rubocop', '~> 0.52.1', require: false
 
 # Rails logs analyzer (see how fast your views are rendering)
-#gem 'log_analyzer'
+# gem 'log_analyzer'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -75,10 +75,10 @@ group :development, :test do
   gem 'byebug', platform: :mri
 
   # Testing framework
-  #gem 'rspec-rails', '~> 3.5'
+  # gem 'rspec-rails', '~> 3.5'
 
   # Patch-level verification for Bundler
-  #gem 'bundler-audit', require: false
+  # gem 'bundler-audit', require: false
 end
 
 group :development do
@@ -94,40 +94,40 @@ group :development do
 
   gem 'spring-watcher-listen', '~> 2.0.0'
 
-  #gem 'better_errors'
+  # gem 'better_errors'
 
   # Rails >= 3 pry initializer
-  #gem 'pry-rails'
+  # gem 'pry-rails'
 
-  #gem 'graphiql-rails', '1.4.8'
+  # gem 'graphiql-rails', '1.4.8'
 
   # Make your Rubies go faster with this command line tool highly inspired by fast-ruby and Sferik's talk at Baruco Conf
-  #gem 'fasterer'
+  # gem 'fasterer'
 
   # Code smell detector for Ruby
-  #gem 'reek'
+  # gem 'reek'
 
   # A code metric tool for rails projects
-  #gem 'rails_best_practices'
+  # gem 'rails_best_practices'
 
   # A static analysis security vulnerability scanner for Ruby on Rails applications
-  #gem 'brakeman', require: false
+  # gem 'brakeman', require: false
 
-  #gem 'fukuzatsu'
+  # gem 'fukuzatsu'
 end
 
 group :test do
   # Provides RSpec with additional matchers.
-  #gem 'shoulda-matchers', '~> 3.1'
+  # gem 'shoulda-matchers', '~> 3.1'
 
   # A library for generating fake data. We'll use this to generate test data.
-  #gem 'faker'
+  # gem 'faker'
 
   # You guessed it! It literally cleans our test database to ensure a clean state in each test suite.
-  #gem 'database_cleaner'
+  # gem 'database_cleaner'
 
   # Brings back `assigns` and `assert_template` to your Rails tests
-  #gem 'rails-controller-testing'
+  # gem 'rails-controller-testing'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

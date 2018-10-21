@@ -1,0 +1,368 @@
+ @font-face {
+   font-family: "Proxima Nova Reg";
+    src: font-url('proxima_nova_regular.woff2') format('woff2'),
+         font-url('proxima_nova_regular.ttf') format('truetype');
+ }
+
+ @font-face {
+   font-family: "Proxima Nova Light";
+   src: font-url('proxima_nova_light.woff2') format('woff2'),
+        font-url('proxima_nova_light.ttf') format('truetype');
+ }
+
+ @font-face {
+   font-family: "Proxima Nova Bold";
+   src: font-url('proxima_nova_bold.woff2') format('woff2'),
+        font-url('proxima_nova_bold.ttf') format('truetype');
+ }
+
+ $DEEPBLACK: #222222;
+ $BLACK: #464646;
+ $RED: #ff0033;
+ $BACKGROUND: white ;
+ $TEXT: #999999;
+ $LIGHT_TEXT: #888888;
+ $PRIMARY_FONT: 'Proxima Nova Reg', sans-serif;
+ $LIGHT_FONT: 'Proxima Nova Light', sans-serif;
+ $TEAL: #00FFFF;
+ $BTN_TEAL: #3ACCED;
+ $LIGHT_TEAL: #51deff;
+ $NAVBAR_BLACK: #2b2b2b;
+ $LIGHT_GRAY: #c9c9c9;
+ $GREEN: #54DE8F;
+ $LIGHT_GREEN: #65f7a3;
+ $MINT_GREEN: #33e6b1;
+ $DARK_BLUE: #0F1825;
+
+ $FOOTER_COLOR: $DARK_BLUE;
+
+ $HEADER_HEIGHT: 0;
+ $SIDEBAR_WIDTH: 300px;
+
+ $LETTER_SPACING: 4px;
+
+/*
+BASE - SCSS
+*/
+
+ body {
+   font-family: $PRIMARY_FONT;
+   margin: 0;
+   min-height: 100vh;
+ }
+
+ body, html, #root {
+   min-height: 100vh;
+ }
+
+ html.no-scroll {
+   overflow: hidden;
+ }
+
+ button:focus{
+    outline:none;
+ }
+ button::-moz-focus-inner {
+    border: 0;
+ }
+
+ a {
+   text-decoration: none;
+   color: inherit;
+ }
+
+ a:visited {
+   color: inherit;
+ }
+
+ a:hover {
+   color: $LIGHT_GRAY;
+ }
+
+ input {
+   border: none;
+ }
+
+ * {
+   box-sizing: border-box;
+ }
+
+ p {
+   margin: 0;
+ }
+ 
+ /*
+ LANDING - SCSS
+ */
+ 
+ .landing-container {
+
+   .landing-dashboard {
+     font-family: $LIGHT_FONT;
+     background-image: asset-data-url('landing/server-landing-background.jpg');
+     background-size: cover;
+     background-attachment: fixed;
+     height: 100vh;
+
+     .dashboard-container {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       height: 100%;
+
+       .dashboard-title {
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+
+         h1 {
+           color: white;
+           font-size: 4.0em;
+         }
+
+         @media (max-width: 700px) {
+           h1 {
+             font-size: 2.2em;
+             text-align: center;
+           }
+         }
+       }
+
+       .dashboard-text {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         text-align: center;
+
+         p {
+           padding-top: 6px;
+           color: white;
+         }
+
+         @media (max-width: 700px) {
+           p {
+             display: none;
+           }
+         }
+       }
+
+       .dashboard-button-container {
+         margin: 40px 0 0 0;
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+
+         .dashboard-button {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           background-color: $MINT_GREEN;
+           cursor: pointer;
+           height: 40px;
+           width: 150px;
+           border-radius: 20px;
+
+           p {
+             font-size: 11px;
+             color: white;
+             letter-spacing: 0.15em;
+           }
+         }
+
+         .dashboard-button:hover {
+           background-color: mediumaquamarine;
+         }
+
+         .dashboard-button:active {
+           background-color: mediumaquamarine;
+           p {
+             color: #C9C9C9;
+           }
+         }
+       }
+     }
+   }
+ }
+ 
+ /*
+ LANDING HEADER - SCSS
+ */
+ 
+ .landing-Header {
+   position: absolute;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: transparent;
+   height: 15vh;
+   width: 100%;
+   padding: 0 30px;
+
+   h2 {
+     margin: 0
+   }
+
+   .header-server-logo {
+     .header-logo {
+       height: 50px;
+       cursor: pointer;
+       font-size: 47px;
+       color: white;
+       font-weight: 900;
+     }
+   }
+
+   .header-button-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+     .landing-button {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background-color: transparent;
+       cursor: pointer;
+       border: solid;
+       border-color: white;
+       border-width: 1px;
+       height: 40px;
+       width: 150px;
+       border-radius: 20px;
+       margin-left: 10px;
+
+       p {
+         font-size: 10px;
+         color: white;
+         letter-spacing: 0.15em;
+         text-transform: uppercase;
+       }
+     }
+
+     .landing-button.login {
+       border: transparent;
+     }
+
+     .landing-button.login:hover {
+       background-color: $MINT_GREEN;
+     }
+
+     .landing-button.login:active {
+       p {
+         color: $LIGHT_GRAY;
+       }
+     }
+
+     .landing-button.signup:hover {
+       border-color: $MINT_GREEN;
+
+       p {
+         color: $MINT_GREEN;
+       }
+     }
+
+     @media (max-width: 700px) {
+       .landing-button.signup {
+         display: none;
+       }
+     }
+   }
+ }
+ 
+ /*
+ server FOOTER - SCSS
+ */
+ 
+ .server-footer-container {
+   display: flex;
+   flex-direction: row;
+   background-color: $FOOTER_COLOR;
+   height: 240px;
+   width: 100%;
+
+   h2 {
+     color: white;
+     margin: 0;
+   }
+
+   .server-logos-container {
+     height: 100%;
+     padding: 2% 5% 0 5%;
+
+     .header-logo {
+       height: 45px;
+       margin-bottom: 5px;
+     }
+
+     .social-media-logos {
+       height: 25px;
+       margin: 20px 15px 15px 0;
+     }
+
+     p {
+       margin-left: 5px;
+       color: white;
+       font-size: 0.55em;
+     }
+
+     .made-in {
+       p {
+         color: white;
+         font-size: 1em;
+       }
+     }
+
+     @media (max-width: 700px) {
+       .header-logo {
+         height: 35px;
+       }
+
+       .social-media-logos {
+         height: 20px;
+         margin: 20px 15px 15px 0;
+       }
+
+       p {
+         font-size: 0.45em;
+       }
+
+     }
+   }
+
+   .server-links-container {
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-end;
+     width: 70%;
+
+     .server-link-column {
+       display: flex;
+       flex-direction: column;
+       padding: 5% 20% 0 0;
+
+       p {
+         color: white;
+         font-size: 1em;
+         padding: 8px 3px 3px 0;
+         cursor: pointer;
+       }
+
+       p:hover {
+         color: $MINT_GREEN;
+       }
+     }
+
+     @media (max-width: 700px) {
+       .server-link-column.non-mobile {
+         display: none;
+       }
+
+     }
+
+   }
+
+ }
+
+ @media (max-width: 700px) {
+   height: 200px;
+ }
