@@ -1,31 +1,12 @@
+// Import React libs
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import Footer from './Footer'
-import Header from './Header'
+// Import components
+import Footer from '../components/Footer'
+import Header from '../components/Header'
 
-export default class Home extends React.Component {
-  static propTypes = {
-    // This is passed from the Rails view
-    instagram: PropTypes.string.isRequired,
-    twitter: PropTypes.string.isRequired,
-    medium: PropTypes.string.isRequired
-  };
-
-  /**
-   * @param props - Comes from your rails view.
-   * @param _railsContext - Comes from React on Rails
-   */
-  constructor(props, _railsContext) {
-    super(props);
-
-    this.state = {
-      instagram: this.props.instagram,
-      twitter: this.props.twitter,
-      medium: this.props.medium
-    };
-  }
-
+export default class Content extends React.Component {
   render() {
     return (
       <div className="landing-container">
