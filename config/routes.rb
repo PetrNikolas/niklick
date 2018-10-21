@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   mount GraphiQL::Rails::Engine, at: '/graphiql', graphql_path: '/api/v1/graphql' if Rails.env.development?
 
   # API endpoints
-  scope '/api' do
+  scope '/api', constraints: AuthConstraint.new(token: 'OllBS57MeAW041dgR7xolpZaiO87kjnMVVK3qrtgtTbcBolB7K3TugZBuM6') do
     # Version 1 of API
     scope module: :v1, defaults: { format: :json } do
       scope '/v1' do
