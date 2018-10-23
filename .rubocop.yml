@@ -28,11 +28,6 @@ Metrics/MethodLength:
 Metrics/ClassLength:
   Max: 1500
 
-# No space makes the method definition shorter and differentiates
-# from a regular assignment.
-Style/SpaceAroundEqualsInParameterDefault:
-  EnforcedStyle: no_space
-
 # Single quotes being faster is hardly measurable and only affects parse time.
 # Enforcing double quotes reduces the times where you need to change them
 # when introducing an interpolation. Use single quotes only if their semantics

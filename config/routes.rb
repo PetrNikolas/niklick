@@ -3,8 +3,14 @@ Rails.application.routes.draw do
   require 'constraints/auth_constraint'
 
   # Root of app - homepage
-  root 'home#index'
+  root 'landing_page#index'
+
+
+
   get 'home', to: 'home#index'
+
+
+
 
   # Url for check if API is running
   get '/healthz' => 'healthz#index'
