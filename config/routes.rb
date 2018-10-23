@@ -2,15 +2,11 @@ Rails.application.routes.draw do
   # Import constraints
   require 'constraints/auth_constraint'
 
-  # Root of app - homepage
+  # Root of app - homepage - based on the AMP project
   root 'landing_page#index'
 
-
-
+  # Homepage - based on the React app
   get 'home', to: 'home#index'
-
-
-
 
   # Url for check if API is running
   get '/healthz' => 'healthz#index'

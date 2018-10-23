@@ -1,5 +1,5 @@
 # Niklick
-React on Rails and Versioned API solution template for hipsters!
+React on Rails and Versioned API solution template for hipsters! With AMP project support!
 
 * Version 3.0.0
 
@@ -54,21 +54,12 @@ React on Rails and Versioned API solution template for hipsters!
 1. Run `foreman start`.
 2. And visit http://localhost:5000/.
 
+### AMP project vs. React app
+You can select between two LP/homepages - LP based on AMP project or basedd on React app.
+* AMP project is on root route - `http://localhost:3000` and React app is on `http://localhost:5000/home`.
+
 ## GraphQL API playground
 * Open `http://localhost:5000/graphiql` and play with GraphQL.
-
-## PgHero dashboard
-* Open `http://localhost:5000/pghero/` and that's it!.
-
-## Sending emails
-* In `app/mailers/user_notifier_mailer.rb` is method for sending emails. 
-* In `app/views/User_notifier/send_signup_email.html.erb` is html template for emails.
-* In `config/environment.rb` is ActionMailer settings to point to SendGrid’s servers.
-* You can modify all files and use it in controller with `UserNotifier.send_signup_email(@user).deliver`
-or you can use Job for sending emails with `SendEmailJob.set(wait: 20.seconds).perform_later(@user)`.
-
-## Jobs (for production environment)
-You can start jobs with `bundle exec rake jobs:work`.
 
 ## Code analyzer, linter, bundle audit and tools
 * Run `rubocop` for Ruby lint.
