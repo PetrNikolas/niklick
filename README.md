@@ -119,13 +119,4 @@ url: `/api/v1/graphql?query={allNews{id, title, content, description, errors}}`
 
 # Get specific News 
 url: `/api/v1/graphql?query={news(id:1){id, title, content, description, errors}}`
-
-# Create News
-url: `/api/v1/graphql?query=mutation{createNews(title: "Deadly Weapon 4", description: "Even deadlier!", content: "Even deadlier!"){id, errors}}`  
-
-# Update News  
-url: `/api/v1/graphql?query=mutation{updatePost(id: 46, title: "Deadly Weapon 55", subtitle: "Deadly Weapon 33", description: "Even deadlier!", content: "Even deadlier!"){id}}`
-
-# Delete News 
-url: `/api/v1/graphql?query=mutation{deletePost(id:17){id}}`
 ```
