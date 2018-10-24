@@ -108,7 +108,7 @@ Avoid repeating yourself, use pry-rails instead of copying the initializer to ev
 
 ## Test API with Postman
 ```shell
-headers: "accept: application/json", "version: version=1", "access-token: v9S2milc1aEcx4hhIGupbg", "client: LCYog4PFg_PN_eCVWyQtYw", "expiry: 1515865278", "uid: your@email.com"
+headers: "accept: application/json", "Authorization: token='OllBS57MeAW041dgR7xolpZaiO87kjnMVVK3qrtgtTbcBolB7K3TugZBuM6'"
 method: POST
 
 #
