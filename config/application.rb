@@ -23,6 +23,14 @@ module Niklick
 
     config.assets.initialize_on_precompile = false
 
+    # CORS
+    config.middleware.insert_before 0, Rack::Cors do
+      allow do
+        origins '*'
+        resource '*', headers: :any, expose: ['access-token', 'expiry', 'token-type', 'uid', 'client'], methods: [:get, :post, :options, :delete, :put]
+      end
+    end
+
     # All times in UTC, defaults to the Eastern timezone when displaying the values, and applies optimistic locking
     config.active_record.default_timezone = :utc
     config.time_zone = 'Eastern Time (US & Canada)'
