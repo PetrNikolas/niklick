@@ -30,6 +30,7 @@ React on Rails and Versioned API solution template for hipsters! With AMP projec
 * [Brakeman](https://github.com/presidentbeef/brakeman) - A static analysis security vulnerability scanner for Ruby on Rails applications
 * [rails_best_practices](https://github.com/flyerhzm/rails_best_practices) - A code metric tool for rails projects
 * [Rails::Controller::Testing](https://github.com/rails/rails-controller-testing) - Brings back `assigns` and `assert_template` to your Rails tests.
+* [Bootsnap](https://github.com/Shopify/bootsnap) - Bootsnap is a library that plugs into Ruby, with optional support for ActiveSupport and YAML, to optimize and cache expensive computations.
 
 ## Project Setup
 * For production, you need to replace the asterisk with the URL of your client-side application in ./config/initializers/cors.rb file.
