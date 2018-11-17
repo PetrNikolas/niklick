@@ -9,7 +9,7 @@ React on Rails and Versioned API solution template for hipsters! With AMP projec
 * [RVM](https://rvm.io/)
 * [PostgreSQL](https://www.postgresql.org/docs/)
 
-## Ruby Gems
+## Main Ruby Gems
 * [ReactOnRails](https://github.com/shakacode/react_on_rails) - Integration of React + Webpack + Rails using rails/webpacker to build Universal (Isomorphic) Apps (aka Server Rendering)
 * [Pg](https://bitbucket.org/ged/ruby-pg/wiki/Home) - Ruby interface to the PostgreSQL RDBMS
 * [Foreman](https://github.com/ddollar/foreman) - Manage Procfile-based applications

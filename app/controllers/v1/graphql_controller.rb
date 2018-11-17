@@ -8,7 +8,7 @@ module V1
         # Set current user as context of schema
         # current_user: current_user
       }
-      result = NiklickSchema.execute(query, variables: variables, context: context, operation_name: operation_name)
+      result = Schema.execute(query, variables: variables, context: context, operation_name: operation_name)
       render json: result
     end
 

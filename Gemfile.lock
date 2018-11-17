@@ -65,6 +65,14 @@ GEM
     graphiql-rails (1.4.8)
       rails
     graphql (1.7.12)
+    graphql-batch (0.3.9)
+      graphql (>= 0.8, < 2)
+      promise.rb (~> 0.7.2)
+    graphql-preload (2.0.1)
+      activerecord (>= 4.1, < 6)
+      graphql (>= 1.5, < 2)
+      graphql-batch (~> 0.3)
+      promise.rb (~> 0.7)
     i18n (1.1.1)
       concurrent-ruby (~> 1.0)
     jbuilder (2.7.0)
@@ -98,6 +106,7 @@ GEM
       ast (~> 2.4.0)
     pg (0.18.4)
     powerpack (0.1.2)
+    promise.rb (0.7.4)
     public_suffix (3.0.3)
     puma (3.12.0)
     rack (2.0.5)
@@ -206,6 +215,7 @@ DEPENDENCIES
   foreman
   graphiql-rails (= 1.4.8)
   graphql (= 1.7.12)
+  graphql-preload
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)

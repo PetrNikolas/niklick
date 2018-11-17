@@ -16,7 +16,7 @@ gem 'sqlite3'
 
 # GraphQL integrations
 gem 'graphql', '1.7.12'
-# gem 'graphql-preload'
+gem 'graphql-preload'
 
 # Manage Procfile-based applications
 gem 'foreman'
@@ -65,9 +65,6 @@ gem 'jbuilder', '~> 2.5'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution

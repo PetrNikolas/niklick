@@ -2073,7 +2073,7 @@ amp-img.circle img {
 }
 
 .travel-link,.travel-link:visited {
-  color: #8b58e3;
+  color: #0ece9e;
   text-decoration: none;
   font-family: inherit;
   -webkit-transition: color .15s ease-in;
@@ -2296,8 +2296,9 @@ amp-img.circle img {
 .travel-input-group>a,.travel-input-group>button {
   border-left-width: 0;
   cursor: pointer;
-  background-color: #fff;
-  border: 1px solid transparent
+  background-color: #0ece9e;
+  border: 1px solid transparent;
+  color: white;
 }
 
 .travel-input-group-sep {
@@ -2476,7 +2477,8 @@ amp-img.circle img {
 }
 
 .travel-icon-logo {
-  color: #fff
+  color: #fff !important;
+  font-size: 32px;
 }
 
 .travel-img-icon-checkmark-purple {
@@ -3168,7 +3170,7 @@ amp-img.circle img {
 
 .travel-hero-search .ampstart-btn {
   font-size: 1.25rem;
-  background-color: #8b58e3;
+  background-color: #0ece9e;
   -webkit-animation: a .4s .4s ease-in-out both;
   animation: a .4s .4s ease-in-out both
 }
@@ -3203,7 +3205,8 @@ amp-img.circle img {
 @media (min-width:52.06rem) {
   .travel-hero {
     z-index: 1;
-    height: auto
+    height: auto;
+    min-height: 650px;
   }
 
   .travel-hero-bg,.travel-hero-content {
@@ -3441,7 +3444,7 @@ amp-img.circle img {
     right: 0;
     height: 112px;
     margin-bottom: -8px;
-    background-color: #8b58e3
+    background-color: #0ece9e
   }
 
   .travel-featured-grid,.travel-featured-tile {
@@ -3480,7 +3483,7 @@ amp-img.circle img {
 }
 
 .travel-search {
-  background-color: #8b58e3
+  background-color: #0ece9e
 }
 
 .travel-search-heading {
