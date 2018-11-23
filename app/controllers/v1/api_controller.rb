@@ -1,8 +1,8 @@
 module V1
-    class ApiController < ApplicationController
-        # Serializations
+  class ApiController < ApplicationController
+    # Serializations
 
-        # Concerns
-        include Concerns::ErrorHandler
-    end
+    # Concerns
+    include Concerns::ErrorHandler
+  end
 end
