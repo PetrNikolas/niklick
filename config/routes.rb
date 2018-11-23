@@ -5,11 +5,15 @@ Rails.application.routes.draw do
   # Root of app - homepage - based on the AMP project
   root 'landing_page#index'
 
+  # Url for check if API is running
+  get '/healthz' => 'healthz#index'
+
   # Homepage - based on the React app
   get 'home', to: 'home#index'
 
-  # Url for check if API is running
-  get '/healthz' => 'healthz#index'
+  # Pages - static pages like privacy, terms, etc
+  get 'privacy', to: 'pages#privacy'
+  get 'terms', to: 'pages#terms'
 
   mount GraphiQL::Rails::Engine, at: '/graphiql', graphql_path: '/api/v1/graphql' if Rails.env.development?
 

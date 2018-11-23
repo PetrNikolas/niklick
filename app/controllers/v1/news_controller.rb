@@ -1,11 +1,16 @@
 module V1
-    class NewsController < ApplicationController
-        before_action :set_news, only: %i[update destroy]
+    class NewsController < ApiController
+        before_action :set_news, only: %i[update destroy show]
 
         # GET /news
         def index
             news = News.all.order('id')
             render json: { success: true, data: news }, status: :ok
+        end
+
+        # GET /news/:id
+        def show
+            render json: { success: true, data: @news }, status: :ok
         end
 
         # POST /news
@@ -15,7 +20,7 @@ module V1
             if news.save
                 render json: { success: true, data: news }, status: :created
             else
-                render_errors(news)
+                render_error(:unprocessable_entity, news)
             end
         end
 
@@ -24,7 +29,7 @@ module V1
             if @news.update(news_params)
                 render json: { success: true, data: @news }, status: 200
             else
-                render_errors(@news)
+                render_error(:unprocessable_entity, @news)
             end
         end
 
@@ -33,7 +38,7 @@ module V1
             if @news.destroy
                 render json: { success: true }, status: 200
             else
-                render_errors(@news)
+                render_error(:unprocessable_entity, @news)
             end
         end
 
@@ -41,17 +46,13 @@ module V1
 
         def news_params
             # whitelist params
-            params.permit(:title, :description, :content)
+            params.permit(:id, :title, :description, :content)
         end
 
         def set_news
             @news = News.find(params[:id])
             rescue StandardError => error
                 render json: { success: false, error: error }, status: 404
-        end
-
-        def render_errors(model)
-            render json: { success: false, error: ErrorSerializer.serialize(model.errors) }, status: :unprocessable_entity
         end
     end
 end
