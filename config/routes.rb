@@ -20,6 +20,9 @@ Rails.application.routes.draw do
       scope '/v1' do
         # Endpoint for GraphQL endpoints
         post '/graphql' => 'graphql#execute'
+
+        # REST endpoints for news
+        resources :news
       end
     end
   end
