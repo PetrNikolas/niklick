@@ -75,7 +75,7 @@ group :development, :test do
   gem 'byebug', platform: :mri
 
   # Testing framework
-  # gem 'rspec-rails', '~> 3.5'
+  gem 'rspec-rails', '~> 3.5'
 
   # Patch-level verification for Bundler
   # gem 'bundler-audit', require: false
