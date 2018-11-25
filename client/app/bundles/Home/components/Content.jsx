@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 // Import components
-import Footer from '../components/Footer'
-import Header from '../components/Header'
+import Footer from './Footer';
+import Header from './Header';
 
 export default class Content extends React.Component {
   render() {
@@ -19,7 +19,9 @@ export default class Content extends React.Component {
             </div>
 
             <div className="dashboard-text">
-              <p>React on Rails and Versioned API solution template for hipsters!</p>
+              <p>
+                React on Rails and Versioned API solution template for hipsters!
+              </p>
               <p>With GraphQL support - query, types, mutations, etc..</p>
               <p>And Versioned REST API.</p>
             </div>
@@ -34,7 +36,11 @@ export default class Content extends React.Component {
           </div>
         </div>
 
-        <Footer instagram={this.props.instagram} twitter={this.props.twitter} medium={this.props.medium} />
+        <Footer
+          instagram={this.props.instagram}
+          twitter={this.props.twitter}
+          medium={this.props.medium}
+        />
       </div>
     );
   }
