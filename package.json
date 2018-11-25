@@ -6,7 +6,7 @@
     "lint-staged": "$(yarn bin)/lint-staged"
   },
   "lint-staged": {
-    "assets/**/*.scss": [
+    "assets/stylesheets/*.scss": [
       "prettier --write",
       "stylelint --fix",
       "git add"
