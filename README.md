@@ -104,16 +104,49 @@ Avoid repeating yourself, use pry-rails instead of copying the initializer to ev
 * For showing routes --> `show-routes`.
 
 ## Test API with Postman
+### GraphQL
 ```shell
 headers: "accept: application/json", "Authorization: token='OllBS57MeAW041dgR7xolpZaiO87kjnMVVK3qrtgtTbcBolB7K3TugZBuM6'"
 method: POST
 
-#
-# POSTS
-#
 # Get all News
 url: `/api/v1/graphql?query={allNews{id, title, content, description, errors}}`
 
 # Get specific News 
 url: `/api/v1/graphql?query={news(id:1){id, title, content, description, errors}}`
+```
+
+### REST JSON
+```shell
+headers: "accept: application/json", "Authorization: token='OllBS57MeAW041dgR7xolpZaiO87kjnMVVK3qrtgtTbcBolB7K3TugZBuM6'"
+
+# Get all News
+url: `/api/v1/news`
+method: GET
+
+# Get specific News 
+url: `/api/v1/news/:id`
+method: GET
+
+# Create News
+url: `/api/v1/news`
+method: POST
+body: {
+    "title": "Title",
+    "description": "My news",
+    "content": "News content"
+}
+
+# Update News 
+url: `/api/v1/news/:id`
+method: PUT
+body: {
+    "title": "New Title",
+    "description": "My news",
+    "content": "Updated content"
+}
+
+# Delete News 
+url: `/api/v1/news/:id`
+method: DELETE
 ```
