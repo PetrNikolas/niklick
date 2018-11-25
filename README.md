@@ -86,7 +86,7 @@ React on Rails and Versioned API solution template for hipsters!
 ### Gitlab CI
 * You need configure `.gitlab-ci.yml` file with your Heroku credentials.
 
-### Gitlab CI
+### Travis CI
 * You need configure `.travis.yml` file with your Travis and Heroku credentials.
 
 ## Docker
