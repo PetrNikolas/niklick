@@ -3,6 +3,18 @@ React on Rails and Versioned API solution template for hipsters!
 
 * Version 3.0.3
 
+## Table of Contents
+* [Prerequisites](#prerequisites)
+* [Main Ruby Gems](#main-ruby-gems)
+* [Project Setup](#project-setup)
+* [Development](#development)
+* [GraphQL API playground](#graphql-api-playground)
+* [Tools](#tools)
+* [Deployment](#deployment)
+* [Docker](#docker)
+* [Pry initializer](#pry-initializer)
+* [Test API with Postman](#test-api-with-postman)
+
 ## Prerequisites
 * [Ruby 2.3.1 and +](https://www.ruby-lang.org/en/downloads/)
 * [Rails 5 and +](http://guides.rubyonrails.org/getting_started.html)
@@ -58,7 +70,7 @@ React on Rails and Versioned API solution template for hipsters!
 ## GraphQL API playground
 * Open `http://localhost:5000/graphiql` and play with GraphQL.
 
-## Code analyzer, linter, bundle audit and tools
+## Tools
 * Run `rubocop` for Ruby lint.
 * Run `rubocop -a` for fixed some issues automatically.
 * Run `reek .` for analyzing code.
@@ -67,7 +79,8 @@ React on Rails and Versioned API solution template for hipsters!
 * Run `brakeman` for static analysis and for security vulnerabilities.
 * Run `rails_best_practices .` in root app directory. Helps to find unused methods, missing indexes into database tables and many other things.
 
-## Deployment (Heroku)
+## Deployment
+* Mainly for Heroku hosting.
 * See [documentation](./DEPLOYMENT.md).
 
 ### Gitlab CI
