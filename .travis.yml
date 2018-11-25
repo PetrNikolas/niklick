@@ -1,0 +1,23 @@
+language: ruby
+rvm:
+  - 2.4.0
+before_script:
+  - bundle exec rake db:create --all
+  - bundle exec rake db:migrate
+script:
+  - bundle exec rake ci:tests
+services:
+  - postgresql
+notifications:
+  email: false
+deploy:
+  provider: heroku
+  api_key:
+    secure: YOUR_SECURE_KEY
+  app:
+    develop: YOUR_DEVELOPMENT_APP
+    master: YOUR_PRODUCTION_APP
+  on:
+    repo: YOUR_GITHUB_REPO
+  run:
+    - "rails db:migrate"
