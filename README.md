@@ -55,10 +55,6 @@ React on Rails and Versioned API solution template for hipsters!
 1. Run `foreman start`.
 2. And visit http://localhost:5000/.
 
-### AMP project vs. React app
-You can select between two LP/homepages - LP based on AMP project or basedd on React app.
-* AMP project is on root route - `http://localhost:3000` and React app is on `http://localhost:5000/home`.
-
 ## GraphQL API playground
 * Open `http://localhost:5000/graphiql` and play with GraphQL.
 
