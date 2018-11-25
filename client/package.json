@@ -26,6 +26,5 @@
     "webpack": "^2.3.3",
     "webpack-manifest-plugin": "^1.1.0"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
