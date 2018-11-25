@@ -67,8 +67,14 @@ React on Rails and Versioned API solution template for hipsters!
 * Run `brakeman` for static analysis and for security vulnerabilities.
 * Run `rails_best_practices .` in root app directory. Helps to find unused methods, missing indexes into database tables and many other things.
 
-## Gitlab CI
+## Deployment (Heroku)
+* See [documentation](./DEPLOYMENT.md).
+
+### Gitlab CI
 * You need configure `.gitlab-ci.yml` file with your Heroku credentials.
+
+### Gitlab CI
+* You need configure `.travis.yml` file with your Travis and Heroku credentials.
 
 ## Docker
 * Basic configuration of Docker image is in Dockerfile and docker-compose.yml files in root of project.
