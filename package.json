@@ -6,6 +6,11 @@
     "lint-staged": "$(yarn bin)/lint-staged"
   },
   "lint-staged": {
+    "frontend/**/*.js": [
+      "prettier --write",
+      "eslint",
+      "git add"
+    ],
     "assets/stylesheets/*.scss": [
       "prettier --write",
       "stylelint --fix",
