@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   root 'home#index'
 
   # Url for check if API is running
-  get '/healthz' => 'healthz#index'
+  get '/healthz', to: 'healtz#index'
 
   # Pages - static pages like privacy, terms, etc
   get 'privacy', to: 'pages#privacy'
