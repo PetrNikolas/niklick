@@ -135,7 +135,7 @@ url: `/api/v1/graphql?query={allNews{id, title, content, description, errors}}`
 url: `/api/v1/graphql?query={news(id:1){id, title, content, description, errors}}`
 ```
 
-### REST JSON
+### REST
 ```shell
 headers: "accept: application/json", "Authorization: token='OllBS57MeAW041dgR7xolpZaiO87kjnMVVK3qrtgtTbcBolB7K3TugZBuM6'"
 
