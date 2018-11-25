@@ -1,5 +1,5 @@
 # Niklick
-React on Rails and Versioned API solution template for hipsters! With AMP project support!
+React on Rails and Versioned API solution template for hipsters!
 
 * Version 3.0.2
 

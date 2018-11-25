@@ -92,12 +92,8 @@ BASE - SCSS
  */
  
  .landing-container {
-
    .landing-dashboard {
      font-family: $LIGHT_FONT;
-     background-image: asset-data-url('landing/server-landing-background.jpg');
-     background-size: cover;
-     background-attachment: fixed;
      height: 100vh;
 
      .dashboard-container {
@@ -112,7 +108,6 @@ BASE - SCSS
          justify-content: center;
 
          h1 {
-           color: white;
            font-size: 4.0em;
          }
 
@@ -132,7 +127,6 @@ BASE - SCSS
 
          p {
            padding-top: 6px;
-           color: white;
          }
 
          @media (max-width: 700px) {
@@ -157,10 +151,10 @@ BASE - SCSS
            height: 40px;
            width: 150px;
            border-radius: 20px;
+           color: white;
 
            p {
              font-size: 11px;
-             color: white;
              letter-spacing: 0.15em;
            }
          }
@@ -203,7 +197,6 @@ BASE - SCSS
        height: 50px;
        cursor: pointer;
        font-size: 47px;
-       color: white;
        font-weight: 900;
      }
    }
@@ -220,7 +213,6 @@ BASE - SCSS
        background-color: transparent;
        cursor: pointer;
        border: solid;
-       border-color: white;
        border-width: 1px;
        height: 40px;
        width: 150px;
@@ -229,7 +221,6 @@ BASE - SCSS
 
        p {
          font-size: 10px;
-         color: white;
          letter-spacing: 0.15em;
          text-transform: uppercase;
        }
@@ -241,6 +232,7 @@ BASE - SCSS
 
      .landing-button.login:hover {
        background-color: $MINT_GREEN;
+       color: white;
      }
 
      .landing-button.login:active {
