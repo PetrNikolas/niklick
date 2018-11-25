@@ -17,8 +17,10 @@ module Niklick
     # Skip assets, templates and helpers from being generated with your controllers.
     config.generators do |g|
       g.assets false
-      g.helper false
       g.template_engine false
+      g.test_framework  false
+      g.javascripts     false
+      g.helper          false
     end
 
     config.assets.initialize_on_precompile = false
