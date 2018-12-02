@@ -1,4 +1,4 @@
-FROM ruby:2.3.1
+FROM ruby:2.4.0
 RUN apt-get update -yqq
 RUN apt-get install -yqq --no-install-recommends nodejs
 COPY . /usr/src/app/
