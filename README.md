@@ -1,7 +1,7 @@
 # Niklick
 React on Rails and Versioned API solution template for hipsters!
 
-* Version 3.0.3
+* Version 3.0.4
 
 ## Table of Contents
 * [Prerequisites](#prerequisites)
@@ -33,15 +33,11 @@ React on Rails and Versioned API solution template for hipsters!
 * [Faker](https://github.com/stympy/faker) - A library for generating fake data such as names, addresses, and phone numbers
 * [Rack attack](https://github.com/kickstarter/rack-attack) - Rack middleware for blocking & throttling
 * [Pry Rails](https://github.com/rweng/pry-rails) - Rails >= 3 pry initializer
-* [Bundler audit](https://github.com/rubysec/bundler-audit) - Patch-level verification for Bundler
 * [Rubocop](https://github.com/bbatsov/rubocop) - A Ruby static code analyzer 
-* [LogAnalyzer](https://github.com/igorkasyanchuk/log_analyzer) - Rails logs analyzer (see how fast your views are rendering)
 * [Bcrypt](https://github.com/codahale/bcrypt-ruby) - bcrypt-ruby is a Ruby binding for the OpenBSD bcrypt() password hashing algorithm, allowing you to easily store a secure hash of your users' passwords
-* [Fasterer](https://github.com/DamirSvrtan/fasterer) - Make your Rubies go faster with this command line tool highly inspired by fast-ruby and Sferik's talk at Baruco Conf
 * [Reek](https://github.com/troessner/reek) - Code smell detector for Ruby
 * [Brakeman](https://github.com/presidentbeef/brakeman) - A static analysis security vulnerability scanner for Ruby on Rails applications
 * [rails_best_practices](https://github.com/flyerhzm/rails_best_practices) - A code metric tool for rails projects
-* [Rails::Controller::Testing](https://github.com/rails/rails-controller-testing) - Brings back `assigns` and `assert_template` to your Rails tests.
 * [Bootsnap](https://github.com/Shopify/bootsnap) - Bootsnap is a library that plugs into Ruby, with optional support for ActiveSupport and YAML, to optimize and cache expensive computations.
 
 ## Project Setup
@@ -74,8 +70,6 @@ React on Rails and Versioned API solution template for hipsters!
 * Run `rubocop` for Ruby lint.
 * Run `rubocop -a` for fixed some issues automatically.
 * Run `reek .` for analyzing code.
-* Run `fasterer` for code analyzer.
-* Run `bundle audit` for audito your bundle.
 * Run `brakeman` for static analysis and for security vulnerabilities.
 * Run `rails_best_practices .` in root app directory. Helps to find unused methods, missing indexes into database tables and many other things.
 
