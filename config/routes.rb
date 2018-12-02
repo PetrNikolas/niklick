@@ -17,14 +17,12 @@ Rails.application.routes.draw do
   # API endpoints
   scope '/api', module: :api, constraints: AuthConstraint.new(token: 'OllBS57MeAW041dgR7xolpZaiO87kjnMVVK3qrtgtTbcBolB7K3TugZBuM6') do
     # Version 1 of API
-    scope module: :v1, defaults: { format: :json } do
-      scope '/v1' do
-        # Endpoint for GraphQL endpoints
-        post '/graphql' => 'graphql#execute'
+    scope '/v1', module: :v1, defaults: { format: :json } do
+      # Endpoint for GraphQL endpoints
+      post '/graphql' => 'graphql#execute'
 
-        # REST endpoints for news
-        resources :news
-      end
+      # REST endpoints for news
+      resources :news
     end
   end
 end
