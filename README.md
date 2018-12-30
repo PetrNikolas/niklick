@@ -2,7 +2,7 @@
 
 React on Rails and Versioned API solution template for hipsters!
 
-* Version 3.0.4
+* Version 3.0.5
 
 ## Table of Contents
 
