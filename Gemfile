@@ -66,6 +66,9 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# The FCM gem lets your ruby backend send notifications to Android and iOS devices via Firebase Cloud Messaging
+gem 'fcm'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution
   # and get a debugger console

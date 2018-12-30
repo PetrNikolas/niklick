@@ -43,6 +43,7 @@ React on Rails and Versioned API solution template for hipsters!
 * [Brakeman](https://github.com/presidentbeef/brakeman) - A static analysis security vulnerability scanner for Ruby on Rails applications
 * [rails_best_practices](https://github.com/flyerhzm/rails_best_practices) - A code metric tool for rails projects
 * [Bootsnap](https://github.com/Shopify/bootsnap) - Bootsnap is a library that plugs into Ruby, with optional support for ActiveSupport and YAML, to optimize and cache expensive computations.
+* [fcm](https://github.com/spacialdb/fcm) - The FCM gem lets your ruby backend send notifications to Android and iOS devices via Firebase Cloud Messaging.
 
 ## Project Setup
 
