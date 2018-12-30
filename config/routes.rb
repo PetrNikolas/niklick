@@ -2,6 +2,9 @@ Rails.application.routes.draw do
   # Import constraints
   require 'constraints/auth_constraint'
 
+  # Devise routes
+  devise_for :users, defaults: { format: :json }
+
   scope '/', module: :web, defaults: { format: :html } do
     # Root of app - homepage
     root 'home#index'

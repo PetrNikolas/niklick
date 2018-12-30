@@ -44,6 +44,7 @@ React on Rails and Versioned API solution template for hipsters!
 * [rails_best_practices](https://github.com/flyerhzm/rails_best_practices) - A code metric tool for rails projects
 * [Bootsnap](https://github.com/Shopify/bootsnap) - Bootsnap is a library that plugs into Ruby, with optional support for ActiveSupport and YAML, to optimize and cache expensive computations.
 * [fcm](https://github.com/spacialdb/fcm) - The FCM gem lets your ruby backend send notifications to Android and iOS devices via Firebase Cloud Messaging.
+* [Devise](https://github.com/plataformatec/devise) - Flexible authentication solution for Rails with Warden.
 
 ## Project Setup
 
@@ -136,12 +137,15 @@ Avoid repeating yourself, use pry-rails instead of copying the initializer to ev
 
 ## Test API with Postman
 
-### GraphQL
-
 ```shell
 headers: "accept: application/json", "Authorization: token='OllBS57MeAW041dgR7xolpZaiO87kjnMVVK3qrtgtTbcBolB7K3TugZBuM6'"
-method: POST
+```
 
+### GraphQL
+
+#### News - GraphQL
+
+```shell
 # Get all News
 url: `/api/v1/graphql?query={allNews{id, title, content, description, errors}}`
 
@@ -151,9 +155,36 @@ url: `/api/v1/graphql?query={news(id:1){id, title, content, description, errors}
 
 ### REST
 
-```shell
-headers: "accept: application/json", "Authorization: token='OllBS57MeAW041dgR7xolpZaiO87kjnMVVK3qrtgtTbcBolB7K3TugZBuM6'"
+#### Users - REST
 
+```shell
+# Get all Users
+url: `/api/v1/users`
+method: GET
+
+# Get specific User
+url: `/api/v1/users/:id`
+method: GET
+
+# Sign Up
+url: `/users`
+method: POST
+body: {
+  "user": {
+    "first_name": "John J",
+    "last_name": "Doe",
+    "email": "john.j@doe.com",
+    "username": "joh.j",
+    "password": "12345678",
+    "password_confirmation": "12345678",
+    "role": 1
+  }
+}
+```
+
+#### News - REST
+
+```shell
 # Get all News
 url: `/api/v1/news`
 method: GET

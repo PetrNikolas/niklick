@@ -69,6 +69,9 @@ gem 'jbuilder', '~> 2.5'
 # The FCM gem lets your ruby backend send notifications to Android and iOS devices via Firebase Cloud Messaging
 gem 'fcm'
 
+# Authorization
+gem 'devise'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution
   # and get a debugger console
