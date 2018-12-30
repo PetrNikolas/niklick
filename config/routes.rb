@@ -2,15 +2,17 @@ Rails.application.routes.draw do
   # Import constraints
   require 'constraints/auth_constraint'
 
-  # Root of app - homepage - based on the AMP project
-  root 'home#index'
+  scope '/', module: :web, defaults: { format: :html } do
+    # Root of app - homepage
+    root 'home#index'
 
-  # Url for check if API is running
-  get '/health', to: 'healtz#index'
+    # Url for check if API is running
+    get '/health', to: 'healtz#index'
 
-  # Pages - static pages like privacy, terms, etc
-  get 'privacy', to: 'pages#privacy'
-  get 'terms', to: 'pages#terms'
+    # Pages - static pages like privacy, terms, etc
+    get 'privacy', to: 'pages#privacy'
+    get 'terms', to: 'pages#terms'
+  end
 
   # GraphiQL playground in browser - for just only development env
   mount GraphiQL::Rails::Engine, at: '/graphiql', graphql_path: '/api/v1/graphql' if Rails.env.development?
