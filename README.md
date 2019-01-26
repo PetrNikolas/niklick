@@ -56,7 +56,7 @@ React on Rails and Versioned API solution template for hipsters!
 4. Run `bin/rails db:migrate RAILS_ENV=development`
 5. Run `bin/rails db:seed RAILS_ENV=development`
 6. Run `foreman start`
-7. Visit --> [http://localhost:5000/](http://localhost:5000/). That's it!.
+7. Visit --> [http://localhost:3000/](http://localhost:3000/). That's it!.
 
 ## Development
 
@@ -66,16 +66,16 @@ React on Rails and Versioned API solution template for hipsters!
 ### Just only backend side development
 
 1. Run `foreman start`.
-2. And visit [http://localhost:5000/](http://localhost:5000/).
+2. And visit [http://localhost:3000/](http://localhost:3000/).
 
 ### Just only frontend side development
 
 1. Run `foreman start`.
-2. And visit [http://localhost:5000/](http://localhost:5000/).
+2. And visit [http://localhost:3000/](http://localhost:3000/).
 
 ## GraphQL API playground
 
-* Open [http://localhost:5000/graphiql](http://localhost:5000/graphiql) and play with GraphQL.
+* Open [http://localhost:3000/graphiql](http://localhost:3000/graphiql) and play with GraphQL.
 
 ## Tools
 
