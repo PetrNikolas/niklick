@@ -1,7 +1,5 @@
 module Web
   class HealtzController < ApplicationController
-    def index
-      render plain: ''
-    end
+    def index; end
   end
 end

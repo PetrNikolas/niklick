@@ -11,10 +11,6 @@ Rails.application.routes.draw do
 
     # Url for check if API is running
     get '/health', to: 'healtz#index'
-
-    # Pages - static pages like privacy, terms, etc
-    get 'privacy', to: 'pages#privacy'
-    get 'terms', to: 'pages#terms'
   end
 
   # GraphiQL playground in browser - for just only development env
