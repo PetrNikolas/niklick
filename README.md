@@ -7,7 +7,6 @@ React on Rails and Versioned API solution template for hipsters!
 ## Table of Contents
 
 * [Prerequisites](#prerequisites)
-* [Gems](#gems)
 * [Project Setup](#project-setup)
 * [Development](#development)
 * [GraphQL API playground](#graphql-api-playground)
@@ -23,28 +22,6 @@ React on Rails and Versioned API solution template for hipsters!
 * [Rails 5 and +](http://guides.rubyonrails.org/getting_started.html)
 * [RVM](https://rvm.io/)
 * [PostgreSQL](https://www.postgresql.org/docs/)
-
-## Gems
-
-* [ReactOnRails](https://github.com/shakacode/react_on_rails) - Integration of React + Webpack + Rails using rails/webpacker to build Universal (Isomorphic) Apps (aka Server Rendering)
-* [Pg](https://bitbucket.org/ged/ruby-pg/wiki/Home) - Ruby interface to the PostgreSQL RDBMS
-* [Foreman](https://github.com/ddollar/foreman) - Manage Procfile-based applications
-* [GraphQL](https://github.com/rmosolgo/graphql-ruby) - Ruby implementation of GraphQL
-* [Better errors](https://github.com/charliesome/better_errors) - Better error page for Rack apps
-* [RSpec](https://github.com/rspec/rspec-rails) - RSpec for Rails-3+
-* [Shoulda](http://matchers.shoulda.io/) - Collection of testing matchers extracted from Shoulda
-* [Database cleaner](http://databasecleaner.github.io/) - Strategies for cleaning databases in Ruby. Can be used to ensure a clean state for testing
-* [Faker](https://github.com/stympy/faker) - A library for generating fake data such as names, addresses, and phone numbers
-* [Rack attack](https://github.com/kickstarter/rack-attack) - Rack middleware for blocking & throttling
-* [Pry Rails](https://github.com/rweng/pry-rails) - Rails >= 3 pry initializer
-* [Rubocop](https://github.com/bbatsov/rubocop) - A Ruby static code analyzer
-* [Bcrypt](https://github.com/codahale/bcrypt-ruby) - bcrypt-ruby is a Ruby binding for the OpenBSD bcrypt() password hashing algorithm, allowing you to easily store a secure hash of your users' passwords
-* [Reek](https://github.com/troessner/reek) - Code smell detector for Ruby
-* [Brakeman](https://github.com/presidentbeef/brakeman) - A static analysis security vulnerability scanner for Ruby on Rails applications
-* [rails_best_practices](https://github.com/flyerhzm/rails_best_practices) - A code metric tool for rails projects
-* [Bootsnap](https://github.com/Shopify/bootsnap) - Bootsnap is a library that plugs into Ruby, with optional support for ActiveSupport and YAML, to optimize and cache expensive computations.
-* [fcm](https://github.com/spacialdb/fcm) - The FCM gem lets your ruby backend send notifications to Android and iOS devices via Firebase Cloud Messaging.
-* [Devise](https://github.com/plataformatec/devise) - Flexible authentication solution for Rails with Warden.
 
 ## Project Setup
 
