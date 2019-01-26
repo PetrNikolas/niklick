@@ -72,6 +72,9 @@ gem 'fcm'
 # Authorization
 gem 'devise'
 
+# Ruby integrations for Elasticsearch
+# gem 'elasticsearch'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution
   # and get a debugger console
