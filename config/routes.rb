@@ -5,11 +5,8 @@ Rails.application.routes.draw do
   # Devise routes
   devise_for :users, defaults: { format: :json }
 
-  scope '/', module: :web, defaults: { format: :html } do
-    # Root of app - homepage
+  scope '/', module: :web do
     root 'home#index'
-
-    # Url for check if API is running
     get '/health', to: 'healtz#index'
   end
 
