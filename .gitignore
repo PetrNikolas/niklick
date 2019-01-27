@@ -23,12 +23,5 @@
 # Ignore IDE files
 .idea
 
-# React on Rails
-npm-debug.log*
-node_modules
-
-# Generated js bundles
-/public/webpack/*
-
 # Ignore vendor bundle.
 vendor/bundle

@@ -39,7 +39,7 @@ module Niklick
     config.active_record.lock_optimistically = true
 
     # Middleware
-    config.middleware.insert_after "Rails::Rack::Logger", "MiddlewareHealthcheck" 
+    config.middleware.insert_after "Rails::Rack::Logger", "MiddlewareHealthcheck"
     config.middleware.use Rack::Attack
   end
 end

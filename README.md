@@ -1,6 +1,6 @@
 # Niklick
 
-React on Rails and Versioned API solution template for hipsters!
+Rails Versioned API solution template for hipsters!
 
 * Version 3.0.6
 
