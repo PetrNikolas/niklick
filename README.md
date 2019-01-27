@@ -11,7 +11,6 @@ Rails Versioned API solution template for hipsters!
 * [Development](#development)
 * [GraphQL API playground](#graphql-api-playground)
 * [Tools](#tools)
-* [Deployment](#deployment)
 * [Docker](#docker)
 * [Pry initializer](#pry-initializer)
 * [Test API with Postman](#test-api-with-postman)
@@ -37,18 +36,8 @@ Rails Versioned API solution template for hipsters!
 
 ## Development
 
-1. Run `foreman start -f Procfile.dev` for run your front-end and server-side application.
+1. Run `foreman start -f Procfile.dev` for run your application.
 2. Open [http://localhost:3000/](http://localhost:3000/) in your browser.
-
-### Just only backend side development
-
-1. Run `foreman start`.
-2. And visit [http://localhost:3000/](http://localhost:3000/).
-
-### Just only frontend side development
-
-1. Run `foreman start`.
-2. And visit [http://localhost:3000/](http://localhost:3000/).
 
 ## GraphQL API playground
 
@@ -61,11 +50,6 @@ Rails Versioned API solution template for hipsters!
 * Run `reek .` for analyzing code.
 * Run `brakeman` for static analysis and for security vulnerabilities.
 * Run `rails_best_practices .` in root app directory. Helps to find unused methods, missing indexes into database tables and many other things.
-
-## Deployment
-
-* Mainly for Heroku hosting.
-* See [documentation](./DEPLOYMENT.md).
 
 ### Gitlab CI
 
