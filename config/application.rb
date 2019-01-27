@@ -12,11 +12,9 @@ module Niklick
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
 
-    config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
-
     # Skip assets, templates and helpers from being generated with your controllers.
     config.generators do |g|
-      g.assets false
+      g.assets          false
       g.template_engine false
       g.test_framework  false
       g.javascripts     false
