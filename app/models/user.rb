@@ -6,6 +6,9 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
+  belongs_to :news
+  has_many :news
+
   validates :first_name, presence: true, length: { within: 2..50, message: 'First name is too short (minimum is 2 characters).' }
   validates :second_name, presence: true, length: { within: 2..50, message: 'Second name is too short (minimum is 2 characters).' }
   validates :password, presence: true, length: { within: 8..40, message: 'Name is too short (minimum is 8 characters).' }, on: :create

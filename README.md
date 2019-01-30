@@ -96,6 +96,10 @@ Avoid repeating yourself, use pry-rails instead of copying the initializer to ev
 * For showing models --> `show-models`.
 * For showing routes --> `show-routes`.
 
+## GraphQL Preload gem
+
+* [Docs.](https://github.com/ConsultingMD/graphql-preload)
+
 ## Test API with Postman
 
 * You can find some examples [here.](./DOCUMENTATION.md)
