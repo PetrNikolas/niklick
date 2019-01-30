@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   # Import constraints
   require 'constraints/auth_constraint'
-  require 'constraints/version_constraint'
 
   # Devise routes
   devise_for :users, defaults: { format: :json }
@@ -17,7 +16,6 @@ Rails.application.routes.draw do
   # API endpoints
   scope '/api', module: :api, defaults: { format: :json }, constraints: AuthConstraint.new(token: 'OllBS57MeAW041dgR7xolpZaiO87kjnMVVK3qrtgtTbcBolB7K3TugZBuM6') do
     # Version 1 of API
-    # scope '/v1', module: :v1, constraints: VersionConstraint.new(version: 1) do
     scope '/v1', module: :v1 do
       # Endpoint for GraphQL endpoints
       post '/graphql' => 'graphql#execute'
