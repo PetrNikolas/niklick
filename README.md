@@ -17,10 +17,10 @@ Rails Versioned API solution template for hipsters!
 
 ## Prerequisites
 
-* [Ruby 2.3.1 and +](https://www.ruby-lang.org/en/downloads/)
-* [Rails 5 and +](http://guides.rubyonrails.org/getting_started.html)
+* [Ruby](https://www.ruby-lang.org/en/downloads/)
+* [Ruby on Rails](http://guides.rubyonrails.org/getting_started.html)
 * [RVM](https://rvm.io/)
-* [PostgreSQL](https://www.postgresql.org/docs/)
+* [PostgreSQL DB](https://www.postgresql.org/docs/)
 
 ## Project Setup
 

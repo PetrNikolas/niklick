@@ -3,7 +3,7 @@
 module Web
   class HomeController < ApplicationController
     def index
-      render plain: 'The API is running successfully.'
+      render plain: 'Versioned API!'
     end
   end
 end
