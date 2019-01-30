@@ -121,3 +121,6 @@ end
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 gem 'mini_racer', platforms: :ruby
+
+# A Rake task that helps you find dead routes and unused actions in your Rails 3+ app.
+gem 'traceroute'

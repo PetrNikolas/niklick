@@ -13,6 +13,8 @@ Rails Versioned API solution template for hipsters!
 * [Tools](#tools)
 * [Docker](#docker)
 * [Pry initializer](#pry-initializer)
+* [Traceroute](#traceroute)
+* [GraphQL Preload gem](#graphql-preload-gem)
 * [Test API with Postman](#test-api-with-postman)
 
 ## Prerequisites
@@ -95,6 +97,10 @@ Avoid repeating yourself, use pry-rails instead of copying the initializer to ev
 * Run `rails console` and in Rails console:
 * For showing models --> `show-models`.
 * For showing routes --> `show-routes`.
+
+## Traceroute
+
+* Run `rake traceroute`.
 
 ## GraphQL Preload gem
 
