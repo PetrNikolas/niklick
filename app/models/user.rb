@@ -7,7 +7,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
   belongs_to :news
-  has_many :news
+  has_many :news, dependent: :delete_all
 
   validates :first_name, presence: true, length: { within: 2..50, message: 'First name is too short (minimum is 2 characters).' }
   validates :second_name, presence: true, length: { within: 2..50, message: 'Second name is too short (minimum is 2 characters).' }
