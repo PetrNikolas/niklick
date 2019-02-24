@@ -3,7 +3,7 @@
 module Web
   class HomeController < ApplicationController
     def index
-      render plain: 'Versioned API!'
+      render plain: 'Niklick - Versioned API!'
     end
   end
 end
