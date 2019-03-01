@@ -20,6 +20,9 @@ Rails.application.routes.draw do
       # Endpoint for GraphQL endpoints
       post '/graphql' => 'graphql#execute'
 
+      # Push notifications and devices register
+      post '/notifications' => 'notification#notify'
+
       # REST endpoints for news
       resources :news
     end
