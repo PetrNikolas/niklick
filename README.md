@@ -2,7 +2,7 @@
 
 Rails Versioned API solution template for hipsters!
 
-* Version 3.0.6
+* Version 3.0.7
 
 ## Table of Contents
 
