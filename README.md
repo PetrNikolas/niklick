@@ -2,7 +2,7 @@
 
 Rails Versioned API solution template for hipsters!
 
-* Version 3.0.7
+* Version 3.0.8
 
 ## Table of Contents
 
@@ -33,17 +33,12 @@ Rails Versioned API solution template for hipsters!
 3. Run `rake db:create`
 4. Run `bin/rails db:migrate RAILS_ENV=development`
 5. Run `bin/rails db:seed RAILS_ENV=development`
-6. Run `foreman start`
-7. Visit --> [http://localhost:3000/](http://localhost:3000/). That's it!.
-
-## Development
-
-1. Run `foreman start -f Procfile.dev` for run your application.
-2. Open [http://localhost:3000/](http://localhost:3000/) in your browser.
+6. Run `foreman start -f Procfile.dev`
+7. Visit --> [http://localhost:5000/](http://localhost:5000/). That's it!.
 
 ## GraphQL API playground
 
-* Open [http://localhost:3000/graphiql](http://localhost:3000/graphiql) and play with GraphQL.
+* Open [http://localhost:5000/graphiql](http://localhost:5000/graphiql) and play with GraphQL.
 
 ## Tools
 
