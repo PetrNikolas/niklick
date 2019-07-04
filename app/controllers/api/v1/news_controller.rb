@@ -28,7 +28,7 @@ module Api
       # PUT /news/:id
       def update
         if @news.update(news_params)
-          render json: { success: true, data: @news }, status: 200
+          render json: { success: true, data: @news }, status: :ok
         else
           render_error(:unprocessable_entity, @news)
         end
@@ -37,7 +37,7 @@ module Api
       # DELETE /news/:id
       def destroy
         if @news.destroy
-          render json: { success: true }, status: 200
+          render json: { success: true }, status: :ok
         else
           render_error(:unprocessable_entity, @news)
         end
@@ -52,8 +52,8 @@ module Api
 
       def set_news
         @news = News.find(params[:id])
-      rescue StandardError => error
-        render json: { success: false, error: error }, status: 404
+      rescue StandardError => e
+        render json: { success: false, error: e }, status: :not_found
       end
     end
   end

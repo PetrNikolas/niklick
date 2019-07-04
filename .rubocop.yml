@@ -1,3 +1,5 @@
+require: rubocop-rails
+
 Rails:
   Enabled: true
 
@@ -21,7 +23,7 @@ Metrics/LineLength:
 
 # Too short methods lead to extraction of single-use methods, which can make
 # the code easier to read (by naming things), but can also clutter the class
-Metrics/MethodLength: 
+Metrics/MethodLength:
   Max: 20
 
 # The guiding principle of classes is SRP, SRP can't be accurately measured by LoC
@@ -44,7 +46,7 @@ Lint/ShadowingOuterLocalVariable:
 
 # This is just silly. Calling the argument `other` in all cases makes no sense.
 Naming/BinaryOperatorParameterName:
-  Enabled: false 
+  Enabled: false
 
 # There are valid cases, for example debugging Cucumber steps,
 # also they'll fail CI anyway

@@ -8,6 +8,6 @@ Schema = GraphQL::Schema.define do
 end
 
 Schema.middleware <<
-  GraphQL::Schema::TimeoutMiddleware.new(max_seconds: 4) do |err, query|
+  GraphQL::Schema::TimeoutMiddleware.new(max_seconds: 4) do |_err, query|
     Rails.logger.info("GraphQL Timeout: #{query.query_string}")
   end

@@ -15,7 +15,7 @@ Types::UserType = GraphQL::ObjectType.define do
     # User.includes(:news)
     preload :news
 
-    resolve ->(obj, args, ctx) { obj.news }
+    resolve ->(obj, _args, _ctx) { obj.news }
   end
 
   field :errors, types[types.String] do

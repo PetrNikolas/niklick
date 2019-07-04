@@ -10,7 +10,7 @@ Types::NewsType = GraphQL::ObjectType.define do
   field :content, !types.String
 
   field :owner, Types::UserType do
-    resolve ->(obj, args, context) { RecordLoader.for(User).load(obj.user_id) }
+    resolve ->(obj, _args, _context) { RecordLoader.for(User).load(obj.user_id) }
   end
 
   field :errors, types[types.String] do

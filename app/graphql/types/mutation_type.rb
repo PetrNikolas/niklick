@@ -4,7 +4,7 @@ Types::MutationType = GraphQL::ObjectType.define do
   # TODO: Remove me
   field :testField, types.String do
     description 'An example field added by the generator'
-    resolve ->(_obj, _args, _ctx) {
+    resolve lambda { |_obj, _args, _ctx|
       'Hello World!'
     }
   end

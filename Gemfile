@@ -33,7 +33,8 @@ gem 'rack-cors'
 gem 'rack-attack'
 
 # A Ruby static code analyzer
-gem 'rubocop', '~> 0.52.1', require: false
+gem 'rubocop', '~> 0.70.0', require: false
+gem 'rubocop-rails', require: false
 
 # Bootsnap is a library that plugs into Ruby, with optional support for ActiveSupport and YAML, to optimize and cache expensive computations.
 gem 'bootsnap', require: false
