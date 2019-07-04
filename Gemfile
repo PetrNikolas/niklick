@@ -104,6 +104,9 @@ group :development do
 
   # A static analysis security vulnerability scanner for Ruby on Rails applications
   gem 'brakeman', require: false
+
+  # Annotate Rails classes with schema and routes info
+  gem 'annotate'
 end
 
 group :test do

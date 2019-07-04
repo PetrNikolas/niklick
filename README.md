@@ -48,6 +48,47 @@ Rails Versioned API solution template for hipsters!
 * Run `brakeman` for static analysis and for security vulnerabilities.
 * Run `rails_best_practices .` in root app directory. Helps to find unused methods, missing indexes into database tables and many other things.
 
+### Annotate (aka AnnotateModels) usage
+
+To annotate all your models, tests, fixtures, and factories:
+
+```bash
+cd /path/to/app
+annotate
+```
+
+To annotate just your models, tests, and factories:
+
+```bash
+annotate --exclude fixtures
+```
+
+To annotate just your models:
+
+```bash
+annotate --exclude tests,fixtures,factories,serializers
+```
+
+To annotate routes.rb:
+
+```bash
+annotate --routes
+```
+
+To remove model/test/fixture/factory/serializer annotations:
+
+```bash
+annotate --delete
+```
+
+To remove routes.rb annotations:
+
+```bash
+annotate --routes --delete
+```
+
+To automatically annotate every time you run db:migrate, either run rails g annotate:install or add Annotate.load_tasks to your `Rakefile`. See the configuration in Rails section for more info.
+
 ### Gitlab CI
 
 * You need configure `.gitlab-ci.yml` file with your Heroku credentials.
