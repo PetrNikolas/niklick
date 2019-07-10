@@ -14,11 +14,10 @@ gem 'pg'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
-# GraphQL integrations
-gem 'graphql', '1.7.12'
+# GraphQL integration
+gem 'graphql', '~> 1.8.0'
+gem 'graphql-cache'
 gem 'graphql-preload'
-# https://github.com/stackshareio/graphql-cache
-# gem 'graphql-cache'
 
 # Manage Procfile-based applications
 gem 'foreman'
