@@ -16,6 +16,7 @@ gem 'sqlite3'
 
 # GraphQL integration
 gem 'graphql', '~> 1.8.0'
+# https://github.com/stackshareio/graphql-cache
 gem 'graphql-cache'
 gem 'graphql-preload'
 
