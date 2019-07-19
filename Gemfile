@@ -57,9 +57,6 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-# The FCM gem lets your ruby backend send notifications to Android and iOS devices via Firebase Cloud Messaging
-gem 'fcm'
-
 # Authorization
 gem 'devise'
 

@@ -15,13 +15,11 @@ Rails.application.routes.draw do
 
   # API endpoints
   scope '/api', module: :api, defaults: { format: :json }, constraints: AuthConstraint.new(token: 'OllBS57MeAW041dgR7xolpZaiO87kjnMVVK3qrtgtTbcBolB7K3TugZBuM6') do
+    # Endpoint for GraphQL endpoints
+    post '/graphql' => 'graphql#execute'
+
     # Version 1 of API
     scope '/v1', module: :v1 do
-      # Endpoint for GraphQL endpoints
-      post '/graphql' => 'graphql#execute'
-
-      # Push notifications and devices register
-      post '/notifications' => 'notification#notify'
 
       # REST endpoints for news
       resources :news
